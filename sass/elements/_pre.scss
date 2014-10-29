@@ -1,0 +1,23 @@
+pre {
+	overflow: auto;
+	max-width: 100%;
+	@include rem(margin-bottom, $margin__spacing-bottom);
+	@include rem(padding, $margin__spacing-left);
+	font-family: $font__pre;
+	@include font-size($font__size-pre);
+	line-height: $font__line-height-pre;
+}
+
+code, kbd, samp, var {
+	font-family: $font__code;
+	@include font-size($font__size-code);
+	background: $color__background-code;
+}
+
+/* Deprecated in HTML5, but just in case */
+
+tt {
+	font-family: $font__code;
+	@include font-size($font__size-code);
+	background: $color__background-code;
+}

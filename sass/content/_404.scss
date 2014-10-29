@@ -1,0 +1,11 @@
+.error-404 {
+	@include rem(padding, $padding__content-article);
+	
+	.entry-title {
+		text-align: center;
+	}
+	
+	.entry-content {
+		text-align: center;
+	}
+}

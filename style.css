@@ -1,0 +1,2149 @@
+@import url("../marker/style.css");
+/*
+Theme Name:		Marker Child
+Theme URI:		https://github.com/WPAddiction/marker
+Author:			Web First Designs
+Author URI:		http://WebFirstDesigns.com
+Description:	Starter child theme for Marker
+Tags:			
+Version:		0.9.1
+License:		GNU General Public License v2 or later
+License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:	marker-child
+Template:		marker
+
+Marker is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Typography
+	2.1 Headings
+	2.2 Copy
+	2.3 Links
+3.0 Elements
+	3.1 Lists
+	3.2 Tables
+	3.3 Blockquotes
+	3.4 Pre & Code
+4.0 Forms
+	4.1 Buttons
+	4.2 Fields
+5.0 Accessibility
+6.0 Alignments
+7.0 Clearings
+8.0 Layout
+9.0 Body (Background)
+10.0 Header
+	10.1 Navigation Menus
+	10.2 Top Navigation
+	10.3 Primary Navigation
+11.0 Content
+	11.1 Asides
+	11.2 Single
+	11.3 Comments
+	11.4 404
+12.0 Sidebars
+	12.1 Widgets
+	12.2 Sidebar Widget Area
+	12.3 Footer Widget Area
+13.0 Footer
+14.0 Infinite scroll
+15.0 Media
+	15.1 Captions
+	15.2 Galleries
+16.0 Theme Specific
+--------------------------------------------------------------*/
+/* Body */
+/* Extra Navigation */
+/* Primary Navigation */
+/* Sections */
+/* Elements & Forms */
+/* Comments */
+/* Sections */
+/* Elements & Forms */
+/* The mixin relies on a baseline of 10px (font-size: 62.5%) */
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+/* line 8, sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 19, sass/_reset.scss */
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+/* line 27, sass/_reset.scss */
+*,
+*:before,
+*:after {
+  /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 30, sass/_reset.scss */
+body {
+  background: #eeeeee;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+/* line 42, sass/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* line 45, sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 48, sass/_reset.scss */
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 52, sass/_reset.scss */
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 57, sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+/* line 60, sass/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 63, sass/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 67, sass/_reset.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 70, sass/_reset.scss */
+a img {
+  border: 0;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+/* line 5, sass/typography/_typography.scss */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #404040;
+}
+
+/* 2.1 Headings
+----------------------------------------------------------*/
+/* line 6, sass/typography/_headings.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  text-align: left;
+}
+
+/* line 16, sass/typography/_headings.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+
+/* 2.2 Copy
+----------------------------------------------------------*/
+/* line 1, sass/typography/_copy.scss */
+p {
+  margin-bottom: 2rem;
+}
+
+/* line 7, sass/typography/_copy.scss */
+b,
+cite,
+strong {
+  font-weight: bold;
+}
+
+/* line 13, sass/typography/_copy.scss */
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+/* line 17, sass/typography/_copy.scss */
+address {
+  margin: 0 0 2rem;
+}
+
+/* line 21, sass/typography/_copy.scss */
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+}
+
+/* line 26, sass/typography/_copy.scss */
+mark {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 32, sass/typography/_copy.scss */
+ins,
+u {
+  text-decoration: underline;
+}
+
+/* line 36, sass/typography/_copy.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 41, sass/typography/_copy.scss */
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 49, sass/typography/_copy.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 53, sass/typography/_copy.scss */
+sub {
+  top: .5ex;
+}
+
+/* line 57, sass/typography/_copy.scss */
+small {
+  font-size: 75%;
+}
+
+/* Deprecated in HTML5, but just in case */
+/* line 63, sass/typography/_copy.scss */
+acronym {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+}
+
+/* line 68, sass/typography/_copy.scss */
+big {
+  font-size: 125%;
+}
+
+/* 2.3 Links
+----------------------------------------------------------*/
+/* line 1, sass/typography/_links.scss */
+a {
+  text-decoration: none;
+  color: royalblue;
+}
+/* line 5, sass/typography/_links.scss */
+a:visited {
+  text-decoration: none;
+  color: purple;
+}
+/* line 11, sass/typography/_links.scss */
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+/* line 1, sass/elements/_elements.scss */
+hr {
+  height: 1px;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 20px 20px;
+  /* We output the result */
+  margin: 0 2rem 2rem;
+  /* We output the result */
+  border: 0;
+  background-color: #cccccc;
+}
+
+/* 3.1 Lists
+----------------------------------------------------------*/
+/* line 1, sass/elements/_lists.scss */
+ul, ol {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 0 20px 20px;
+  /* We output the result */
+  margin: 0 0 2rem 2rem;
+  /* We output the result */
+}
+
+/* line 5, sass/elements/_lists.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 9, sass/elements/_lists.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 14, sass/elements/_lists.scss */
+li > ul,
+li > ol {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 0 0 20px;
+  /* We output the result */
+  margin: 0 0 0 2rem;
+  /* We output the result */
+}
+
+/* line 18, sass/elements/_lists.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 22, sass/elements/_lists.scss */
+dd {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 20px 20px;
+  /* We output the result */
+  margin: 0 2rem 2rem;
+  /* We output the result */
+}
+
+/* 3.2 Tables
+----------------------------------------------------------*/
+/* line 1, sass/elements/_tables.scss */
+table {
+  width: 100%;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 0 20px;
+  /* We output the result */
+  margin: 0 0 2rem;
+  /* We output the result */
+  border-collapse: collapse;
+}
+
+/* line 9, sass/elements/_tables.scss */
+table,
+th,
+td {
+  border: 1px solid gray;
+}
+
+/* line 14, sass/elements/_tables.scss */
+th,
+td {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 2px 4px;
+  /* We output the result */
+  padding: 0.2rem 0.4rem;
+  /* We output the result */
+}
+
+/* line 18, sass/elements/_tables.scss */
+th {
+  font-weight: bold;
+}
+
+/* line 24, sass/elements/_tables.scss */
+.hentry th {
+  background-color: transparent;
+}
+/* line 28, sass/elements/_tables.scss */
+.hentry tbody tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+/* 3.3 Blockquotes
+----------------------------------------------------------*/
+/* line 1, sass/elements/_blockquotes.scss */
+blockquote {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 20px;
+  /* We output the result */
+  margin: 0 2rem;
+  /* We output the result */
+  padding-left: 0.3em;
+  border-left: 5px solid #eeeeee;
+  font-style: italic;
+}
+
+/* 3.4 Pre & Code
+----------------------------------------------------------*/
+/* line 1, sass/elements/_pre.scss */
+pre {
+  overflow: auto;
+  max-width: 100%;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 20px;
+  /* We output the result */
+  margin-bottom: 2rem;
+  /* We output the result */
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 20px;
+  /* We output the result */
+  padding: 2rem;
+  /* We output the result */
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* line 11, sass/elements/_pre.scss */
+code, kbd, samp, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  background: #eeeeee;
+}
+
+/* Deprecated in HTML5, but just in case */
+/* line 19, sass/elements/_pre.scss */
+tt {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  background: #eeeeee;
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+/* line 4, sass/forms/_forms.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+}
+
+/* 4.1 Buttons
+----------------------------------------------------------*/
+/* line 4, sass/forms/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #cccccc #cccccc #bbbbbb;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding: .5em 1em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* line 22, sass/forms/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #cccccc #bbbbbb #aaaaaa;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+
+/* line 34, sass/forms/_buttons.scss */
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  border-color: #aaaaaa #bbbbbb #bbbbbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* 4.2 Fields
+----------------------------------------------------------*/
+/* line 2, sass/forms/_fields.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+}
+
+/* line 6, sass/forms/_fields.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 13, sass/forms/_fields.scss */
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+
+/* line 18, sass/forms/_fields.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+/* line 28, sass/forms/_fields.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666666;
+  border: 1px solid #cccccc;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 39, sass/forms/_fields.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111111;
+}
+
+/* line 47, sass/forms/_fields.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 3px;
+  /* We output the result */
+  padding: 0.3rem;
+  /* We output the result */
+}
+
+/* line 51, sass/forms/_fields.scss */
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding-left: 3px;
+  /* We output the result */
+  padding-left: 0.3rem;
+  /* We output the result */
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+5.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+/* line 2, sass/modules/_accessibility.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* line 11, sass/modules/_accessibility.scss */
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+  background-color: white;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+6.0 Alignments
+--------------------------------------------------------------*/
+/* line 1, sass/modules/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-right: 20px;
+  /* We output the result */
+  margin-right: 2rem;
+  /* We output the result */
+}
+
+/* line 7, sass/modules/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-left: 20px;
+  /* We output the result */
+  margin-left: 2rem;
+  /* We output the result */
+}
+
+/* line 13, sass/modules/_alignments.scss */
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+7.0 Clearings
+--------------------------------------------------------------*/
+/* line 12, sass/modules/_clearings.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+}
+
+/* line 21, sass/modules/_clearings.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+8.0 Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.0 Body (Background)
+--------------------------------------------------------------*/
+/* line 1, sass/body/_body.scss */
+.site {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+/*--------------------------------------------------------------
+10.0 Header
+--------------------------------------------------------------*/
+/* line 1, sass/header/_header.scss */
+.site-header {
+  background-color: transparent;
+}
+
+/* line 5, sass/header/_header.scss */
+.site-branding {
+  clear: both;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px 60px;
+  /* We output the result */
+  padding: 3rem 6rem;
+  /* We output the result */
+}
+
+/* line 10, sass/header/_header.scss */
+h1.site-title {
+  margin-left: -2px;
+  font-family: sans-serif;
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1;
+}
+/* line 17, sass/header/_header.scss */
+h1.site-title a,
+h1.site-title a:visited {
+  text-decoration: none;
+  color: royalblue;
+}
+/* line 24, sass/header/_header.scss */
+h1.site-title a:hover,
+h1.site-title a:focus,
+h1.site-title a:active {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+/* line 30, sass/header/_header.scss */
+h2.site-description {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+/* 10.1 Navigation Menus
+----------------------------------------------------------*/
+/* line 2, sass/header/_menus.scss */
+.main-navigation,
+.top-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 8, sass/header/_menus.scss */
+.main-navigation ul,
+.top-navigation ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 13, sass/header/_menus.scss */
+.main-navigation ul ul,
+.top-navigation ul ul {
+  z-index: 99999;
+  position: absolute;
+  float: left;
+  left: -999em;
+}
+/* line 19, sass/header/_menus.scss */
+.main-navigation ul ul ul,
+.top-navigation ul ul ul {
+  top: 0;
+  left: -999em;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-top: -1px;
+  /* We output the result */
+  margin-top: -0.1rem;
+  /* We output the result */
+}
+/* line 26, sass/header/_menus.scss */
+.main-navigation ul ul li:hover > ul,
+.top-navigation ul ul li:hover > ul {
+  left: 100%;
+}
+/* line 41, sass/header/_menus.scss */
+.main-navigation ul li:hover > ul,
+.top-navigation ul li:hover > ul {
+  left: auto;
+}
+/* line 46, sass/header/_menus.scss */
+.main-navigation li,
+.top-navigation li {
+  float: left;
+  position: relative;
+}
+/* line 54, sass/header/_menus.scss */
+.main-navigation a,
+.top-navigation a {
+  display: block;
+}
+
+/* 10.2 Top Navigation
+----------------------------------------------------------*/
+/* line 1, sass/header/_extra-navigation.scss */
+.top-navigation {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 0 20px;
+  /* We output the result */
+  padding: 0 2rem;
+  /* We output the result */
+  border-top: none;
+  border-bottom: none;
+  background-color: white;
+}
+/* line 7, sass/header/_extra-navigation.scss */
+.top-navigation ul {
+  float: right;
+}
+/* line 10, sass/header/_extra-navigation.scss */
+.top-navigation ul ul {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  top: 28px;
+  /* We output the result */
+  top: 2.8rem;
+  /* We output the result */
+  border: 1px solid gray;
+  background-color: white;
+  background-color: white;
+}
+/* line 16, sass/header/_extra-navigation.scss */
+.top-navigation ul ul a {
+  width: 120px;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 2.5px 10px;
+  /* We output the result */
+  padding: 0.25rem 1rem;
+  /* We output the result */
+}
+/* line 31, sass/header/_extra-navigation.scss */
+.top-navigation li:hover > a {
+  background-color: gray;
+  color: midnightblue;
+}
+/* line 37, sass/header/_extra-navigation.scss */
+.top-navigation a {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 5px 10px;
+  /* We output the result */
+  padding: 0.5rem 1rem;
+  /* We output the result */
+  font-family: sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-decoration: none;
+  color: royalblue;
+}
+/* line 45, sass/header/_extra-navigation.scss */
+.top-navigation a:visited {
+  color: royalblue;
+}
+/* line 52, sass/header/_extra-navigation.scss */
+.top-navigation .current_page_item > a,
+.top-navigation .current-menu-item > a,
+.top-navigation .current_page_ancestor > a {
+  background-color: #f6f6f6;
+  color: purple;
+}
+
+/* 10.3 Primary Navigation
+----------------------------------------------------------*/
+/* line 1, sass/header/_site-navigation.scss */
+.main-navigation {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 0 40px;
+  /* We output the result */
+  padding: 0 4rem;
+  /* We output the result */
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: white;
+}
+/* line 9, sass/header/_site-navigation.scss */
+.main-navigation ul ul {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  top: 41px;
+  /* We output the result */
+  top: 4.1rem;
+  /* We output the result */
+  border: 1px solid gray;
+  background-color: white;
+  background-color: white;
+}
+/* line 15, sass/header/_site-navigation.scss */
+.main-navigation ul ul a {
+  width: 160px;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 5px 20px;
+  /* We output the result */
+  padding: 0.5rem 2rem;
+  /* We output the result */
+}
+/* line 30, sass/header/_site-navigation.scss */
+.main-navigation li:hover > a {
+  background-color: gray;
+  color: midnightblue;
+}
+/* line 36, sass/header/_site-navigation.scss */
+.main-navigation a {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 10px 20px;
+  /* We output the result */
+  padding: 1rem 2rem;
+  /* We output the result */
+  font-family: sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: royalblue;
+}
+/* line 44, sass/header/_site-navigation.scss */
+.main-navigation a:visited {
+  color: royalblue;
+}
+/* line 51, sass/header/_site-navigation.scss */
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+  background-color: #f6f6f6;
+  color: purple;
+}
+
+/* Small menu */
+/* line 58, sass/header/_site-navigation.scss */
+.menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 64, sass/header/_site-navigation.scss */
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
+
+  /* line 68, sass/header/_site-navigation.scss */
+  .main-navigation ul {
+    display: none;
+  }
+}
+/*--------------------------------------------------------------
+11.0 Content
+--------------------------------------------------------------*/
+/* line 1, sass/content/_content.scss */
+.site-main {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+  border-right: none;
+  border: none;
+  background-color: white;
+  background-color: white;
+}
+
+/* line 9, sass/content/_content.scss */
+.page-header {
+  background: #f6f6f6;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  margin: -30px -30px 0;
+  /* We output the result */
+  margin: -3rem -3rem 0;
+  /* We output the result */
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+}
+/* line 14, sass/content/_content.scss */
+.page-header .page-title {
+  font-weight: bold;
+}
+/* line 18, sass/content/_content.scss */
+.page-header p {
+  margin: 0;
+}
+
+/* line 23, sass/content/_content.scss */
+.sticky {
+  display: block;
+}
+
+/* line 27, sass/content/_content.scss */
+.hentry {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+}
+
+/* line 31, sass/content/_content.scss */
+img.wp-post-image {
+  display: block;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 auto 10px;
+  /* We output the result */
+  margin: 0 auto 1rem;
+  /* We output the result */
+}
+
+/* line 36, sass/content/_content.scss */
+.entry-header {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 20px;
+  /* We output the result */
+  margin-bottom: 2rem;
+  /* We output the result */
+}
+
+/* line 40, sass/content/_content.scss */
+h1.entry-title {
+  margin-left: -2px;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+/* line 47, sass/content/_content.scss */
+h1.entry-title a,
+h1.entry-title a:visited {
+  text-decoration: none;
+  color: royalblue;
+}
+/* line 54, sass/content/_content.scss */
+h1.entry-title a:hover,
+h1.entry-title a:focus,
+h1.entry-title a:active {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+/* line 60, sass/content/_content.scss */
+.entry-meta {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: gray;
+}
+/* line 65, sass/content/_content.scss */
+.entry-meta .edit-link {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-left: 20px;
+  /* We output the result */
+  margin-left: 2rem;
+  /* We output the result */
+}
+
+/* line 71, sass/content/_content.scss */
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 76, sass/content/_content.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 82, sass/content/_content.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  text-align: justify;
+}
+/* line 90, sass/content/_content.scss */
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-summary h1,
+.entry-summary h2,
+.entry-summary h3,
+.entry-summary h4,
+.entry-summary h5,
+.entry-summary h6 {
+  margin-left: -2px;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  padding: 20px 0;
+  /* We output the result */
+  padding: 2rem 0;
+  /* We output the result */
+  font-family: sans-serif;
+}
+/* line 96, sass/content/_content.scss */
+.page-content h2,
+.entry-content h2,
+.entry-summary h2 {
+  font-size: 26px;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+/* line 101, sass/content/_content.scss */
+.page-content h3,
+.entry-content h3,
+.entry-summary h3 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+/* line 108, sass/content/_content.scss */
+.page-content h4,
+.page-content h5,
+.page-content h6,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-summary h4,
+.entry-summary h5,
+.entry-summary h6 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+/* line 114, sass/content/_content.scss */
+.page-content p,
+.entry-content p,
+.entry-summary p {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 20px;
+  /* We output the result */
+  margin-bottom: 2rem;
+  /* We output the result */
+}
+
+/* line 119, sass/content/_content.scss */
+.entry-footer {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: gray;
+}
+/* line 124, sass/content/_content.scss */
+.entry-footer span {
+  display: inline-block;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-right: 20px;
+  /* We output the result */
+  margin-right: 2rem;
+  /* We output the result */
+}
+/* line 129, sass/content/_content.scss */
+.entry-footer .edit-link {
+  margin-right: 0;
+}
+
+/* 11.1 Asides
+----------------------------------------------------------*/
+/* line 2, sass/content/_asides.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
+
+/* 11.2 Navigation
+----------------------------------------------------------*/
+/* line 3, sass/content/_navigation.scss */
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+  clear: both;
+  overflow: hidden;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+}
+
+/* line 11, sass/content/_navigation.scss */
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+
+/* line 18, sass/content/_navigation.scss */
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/* line 24, sass/content/_navigation.scss */
+.page-links {
+  clear: both;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 20px;
+  /* We output the result */
+  margin-bottom: 2rem;
+  /* We output the result */
+  font-weight: bold;
+}
+/* line 29, sass/content/_navigation.scss */
+.page-links a {
+  text-decoration: none;
+}
+
+/* line 34, sass/content/_navigation.scss */
+.post-navigation {
+  display: none;
+}
+
+/* 11.3 Comments
+----------------------------------------------------------*/
+/* line 1, sass/content/_comments.scss */
+.comments-area {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+  text-align: justify;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 6, sass/content/_comments.scss */
+.comments-area h2.comments-title {
+  margin-left: -1px;
+  /* Fixes larger font alignment with smaller fonts */
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+/* line 12, sass/content/_comments.scss */
+.comments-area ol.comment-list {
+  margin: 0;
+  list-style: none;
+}
+/* line 16, sass/content/_comments.scss */
+.comments-area ol.comment-list ol.children {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 10px -10px 10px 20px;
+  /* We output the result */
+  margin: 1rem -1rem 1rem 2rem;
+  /* We output the result */
+  list-style: none;
+}
+/* line 21, sass/content/_comments.scss */
+.comments-area ol.comment-list li.comment {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 10px;
+  /* We output the result */
+  padding: 1rem;
+  /* We output the result */
+}
+/* line 25, sass/content/_comments.scss */
+.comments-area ol.comment-list li.even {
+  background: #f6f6f6;
+}
+/* line 29, sass/content/_comments.scss */
+.comments-area ol.comment-list li.odd {
+  background: white;
+}
+
+/* line 35, sass/content/_comments.scss */
+.comment-author {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 38, sass/content/_comments.scss */
+.comment-author img.avatar {
+  float: left;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  margin: 0 10px 10px 0;
+  /* We output the result */
+  margin: 0 1rem 1rem 0;
+  /* We output the result */
+}
+
+/* line 44, sass/content/_comments.scss */
+.bypostauthor {
+  /* Comments by post author */
+  display: block;
+  border-top: 5px solid #eeeeee;
+  background-color: transparent;
+}
+/* line 49, sass/content/_comments.scss */
+.bypostauthor .fn {
+  color: inherit;
+}
+
+/* line 54, sass/content/_comments.scss */
+.comment-metadata .edit-link {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-left: 10px;
+  /* We output the result */
+  margin-left: 1rem;
+  /* We output the result */
+}
+
+/* line 58, sass/content/_comments.scss */
+.comment-content {
+  clear: both;
+}
+/* line 61, sass/content/_comments.scss */
+.comment-content p {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 10px;
+  /* We output the result */
+  margin-bottom: 1rem;
+  /* We output the result */
+}
+/* line 65, sass/content/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 71, sass/content/_comments.scss */
+.comment-respond {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-top: 20px;
+  /* We output the result */
+  margin-top: 2rem;
+  /* We output the result */
+}
+/* line 74, sass/content/_comments.scss */
+.comment-respond h3 {
+  margin-left: -1px;
+  /* Fixes larger font alignment with smaller fonts */
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+/* line 80, sass/content/_comments.scss */
+.comment-respond p {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 10px;
+  /* We output the result */
+  margin-bottom: 1rem;
+  /* We output the result */
+}
+/* line 84, sass/content/_comments.scss */
+.comment-respond p.form-submit {
+  margin-bottom: 0;
+}
+/* line 88, sass/content/_comments.scss */
+.comment-respond label {
+  display: inline-block;
+  width: 70px;
+}
+/* line 94, sass/content/_comments.scss */
+.comment-respond .form-allowed-tags,
+.comment-respond .form-allowed-tags code {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: gray;
+}
+
+/* 11.4 404
+----------------------------------------------------------*/
+/* line 1, sass/content/_404.scss */
+.error-404 {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+}
+/* line 4, sass/content/_404.scss */
+.error-404 .entry-title {
+  text-align: center;
+}
+/* line 8, sass/content/_404.scss */
+.error-404 .entry-content {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+12.0 Sidebars
+--------------------------------------------------------------*/
+/* line 1, sass/sidebars/_sidebars.scss */
+.widget-title {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 6, sass/sidebars/_sidebars.scss */
+.widget ul {
+  margin: 0;
+  list-style: none;
+}
+/* line 10, sass/sidebars/_sidebars.scss */
+.widget ul ul {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-left: 20px;
+  /* We output the result */
+  margin-left: 2rem;
+  /* We output the result */
+  list-style-type: circle;
+}
+
+/* line 16, sass/sidebars/_sidebars.scss */
+.widget ol {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 0 0 20px;
+  /* We output the result */
+  margin: 0 0 0 2rem;
+  /* We output the result */
+  list-style-type: decimal;
+}
+
+/* line 21, sass/sidebars/_sidebars.scss */
+.widget select {
+  max-width: 100%;
+}
+
+/* 12.1 Widgets
+----------------------------------------------------------*/
+/* line 1, sass/sidebars/_widgets.scss */
+.widget_search .search-submit {
+  display: none;
+}
+
+/* line 5, sass/sidebars/_widgets.scss */
+.tagcloud {
+  text-align: justify;
+}
+
+/* line 9, sass/sidebars/_widgets.scss */
+table#wp-calendar {
+  margin: 0;
+  border: none;
+}
+/* line 14, sass/sidebars/_widgets.scss */
+table#wp-calendar th,
+table#wp-calendar td {
+  border: none;
+  text-align: center;
+}
+/* line 20, sass/sidebars/_widgets.scss */
+table#wp-calendar tfoot,
+table#wp-calendar tfoot td {
+  border: none;
+}
+/* line 24, sass/sidebars/_widgets.scss */
+table#wp-calendar td#prev {
+  text-align: left;
+}
+/* line 28, sass/sidebars/_widgets.scss */
+table#wp-calendar td#next {
+  text-align: right;
+}
+/* line 32, sass/sidebars/_widgets.scss */
+table#wp-calendar a {
+  font-weight: bold;
+}
+
+/* 12.2 Sidebar Widget Area
+----------------------------------------------------------*/
+/* line 1, sass/sidebars/_secondary.scss */
+.content-area {
+  background-color: #f6f6f6;
+}
+
+/* line 5, sass/sidebars/_secondary.scss */
+#secondary {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  padding: 30px 30px 0;
+  /* We output the result */
+  padding: 3rem 3rem 0;
+  /* We output the result */
+  border: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  background-color: #f6f6f6;
+}
+/* line 12, sass/sidebars/_secondary.scss */
+#secondary .widget {
+  overflow: hidden;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 30px;
+  /* We output the result */
+  margin-bottom: 3rem;
+  /* We output the result */
+}
+/* line 18, sass/sidebars/_secondary.scss */
+#secondary .widget-title,
+#secondary .widget_calendar caption {
+  border-bottom: 1px solid gray;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+/* line 25, sass/sidebars/_secondary.scss */
+#secondary a {
+  text-decoration: none;
+}
+
+/* 12.3 Footer Widget Area
+----------------------------------------------------------*/
+/* line 1, sass/sidebars/_tertiary.scss */
+#tertiary {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+  border-top: 1px solid gray;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  background-color: #f6f6f6;
+}
+/* line 8, sass/sidebars/_tertiary.scss */
+#tertiary .widget {
+  float: left;
+  overflow: hidden;
+  width: 300px;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px;
+  /* We output the result */
+  padding: 3rem;
+  /* We output the result */
+}
+/* line 16, sass/sidebars/_tertiary.scss */
+#tertiary .widget-title,
+#tertiary .widget_calendar caption {
+  border-bottom: 1px solid gray;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+/* line 23, sass/sidebars/_tertiary.scss */
+#tertiary a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+13.0 Footer
+--------------------------------------------------------------*/
+/* line 1, sass/footer/_footer.scss */
+.site-footer .site-info {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 10px;
+  /* We output the result */
+  padding: 1rem;
+  /* We output the result */
+  border-top: 1px solid gray;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: white;
+}
+/* line 9, sass/footer/_footer.scss */
+.site-footer .site-info a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+14.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 3, sass/modules/_infinite-scroll.scss */
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+/* line 8, sass/modules/_infinite-scroll.scss */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+15.0 Media
+--------------------------------------------------------------*/
+/* line 1, sass/media/_media.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* line 6, sass/media/_media.scss */
+figure {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 0 0 20px;
+  /* We output the result */
+  margin: 0 0 2rem;
+  /* We output the result */
+  line-height: 0;
+}
+
+/* line 13, sass/media/_media.scss */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+/* line 23, sass/media/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* 15.1 Captions
+----------------------------------------------------------*/
+/* line 1, sass/media/_captions.scss */
+.wp-caption {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 20px;
+  /* We output the result */
+  margin-bottom: 2rem;
+  /* We output the result */
+  max-width: 100%;
+}
+/* line 5, sass/media/_captions.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0 auto;
+}
+/* line 9, sass/media/_captions.scss */
+.wp-caption .wp-caption-text {
+  margin: 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* line 16, sass/media/_captions.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/* 15.2 Galleries
+----------------------------------------------------------*/
+/* line 1, sass/media/_galleries.scss */
+.gallery {
+  margin-bottom: 2rem;
+}
+
+/* line 5, sass/media/_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* line 13, sass/media/_galleries.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+/* line 17, sass/media/_galleries.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+
+/* line 21, sass/media/_galleries.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+/* line 25, sass/media/_galleries.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+/* line 29, sass/media/_galleries.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+/* line 33, sass/media/_galleries.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+/* line 37, sass/media/_galleries.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+/* line 41, sass/media/_galleries.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+/* line 45, sass/media/_galleries.scss */
+.gallery-caption {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+16.0 Theme Specific
+--------------------------------------------------------------*/

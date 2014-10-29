@@ -1,0 +1,101 @@
+/* Body */
+
+$color__background: #eee;
+$color__background-body: #fff;
+
+$border__body: none;
+$box-shadow__body: 0 0 10px rgba(0, 0, 0, 0.2);
+
+$color__text-body: #404040;
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+/* Extra Navigation */
+
+$color__background-extra-navigation: #fff;
+$color__background-extra-navigation-dropdown: #fff;
+$color__background-extra-navigation-hover: #808080;
+$color__background-extra-navigation-current: #f6f6f6;
+
+$border__extra-navigation-top: none;
+$border__extra-navigation-bottom: none;
+$border__extra-navigation-dropdown: 1px solid #808080;
+
+$color__extra-navigation-link: royalblue;
+$color__extra-navigation-link-hover: midnightblue;
+$color__extra-navigation-link-current: purple;
+
+/* Primary Navigation */
+
+$color__background-site-navigation: #fff;
+$color__background-site-navigation-dropdown: #fff;
+$color__background-site-navigation-hover: #808080;
+$color__background-site-navigation-current: #f6f6f6;
+
+$border__site-navigation-top: 1px solid #808080;
+$border__site-navigation-bottom: 1px solid #808080;
+$border__site-navigation-dropdown: 1px solid #808080;
+
+$color__site-navigation-link: royalblue;
+$color__site-navigation-link-hover: midnightblue;
+$color__site-navigation-link-current: purple;
+
+/* Sections */
+
+$color__background-header: transparent;
+$color__background-page-header: #f6f6f6;
+$color__background-primary: #fff;
+$color__background-secondary-column: #f6f6f6;
+$color__background-secondary: $color__background-secondary-column; // Equal to secondary-column unless transparent.
+$color__background-tertiary: #f6f6f6;
+$color__background-footer: #fff;
+
+$border__primary: none;
+$border__secondary-column: none;
+$border__secondary: none;
+$border__secondary-title-bottom: 1px solid #808080;
+$border__tertiary-top: 1px solid #808080;
+$border__tertiary-title-bottom: 1px solid #808080;
+$border__footer-top: 1px solid #808080;
+
+$color__site-title-link: royalblue;
+$color__site-title-link-hover: midnightblue;
+$color__title-link: royalblue;
+$color__title-link-hover: midnightblue;
+
+
+/* Elements & Forms */
+
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-code: #eee;
+$color__background-mark: #fff9c0;
+$color__background-table-th: transparent;
+$color__background-table-tr: #eee;
+$color__background-button: #e6e6e6;
+
+$border__blockquote-left: 5px solid #eee;
+$border__table: 1px solid #808080;
+
+$color__border-abbr: #666;
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+
+$color__text-meta: #808080;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__text-screen: #21759b;
+
+/* Comments */
+
+$color__background-comment-even: #f6f6f6;
+$color__background-comment-odd: #fff;
+$color__background-bypostauthor: transparent;
+
+$border__bypostauthor-top: 5px solid #eee;
+
+$color__text-bypostauthor: inherit;
+$color__text-form-allowed-tags: #808080;

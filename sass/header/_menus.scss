@@ -1,0 +1,65 @@
+.main-navigation,
+.top-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		margin: 0;
+		padding-left: 0;
+		list-style: none;
+
+		ul {
+			z-index: 99999;
+			position: absolute;
+			float: left;
+			left: -999em;
+
+			ul {
+				top: 0;
+				left: -999em;
+				@include rem(margin-top, -0.1rem); // Aligns top border
+			}
+
+			li {
+				&:hover > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+			}
+
+			:hover > a {
+			}
+
+			a:hover {
+			}
+		}
+
+		li:hover > ul {
+			left: auto;
+		}
+	}
+	
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a {
+		}
+	}
+	
+	a {
+		display: block;
+		
+		&:visited {
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+}

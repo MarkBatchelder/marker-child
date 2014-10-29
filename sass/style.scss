@@ -1,0 +1,233 @@
+/*
+Theme Name:		Marker Child
+Theme URI:		https://github.com/WPAddiction/marker
+Author:			Web First Designs
+Author URI:		http://WebFirstDesigns.com
+Description:	Starter child theme for Marker
+Tags:			
+Version:		0.9.1
+License:		GNU General Public License v2 or later
+License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:	marker-child
+Template:		marker
+
+Marker is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+@import url("../marker/style.css");
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Typography
+	2.1 Headings
+	2.2 Copy
+	2.3 Links
+3.0 Elements
+	3.1 Lists
+	3.2 Tables
+	3.3 Blockquotes
+	3.4 Pre & Code
+4.0 Forms
+	4.1 Buttons
+	4.2 Fields
+5.0 Accessibility
+6.0 Alignments
+7.0 Clearings
+8.0 Layout
+9.0 Body (Background)
+10.0 Header
+	10.1 Navigation Menus
+	10.2 Top Navigation
+	10.3 Primary Navigation
+11.0 Content
+	11.1 Asides
+	11.2 Single
+	11.3 Comments
+	11.4 404
+12.0 Sidebars
+	12.1 Widgets
+	12.2 Sidebar Widget Area
+	12.3 Footer Widget Area
+13.0 Footer
+14.0 Infinite scroll
+15.0 Media
+	15.1 Captions
+	15.2 Galleries
+16.0 Theme Specific
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+@import "mixins/mixins-rem";
+// @import "mixins/mixins-border";
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+@import "reset";
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+	/* 2.1 Headings
+	----------------------------------------------------------*/
+	@import "typography/headings";
+
+	/* 2.2 Copy
+	----------------------------------------------------------*/
+	@import "typography/copy";
+
+	/* 2.3 Links
+	----------------------------------------------------------*/
+	@import "typography/links";
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+	/* 3.1 Lists
+	----------------------------------------------------------*/
+	@import "elements/lists";
+
+	/* 3.2 Tables
+	----------------------------------------------------------*/
+	@import "elements/tables";
+
+	/* 3.3 Blockquotes
+	----------------------------------------------------------*/
+	@import "elements/blockquotes";
+	
+	/* 3.4 Pre & Code
+	----------------------------------------------------------*/
+	@import "elements/pre";
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+	/* 4.1 Buttons
+	----------------------------------------------------------*/
+	@import "forms/buttons";
+
+	/* 4.2 Fields
+	----------------------------------------------------------*/
+	@import "forms/fields";
+
+/*--------------------------------------------------------------
+5.0 Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+6.0 Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+7.0 Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+8.0 Layout
+--------------------------------------------------------------*/
+// @import "layout/content-sidebar";
+// @import "layout/sidebar-content";
+// @import "layout/content";
+
+/*--------------------------------------------------------------
+9.0 Body (Background)
+--------------------------------------------------------------*/
+@import "body/body";
+
+/*--------------------------------------------------------------
+10.0 Header
+--------------------------------------------------------------*/
+@import "header/header";
+
+	/* 10.1 Navigation Menus
+	----------------------------------------------------------*/
+	@import "header/menus";
+
+	/* 10.2 Top Navigation
+	----------------------------------------------------------*/
+	@import "header/extra-navigation";
+
+	/* 10.3 Primary Navigation
+	----------------------------------------------------------*/
+	@import "header/site-navigation";
+	
+/*--------------------------------------------------------------
+11.0 Content
+--------------------------------------------------------------*/
+@import "content/content";
+
+	/* 11.1 Asides
+	----------------------------------------------------------*/
+	@import "content/asides";
+	
+	/* 11.2 Navigation
+	----------------------------------------------------------*/
+	@import "content/navigation";
+		
+	/* 11.3 Comments
+	----------------------------------------------------------*/
+	@import "content/comments";
+		
+	/* 11.4 404
+	----------------------------------------------------------*/
+	@import "content/404";
+	
+/*--------------------------------------------------------------
+12.0 Sidebars
+--------------------------------------------------------------*/
+@import "sidebars/sidebars";
+
+	/* 12.1 Widgets
+	----------------------------------------------------------*/
+	@import "sidebars/widgets";
+	
+	/* 12.2 Sidebar Widget Area
+	----------------------------------------------------------*/
+	@import "sidebars/secondary";
+
+	/* 12.3 Footer Widget Area
+	----------------------------------------------------------*/
+	@import "sidebars/tertiary";
+		
+/*--------------------------------------------------------------
+13.0 Footer
+--------------------------------------------------------------*/
+@import "footer/footer";
+
+/*--------------------------------------------------------------
+14.0 Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+15.0 Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+	/* 15.1 Captions
+	----------------------------------------------------------*/
+	@import "media/captions";
+
+	/* 15.2 Galleries
+	----------------------------------------------------------*/
+	@import "media/galleries";
+	
+/*--------------------------------------------------------------
+16.0 Theme Specific
+--------------------------------------------------------------*/

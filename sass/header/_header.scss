@@ -1,0 +1,35 @@
+.site-header { // #masthead
+	background-color: $color__background-header;
+}
+
+.site-branding {
+	clear: both;
+	@include rem(padding, $padding__content ($padding__content + $padding__content-article));
+}
+
+h1.site-title {
+	margin-left: -2px; // Fixes larger font alignment with smaller fonts
+	font-family: $font__site-title;
+	@include font-size($font__size-site-title);
+	line-height: 1;
+	
+	a,
+	a:visited {
+		text-decoration: none;
+		color: $color__site-title-link;
+	}
+	
+	a:hover,
+	a:focus,
+	a:active {
+		text-decoration: none;
+		color: $color__site-title-link-hover;
+	}
+}
+
+h2.site-description {
+	font-family: $font__site-description;
+	@include font-size($font__size-site-description);
+	line-height: 1;
+	font-weight: bold;
+}

@@ -1,0 +1,23 @@
+.widget-title {
+	display: inline-block;
+	width: 100%;
+}
+
+.widget ul {
+	margin: 0; // Reset
+	list-style: none;
+	
+	ul {
+		@include rem(margin-left, $margin__spacing-left);
+		list-style-type: circle;
+	}
+}
+
+.widget ol {
+	@include rem(margin, 0 0 0 $margin__spacing-left);
+	list-style-type: decimal;
+}
+
+.widget select {
+	max-width: 100%; // Make sure select elements fit in widgets
+}

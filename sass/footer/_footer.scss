@@ -1,0 +1,12 @@
+.site-footer .site-info {
+	@include rem(padding, 1rem);
+	border-top: $border__footer-top;
+	font-family: $font__footer;
+	@include font-size($font__size-footer);
+	text-align: center;
+	background-color: $color__background-footer;
+	
+	a {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,18 @@
+.wp-caption {
+	@include rem(margin-bottom, $margin__spacing-bottom); // Repeat/overlap of figure in media.scss
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: 0;
+		@include font-size($font__size-caption);
+		font-style: italic;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}

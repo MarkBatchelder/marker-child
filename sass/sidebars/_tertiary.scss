@@ -1,0 +1,26 @@
+#tertiary { // Footer Widget Area
+	@include rem(padding, $padding__tertiary);
+	border-top: $border__tertiary-top;
+	font-family: $font__tertiary;
+	@include font-size($font__size-tertiary);
+	background-color: $color__background-tertiary;
+
+	.widget {
+		float: left;
+		overflow: hidden;
+		width: 300px;
+		@include rem(padding, $padding__tertiary-widget);
+	}
+	
+	.widget-title,
+	.widget_calendar caption {
+		border-bottom: $border__tertiary-title-bottom;
+		font-family: $font__title-tertiary;
+		@include font-size($font__size-title-tertiary);
+		font-weight: bold;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+}

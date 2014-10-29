@@ -1,0 +1,98 @@
+.comments-area {
+	@include rem(padding, $padding__content-article);
+	text-align: justify;
+	@include font-size($font__size-comments);
+	
+	h2.comments-title {
+		margin-left: -1px; /* Fixes larger font alignment with smaller fonts */
+		@include font-size($font__size-comments-title);
+		line-height: $font__line-height-comments-title;
+	}
+
+	ol.comment-list {
+		margin: 0;
+		list-style: none;
+	
+		ol.children {
+			@include rem(margin, $margin__spacing-comments (-$margin__spacing-comments) $margin__spacing-comments $margin__spacing-left);
+			list-style: none;
+		}
+		
+		li.comment {
+			@include rem(padding, $margin__spacing-comments);
+		}
+
+		li.even {
+			background: $color__background-comment-even;
+		}
+
+		li.odd {
+			background: $color__background-comment-odd;
+		}
+	}
+}
+
+.comment-author {
+	@include font-size($font__size-comment-author);
+
+	img.avatar {
+		float: left;
+		@include rem(margin, 0 $margin__spacing-comments $margin__spacing-comments 0);
+	}
+}
+
+.bypostauthor { /* Comments by post author */
+	display: block;
+	border-top: $border__bypostauthor-top;
+	background-color: $color__background-bypostauthor;
+	
+	.fn {
+		color: $color__text-bypostauthor;
+	}
+}
+
+.comment-metadata .edit-link {
+	@include rem(margin-left, $margin__spacing-comments);
+}
+
+.comment-content {
+	clear: both;
+
+	p {
+		@include rem(margin-bottom, $margin__spacing-comments);
+	}
+
+	a {
+		word-wrap: break-word;
+	}
+	
+}
+
+.comment-respond {
+	@include rem(margin-top, $margin__spacing-bottom);
+	
+	h3 {
+		margin-left: -1px; /* Fixes larger font alignment with smaller fonts */
+		@include font-size($font__size-comments-title);
+		line-height: $font__line-height-comments-title;
+	}
+	
+	p {
+		@include rem(margin-bottom, $margin__spacing-comments);
+	}
+	
+	p.form-submit {
+		margin-bottom: 0;
+	}
+	
+	label {
+		display: inline-block;
+		width: 70px;
+	}
+	
+	.form-allowed-tags,
+	.form-allowed-tags code {
+		@include font-size($font__size-comments);
+		color: $color__text-form-allowed-tags;
+	}
+}

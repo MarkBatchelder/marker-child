@@ -1,0 +1,28 @@
+.content-area { // #primary
+	background-color: $color__background-secondary-column; // Sidebar Column Background
+}
+
+#secondary { // Sidebar Widget Area
+	@include rem(padding, $padding__secondary);
+	border: $border__secondary;
+	font-family: $font__secondary;
+	@include font-size($font__size-secondary);
+	background-color: $color__background-secondary;
+
+	.widget {
+		overflow: hidden;
+		@include rem(margin-bottom, $padding__secondary-widget);
+	}
+	
+	.widget-title,
+	.widget_calendar caption {
+		border-bottom: $border__secondary-title-bottom;
+		font-family: $font__title-secondary;
+		@include font-size($font__size-title-secondary);
+		font-weight: bold;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+}

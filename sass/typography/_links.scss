@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+	color: $color__link;
+
+	&:visited {
+		text-decoration: none;
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+		color: $color__link-hover;
+	}
+}

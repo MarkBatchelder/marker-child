@@ -1,0 +1,35 @@
+.widget_search .search-submit {
+	display: none;
+}
+
+.tagcloud {
+	text-align: justify;
+}
+
+table#wp-calendar {
+	margin: 0;
+	border: none; // Reset
+	
+	th,
+	td {
+		border: none; // Reset
+		text-align: center;
+	}
+	
+	tfoot,
+	tfoot td {
+		border: none;
+	}
+	
+	td#prev {
+		text-align: left;
+	}
+	
+	td#next {
+		text-align: right;
+	}
+	
+	a {
+		font-weight: bold;
+	}
+}

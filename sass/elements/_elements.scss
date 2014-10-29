@@ -1,0 +1,6 @@
+hr {
+	height: 1px;
+	@include rem(margin, 0 $margin__spacing-left $margin__spacing-bottom);
+	border: 0;
+	background-color: $color__background-hr;
+}

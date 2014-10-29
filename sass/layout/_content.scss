@@ -1,0 +1,37 @@
+#page {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#masthead { // Header
+	clear: both;
+	width: $size__site-main;
+}
+
+#content {
+	clear: both;
+	width: $size__site-main;
+}
+
+#primary { // Content
+	width: 100%;
+}
+
+#secondary { // Sidebar Widget Area
+	display: none;
+}
+
+#colophon { // Footer
+	clear: both;
+	width: $size__site-main;
+}
+
+#tertiary { // Footer Widget Area
+	overflow: hidden;
+	width: 100%;
+}
+
+.site-footer .site-info {
+	clear: both;
+	width: 100%
+}

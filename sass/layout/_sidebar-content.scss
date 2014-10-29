@@ -1,0 +1,46 @@
+#page {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#masthead { // Header
+	clear: both;
+	width: $size__site-main;
+}
+
+#content {
+	clear: both;
+	width: $size__site-main;
+}
+
+#primary { // Content
+	float: right;
+	width: 100%;
+	margin: 0 0 0 (-$size__site-sidebar);
+}
+
+#main {
+	overflow: hidden;
+	margin: 0 0 0 $size__site-sidebar;
+}
+
+#secondary { // Sidebar Widget Area
+	float: left;
+	overflow: hidden;
+	width: $size__site-sidebar;
+}
+
+#colophon { // Footer
+	clear: both;
+	width: $size__site-main;
+}
+
+#tertiary { // Footer Widget Area
+	overflow: hidden;
+	width: 100%;
+}
+
+.site-footer .site-info {
+	clear: both;
+	width: 100%
+}

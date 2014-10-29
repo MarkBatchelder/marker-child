@@ -1,0 +1,6 @@
+blockquote {
+	@include rem(margin, 0 $margin__spacing-left);
+	padding-left: 0.3em; // normal letter spacing
+	border-left: $border__blockquote-left;
+	font-style: italic;
+}
