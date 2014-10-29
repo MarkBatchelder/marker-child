@@ -831,6 +831,62 @@ textarea {
 /*--------------------------------------------------------------
 8.0 Layout
 --------------------------------------------------------------*/
+/* line 1, sass/layout/_content-sidebar.scss */
+#page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 6, sass/layout/_content-sidebar.scss */
+#masthead {
+  clear: both;
+  width: 100%;
+}
+
+/* line 11, sass/layout/_content-sidebar.scss */
+#content {
+  clear: both;
+  width: 100%;
+}
+
+/* line 16, sass/layout/_content-sidebar.scss */
+#primary {
+  float: left;
+  width: 100%;
+  margin: 0 -25% 0 0;
+}
+
+/* line 22, sass/layout/_content-sidebar.scss */
+#main {
+  overflow: hidden;
+  margin: 0 25% 0 0;
+}
+
+/* line 27, sass/layout/_content-sidebar.scss */
+#secondary {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+}
+
+/* line 33, sass/layout/_content-sidebar.scss */
+#colophon {
+  clear: both;
+  width: 100%;
+}
+
+/* line 38, sass/layout/_content-sidebar.scss */
+#tertiary {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 43, sass/layout/_content-sidebar.scss */
+.site-footer .site-info {
+  clear: both;
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 9.0 Body (Background)
 --------------------------------------------------------------*/
