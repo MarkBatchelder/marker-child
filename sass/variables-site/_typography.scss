@@ -9,12 +9,18 @@ $font__size-site-description: 1.6;
 $font__site-navigation: sans-serif;
 $font__size-site-navigation: 1.4;
 
-$font__title: sans-serif;
+$font__title: sans-serif; // typography\headings.scss
 $font__size-title: 3.2;
-$font__line-height: 1;
+$font__line-height-title: 1;
 $font__meta: sans-serif;
 $font__size-meta: 1.4;
 $font__headers: sans-serif; // typography\headings.scss
+$font__size-h2: 2.6;
+$font__line-height-h2: 1;
+$font__size-h3: 2.0;
+$font__line-height-h3: 1.3;
+$font__size-h4: 1.6;
+$font__line-height-h4: 1.5;
 $font__body: Georgia, serif; // typography\typography.scss
 $font__size-body: 1.6;
 $font__line-height-body: 1.5;
