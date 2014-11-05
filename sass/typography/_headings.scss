@@ -33,18 +33,18 @@ h6 {
 
 h2 {
 	@include font-size($font__size-h2);
-	line-height: $font__line-height-h2
+	line-height: $font__line-height-h2;
 }
 
 h3 {
 	@include font-size($font__size-h3);
-	line-height: $font__line-height-h3
+	line-height: $font__line-height-h3;
 }
 
 h4,
 h5,
 h6 {
 	@include font-size($font__size-h4);
-	line-height: $font__line-height-h4
+	line-height: $font__line-height-h4;
 	font-weight: bold;
 }
