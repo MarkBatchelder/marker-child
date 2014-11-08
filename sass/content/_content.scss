@@ -33,6 +33,10 @@ img.wp-post-image {
 	@include rem(margin, 0 auto 1rem);
 }
 
+.home .entry-header {
+	display: none;
+}
+
 .entry-header {
 	@include rem(margin-bottom, $margin__spacing-bottom);
 }
