@@ -1,23 +1,13 @@
-img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
-}
-
-figure {
-	@include rem(margin, 0 0 $margin__spacing-bottom);
-	line-height: 0; // Reset
-}
-
-.page-content img.wp-smiley,
-.entry-content img.wp-smiley,
-.comment-content img.wp-smiley {
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
 	border: none;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
 }
 
-/* Make sure embeds and iframes fit their containers */
+/* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {

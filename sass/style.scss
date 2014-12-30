@@ -13,10 +13,8 @@ Template:		marker
 
 Marker is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 @import url("../marker/style.css");
@@ -24,7 +22,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-1.0 Reset
+1.0 Normalize
 2.0 Typography
 	2.1 Headings
 	2.2 Copy
@@ -69,9 +67,9 @@ and Blueprint http://www.blueprintcss.org/
 // @import "mixins/mixins-border";
 
 /*--------------------------------------------------------------
-1.0 Reset
+1.0 Normalize
 --------------------------------------------------------------*/
-@import "reset";
+@import "normalize";
 
 /*--------------------------------------------------------------
 2.0 Typography

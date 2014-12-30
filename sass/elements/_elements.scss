@@ -1,6 +1,26 @@
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
 hr {
 	height: 1px;
 	@include rem(margin, 0 $margin__spacing-left $margin__spacing-bottom);
 	border: 0;
 	background-color: $color__background-hr;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	@include rem(margin, 0 0 $margin__spacing-bottom);
+	line-height: 0; // Reset
 }
