@@ -3,6 +3,7 @@
 	border-top: $border__footer-top;
 	font-family: $font__footer;
 	@include font-size($font__size-footer);
+	color: $color__footer-text;
 	text-align: center;
 	background-color: $color__background-footer;
 	

@@ -1,9 +1,13 @@
+#footer-primary {
+	border-top: $border__tertiary-top;
+	background-color: $color__background-tertiary;
+}
+
 #tertiary { // Footer Widget Area
 	@include rem(padding, $padding__tertiary);
-	border-top: $border__tertiary-top;
 	font-family: $font__tertiary;
 	@include font-size($font__size-tertiary);
-	background-color: $color__background-tertiary;
+	color: $color__tertiary-text;
 
 	.widget {
 		float: left;
