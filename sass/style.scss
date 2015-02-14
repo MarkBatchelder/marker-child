@@ -60,7 +60,8 @@ and Blueprint http://www.blueprintcss.org/
 15.0 Media
 	15.1 Captions
 	15.2 Galleries
-16.0 Theme Specific
+16.0 Plugins
+17.0 Theme Specific
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -229,5 +230,10 @@ and Blueprint http://www.blueprintcss.org/
 	@import "media/galleries";
 	
 /*--------------------------------------------------------------
-16.0 Theme Specific
+16.0 Plugins
+--------------------------------------------------------------*/
+@import "plugins/plugins";
+	
+/*--------------------------------------------------------------
+17.0 Theme Specific
 --------------------------------------------------------------*/
