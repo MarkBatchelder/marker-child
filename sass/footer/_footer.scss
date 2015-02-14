@@ -1,11 +1,23 @@
 .site-footer .site-info {
-	@include rem(padding, 1rem);
 	border-top: $border__footer-top;
 	font-family: $font__footer;
 	@include font-size($font__size-footer);
 	color: $color__footer-text;
-	text-align: center;
 	background-color: $color__background-footer;
+	
+	.copyright,
+	.theme-info {
+		@include rem(padding, 1rem 0);
+	
+	}
+	
+	.copyright {
+		float: left;
+	}
+	
+	.theme-info {
+		float: right;
+	}
 	
 	a {
 		text-decoration: none;
