@@ -11,7 +11,7 @@ h1.site-title {
 	margin-left: -2px; // Fixes larger font alignment with smaller fonts
 	font-family: $font__site-title;
 	@include font-size($font__size-site-title);
-	line-height: 1;
+	line-height: $font__line-height-site-title;
 	
 	a,
 	a:visited {
@@ -30,6 +30,6 @@ h1.site-title {
 h2.site-description {
 	font-family: $font__site-description;
 	@include font-size($font__size-site-description);
-	line-height: 1;
+	line-height: $font__line-height-site-description;
 	font-weight: bold;
 }
