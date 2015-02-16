@@ -1094,7 +1094,7 @@ h1.site-title {
   font-family: sans-serif;
   font-size: 48px;
   font-size: 3rem;
-  line-height: 1;
+  line-height: 0.1;
 }
 /* line 17, sass/header/_header.scss */
 h1.site-title a,
@@ -1115,7 +1115,7 @@ h2.site-description {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1;
+  line-height: 0.3;
   font-weight: bold;
 }
 
