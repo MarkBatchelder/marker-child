@@ -57,6 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	15.1 Captions
 	15.2 Galleries
 16.0 Plugins
+    16.1 Ninja Forms
 17.0 Theme Specific
 --------------------------------------------------------------*/
 /* Body */
@@ -2303,11 +2304,39 @@ object {
 /*--------------------------------------------------------------
 16.0 Plugins
 --------------------------------------------------------------*/
-/* line 1, sass/plugins/_plugins.scss */
+/* 16.1 Ninja Forms
+----------------------------------------------------------*/
+/* line 1, sass/plugins/_ninja-forms.scss */
 .ninja-forms-required-items {
   float: right;
   font-size: small;
   font-style: italic;
+}
+
+/* line 7, sass/plugins/_ninja-forms.scss */
+.ninja-forms-error-msg {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 20px;
+  /* We output the result */
+  margin-bottom: 2rem;
+  /* We output the result */
+  font-weight: bold;
+}
+
+/* line 12, sass/plugins/_ninja-forms.scss */
+.ninja-forms-field-error {
+  float: left;
+  color: #F00;
+}
+
+/* line 17, sass/plugins/_ninja-forms.scss */
+.submit-wrap {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
