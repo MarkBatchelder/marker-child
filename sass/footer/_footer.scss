@@ -1,19 +1,10 @@
-.site-footer {
-	clear: both;
-}
-
 .site-footer .site-info {
+    @include rem(padding, $padding__footer-height $padding__footer-width);
 	border-top: $border__footer-top;
+	background-color: $color__background-footer;
+	color: $color__footer-text;
 	font-family: $font__footer;
 	@include font-size($font__size-footer);
-	color: $color__footer-text;
-	background-color: $color__background-footer;
-	
-	.copyright,
-	.theme-info {
-		@include rem(padding, 1rem 0);
-	
-	}
 	
 	.copyright {
 		float: left;
