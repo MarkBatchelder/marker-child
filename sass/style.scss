@@ -59,6 +59,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	15.1 Captions
 	15.2 Galleries
 16.0 Plugins
+    16.1 Ninja Forms
 17.0 Theme Specific
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
@@ -230,7 +231,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 16.0 Plugins
 --------------------------------------------------------------*/
-@import "plugins/plugins";
+
+	/* 16.1 Ninja Forms
+	----------------------------------------------------------*/
+	@import "plugins/ninja-forms";
 	
 /*--------------------------------------------------------------
 17.0 Theme Specific

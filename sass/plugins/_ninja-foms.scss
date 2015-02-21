@@ -1,0 +1,19 @@
+.ninja-forms-required-items {
+	float: right;
+	font-size: small;
+	font-style: italic;
+}
+
+.ninja-forms-error-msg {
+	@include rem(margin-bottom, 2rem);
+	font-weight: bold;
+}
+
+.ninja-forms-field-error {
+	float: left;
+	color: #F00;
+}
+
+.submit-wrap {
+	text-align: center;
+}
