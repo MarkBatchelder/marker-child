@@ -6,7 +6,7 @@ Author:			Web First Designs
 Author URI:		http://WebFirstDesigns.com
 Description:	Starter child theme for Marker
 Tags:			
-Version:		0.9.1
+Version:		0.9.3
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:	marker-child
@@ -583,23 +583,39 @@ ul, ol {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 10px;
   /* We output the result */
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 2rem 1rem;
+  /* We output the result */
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 0 0 0 10px;
+  /* We output the result */
+  padding: 0 0 0 1rem;
   /* We output the result */
 }
 
-/* line 5, sass/elements/_lists.scss */
+/* line 6, sass/elements/_lists.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 9, sass/elements/_lists.scss */
+/* line 10, sass/elements/_lists.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 14, sass/elements/_lists.scss */
+/* line 15, sass/elements/_lists.scss */
 li > ul,
 li > ol {
   /* We define a list of values for both units */
@@ -614,18 +630,18 @@ li > ol {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
   /* We output the result */
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 1rem;
   /* We output the result */
 }
 
-/* line 18, sass/elements/_lists.scss */
+/* line 19, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 22, sass/elements/_lists.scss */
+/* line 23, sass/elements/_lists.scss */
 dd {
   /* We define a list of values for both units */
   /* We define a list of values for both units */
@@ -639,9 +655,9 @@ dd {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin: 0 20px 20px;
+  margin: 0 10px 20px;
   /* We output the result */
-  margin: 0 2rem 2rem;
+  margin: 0 1rem 2rem;
   /* We output the result */
 }
 
@@ -1216,9 +1232,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  top: 28px;
+  top: 21px;
   /* We output the result */
-  top: 2.8rem;
+  top: 2.1rem;
   /* We output the result */
   border: 1px solid gray;
   background-color: white;
@@ -1226,7 +1242,7 @@ h2.site-description {
 }
 /* line 16, sass/header/_extra-navigation.scss */
 .top-navigation ul ul a {
-  width: 120px;
+  width: 150px;
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
@@ -1310,9 +1326,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  top: 41px;
+  top: 33.5px;
   /* We output the result */
-  top: 4.1rem;
+  top: 3.35rem;
   /* We output the result */
   border: 1px solid gray;
   background-color: white;
@@ -1320,7 +1336,7 @@ h2.site-description {
 }
 /* line 15, sass/header/_site-navigation.scss */
 .main-navigation ul ul a {
-  width: 160px;
+  width: 200px;
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
@@ -1405,9 +1421,13 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px;
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px 30px;
   /* We output the result */
-  padding: 3rem;
+  padding: 3rem 3rem;
   /* We output the result */
   border-right: none;
   border: none;
@@ -1440,9 +1460,13 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px;
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 30px 30px;
   /* We output the result */
-  padding: 3rem;
+  padding: 3rem 3rem;
   /* We output the result */
 }
 /* line 14, sass/content/_content.scss */
@@ -1937,14 +1961,25 @@ h1.entry-title a:active {
 .widget-title {
   display: inline-block;
   width: 100%;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin-bottom: 5px;
+  /* We output the result */
+  margin-bottom: 0.5rem;
+  /* We output the result */
 }
 
-/* line 6, sass/sidebars/_sidebars.scss */
+/* line 7, sass/sidebars/_sidebars.scss */
 .widget ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
-/* line 10, sass/sidebars/_sidebars.scss */
+/* line 12, sass/sidebars/_sidebars.scss */
 .widget ul ul {
   /* We define a list of values for both units */
   /* We define a list of values for both units */
@@ -1952,15 +1987,16 @@ h1.entry-title a:active {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin-left: 20px;
+  padding-left: 10px;
   /* We output the result */
-  margin-left: 2rem;
+  padding-left: 1rem;
   /* We output the result */
   list-style-type: circle;
 }
 
-/* line 16, sass/sidebars/_sidebars.scss */
+/* line 18, sass/sidebars/_sidebars.scss */
 .widget ol {
+  margin: 0;
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
@@ -1973,14 +2009,14 @@ h1.entry-title a:active {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin: 0 0 0 20px;
+  padding: 0 0 0 10px;
   /* We output the result */
-  margin: 0 0 0 2rem;
+  padding: 0 0 0 1rem;
   /* We output the result */
   list-style-type: decimal;
 }
 
-/* line 21, sass/sidebars/_sidebars.scss */
+/* line 24, sass/sidebars/_sidebars.scss */
 .widget select {
   max-width: 100%;
 }
@@ -2047,9 +2083,9 @@ table#wp-calendar a {
   /* We append according values to the lists depending on the unit of the given value */
   /* We iterate through each value in the given parameter $values */
   /* If the value is either auto or 0, we append it to the list as-is */
-  padding: 30px 30px 0;
+  padding: 20px 20px 0;
   /* We output the result */
-  padding: 3rem 3rem 0;
+  padding: 2rem 2rem 0;
   /* We output the result */
   border: none;
   font-family: sans-serif;
@@ -2066,9 +2102,9 @@ table#wp-calendar a {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   /* We output the result */
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   /* We output the result */
 }
 /* line 18, sass/sidebars/_secondary.scss */
