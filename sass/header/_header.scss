@@ -4,7 +4,7 @@
 
 .site-branding {
 	clear: both;
-	@include rem(padding, $padding__content ($padding__content + $padding__content-article));
+	@include rem(padding, $spacing__header);
 }
 
 h1.site-title {

@@ -1,5 +1,5 @@
 .error-404 {
-	@include rem(padding, $padding__content-article);
+	@include rem(padding, $spacing__article);
 	
 	.entry-title {
 		text-align: center;

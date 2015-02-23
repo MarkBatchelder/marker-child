@@ -1,5 +1,5 @@
 .main-navigation {
-	@include rem(padding, 0 4rem);
+	@include rem(padding, 0 $spacing__main-nav-width);
 	border-top: $border__site-navigation-top;
 	border-bottom: $border__site-navigation-bottom;
 	background-color: $color__background-site-navigation;
@@ -7,14 +7,14 @@
 	ul {
 
 		ul {
-			@include rem(top, 4.1rem);
+			@include rem(top, $top__main-nav-dropdown);
 			border: $border__site-navigation-dropdown;
 			background-color: $color__background-site-navigation;
 			background-color: $color__background-site-navigation-dropdown;
 
 			a {
-				width: 160px;
-				@include rem(padding, 0.5rem 2rem);
+				width: $width__main-nav-dropdown;
+				@include rem(padding, $spacing__main-nav-dropdown);
 			}
 
 			:hover > a {
@@ -34,7 +34,7 @@
 	}
 	
 	a {
-		@include rem(padding, 1rem 2rem);
+		@include rem(padding, $spacing__main-nav-link-height $spacing__main-nav-link-width);
 		font-family: $font__site-navigation;
 		@include font-size($font__size-site-navigation);
 		font-weight: bold;

@@ -1,8 +1,8 @@
 pre {
 	overflow: auto;
 	max-width: 100%;
-	@include rem(margin-bottom, $margin__spacing-bottom);
-	@include rem(padding, $margin__spacing-left);
+	@include rem(margin-bottom, $spacing__element-bottom);
+	@include rem(padding, $spacing__element-left);
 	font-family: $font__pre;
 	@include font-size($font__size-pre);
 	line-height: $font__line-height-pre;

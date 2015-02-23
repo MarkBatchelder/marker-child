@@ -1,5 +1,6 @@
 ul, ol {
-	@include rem(margin, 0 0 $margin__spacing-bottom $margin__spacing-left);
+	@include rem(margin, 0 0 $spacing__element-bottom $spacing__list-left);
+    @include rem(padding, 0 0 0 $spacing__list-left);
 }
 
 ul {
@@ -12,7 +13,7 @@ ol {
 
 li > ul,
 li > ol {
-	@include rem(margin, 0 0 0 $margin__spacing-left);
+	@include rem(margin, 0 0 0 $spacing__list-left);
 }
 
 dt {
@@ -20,5 +21,5 @@ dt {
 }
 
 dd {
-	@include rem(margin, 0 $margin__spacing-left $margin__spacing-bottom);
+	@include rem(margin, 0 $spacing__list-left $spacing__element-bottom);
 }

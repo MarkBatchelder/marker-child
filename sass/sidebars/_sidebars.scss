@@ -1,20 +1,23 @@
 .widget-title {
 	display: inline-block;
 	width: 100%;
+    @include rem(margin-bottom, $margin-bottom__sidebar-title);
 }
 
 .widget ul {
 	margin: 0; // Reset
+    padding: 0; // Reset
 	list-style: none;
 	
 	ul {
-		@include rem(margin-left, $margin__spacing-left);
+		@include rem(padding-left, $spacing__sidebar-list);
 		list-style-type: circle;
 	}
 }
 
 .widget ol {
-	@include rem(margin, 0 0 0 $margin__spacing-left);
+	margin: 0; // Reset
+    @include rem(padding, 0 0 0 $spacing__sidebar-list);
 	list-style-type: decimal;
 }
 

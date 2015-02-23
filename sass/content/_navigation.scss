@@ -21,7 +21,7 @@
 
 .page-links {
 	clear: both;
-	@include rem(margin-bottom, 2rem);
+	@include rem(margin-bottom, $spacing__element-bottom);
 	font-weight: bold;
 	
 	a {

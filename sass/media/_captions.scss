@@ -1,5 +1,5 @@
 .wp-caption {
-	@include rem(margin-bottom, $margin__spacing-bottom); // Repeat/overlap of figure in media.scss
+	@include rem(margin-bottom, $spacing__element-bottom); // Repeat/overlap of figure in media.scss
 	max-width: 100%;
 
 	img[class*="wp-image-"] {

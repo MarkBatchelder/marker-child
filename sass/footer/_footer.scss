@@ -1,5 +1,5 @@
 .site-footer .site-info {
-    @include rem(padding, $padding__footer-height $padding__footer-width);
+    @include rem(padding, $spacing__footer-height $spacing__footer-width);
 	border-top: $border__footer-top;
 	background-color: $color__background-footer;
 	color: $color__footer-text;

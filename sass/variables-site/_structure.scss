@@ -1,19 +1,44 @@
+$default__width: 6rem;
+$default__height: ($default__width / 2);
+
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
-$padding__content: 3rem;
-$padding__content-article: 3rem;
+$spacing__extra-nav-width: 2rem;
+$spacing__extra-nav-link-height: 0.5rem;
+$spacing__extra-nav-link-width: 1rem;
+$top__extra-nav-dropdown: 2.1rem;
+$width__extra-nav-dropdown: 150px;
+$spacing__extra-nav-dropdown: 0.25rem $spacing__extra-nav-link-width;
 
-$margin__spacing-bottom: 2rem;
-$margin__spacing-left: 2rem;
+$spacing__header: $default__height $default__width;
 
-$margin__spacing-comments: ($margin__spacing-left / 2);
+$spacing__main-nav-width: 4rem;
+$spacing__main-nav-link-height: 1rem;
+$spacing__main-nav-link-width: 2rem;
+$top__main-nav-dropdown: 3.35rem;
+$width__main-nav-dropdown: 200px;
+$spacing__main-nav-dropdown: 0.5rem $spacing__main-nav-link-width;
 
-$padding__secondary: 3rem 3rem 0;
-$padding__secondary-widget: 3rem;
+$spacing__main-height: 3rem;
+$spacing__main-width: 3rem;
 
-$padding__tertiary: 3rem;
-$padding__tertiary-widget: 3rem;
+$margin__page-header: (-$spacing__main-height) (-$spacing__main-width) 0;
+$padding__page-header: $spacing__main-height $spacing__main-width;
 
-$padding__footer-height: 1rem;
-$padding__footer-width: 6rem;
+$spacing__article: ($default__width / 2);
+$spacing__post-image: 0 auto 1rem;
+$spacing__element-bottom: 2rem;
+$spacing__element-left: 2rem;
+$spacing__list-left: ($spacing__element-left / 2);
+$spacing__comment: ($spacing__element-left / 2);
+
+$margin-bottom__sidebar-title: 0.5rem;
+$spacing__sidebar-list: ($spacing__element-left / 2);
+$spacing__secondary: 2rem 2rem 0;
+$spacing__secondary-widget: 2rem;
+$spacing__tertiary: ($default__width / 2);
+$spacing__tertiary-widget: ($default__width / 2);
+
+$spacing__footer-height: 1rem;
+$spacing__footer-width: $default__width;

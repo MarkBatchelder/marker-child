@@ -3,7 +3,7 @@
 }
 
 #secondary { // Sidebar Widget Area
-	@include rem(padding, $padding__secondary);
+	@include rem(padding, $spacing__secondary);
 	border: $border__secondary;
 	font-family: $font__secondary;
 	@include font-size($font__size-secondary);
@@ -11,7 +11,7 @@
 
 	.widget {
 		overflow: hidden;
-		@include rem(margin-bottom, $padding__secondary-widget);
+		@include rem(margin-bottom, $spacing__secondary-widget);
 	}
 	
 	.widget-title,

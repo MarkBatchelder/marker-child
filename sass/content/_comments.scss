@@ -1,5 +1,5 @@
 .comments-area {
-	@include rem(padding, $padding__content-article);
+	@include rem(padding, $spacing__article);
 	text-align: justify;
 	@include font-size($font__size-comments);
 	
@@ -14,12 +14,12 @@
 		list-style: none;
 	
 		ol.children {
-			@include rem(margin, $margin__spacing-comments (-$margin__spacing-comments) $margin__spacing-comments $margin__spacing-left);
+			@include rem(margin, $spacing__comment (-$spacing__comment) $spacing__comment $spacing__element-left);
 			list-style: none;
 		}
 		
 		li.comment {
-			@include rem(padding, $margin__spacing-comments);
+			@include rem(padding, $spacing__comment);
 		}
 
 		li.even {
@@ -37,7 +37,7 @@
 
 	img.avatar {
 		float: left;
-		@include rem(margin, 0 $margin__spacing-comments $margin__spacing-comments 0);
+		@include rem(margin, 0 $spacing__comment $spacing__comment 0);
 	}
 }
 
@@ -52,14 +52,14 @@
 }
 
 .comment-metadata .edit-link {
-	@include rem(margin-left, $margin__spacing-comments);
+	@include rem(margin-left, $spacing__comment);
 }
 
 .comment-content {
 	clear: both;
 
 	p {
-		@include rem(margin-bottom, $margin__spacing-comments);
+		@include rem(margin-bottom, $spacing__comment);
 	}
 
 	a {
@@ -69,7 +69,7 @@
 }
 
 .comment-respond {
-	@include rem(margin-top, $margin__spacing-bottom);
+	@include rem(margin-top, $spacing__element-bottom);
 	
 	h3 {
 		margin-left: -1px; /* Fixes larger font alignment with smaller fonts */
@@ -78,7 +78,7 @@
 	}
 	
 	p {
-		@include rem(margin-bottom, $margin__spacing-comments);
+		@include rem(margin-bottom, $spacing__comment);
 	}
 	
 	p.form-submit {

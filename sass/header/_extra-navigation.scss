@@ -1,5 +1,5 @@
 .top-navigation {
-	@include rem(padding, 0 2rem);
+	@include rem(padding, 0 $spacing__extra-nav-width);
 	border-top: $border__extra-navigation-top;
 	border-bottom: $border__extra-navigation-bottom;
 	background-color: $color__background-extra-navigation;
@@ -8,14 +8,14 @@
 		float: right;
 
 		ul {
-			@include rem(top, 2.8rem);
+			@include rem(top, $top__extra-nav-dropdown);
 			border: $border__extra-navigation-dropdown;
 			background-color: $color__background-extra-navigation;
 			background-color: $color__background-extra-navigation-dropdown;
 
 			a {
-				width: 120px;
-				@include rem(padding, 0.25rem 1rem);
+				width: $width__extra-nav-dropdown;
+				@include rem(padding, $spacing__extra-nav-dropdown);
 			}
 
 			:hover > a {
@@ -35,7 +35,7 @@
 	}
 	
 	a {
-		@include rem(padding, 0.5rem 1rem);
+		@include rem(padding, $spacing__extra-nav-link-height $spacing__extra-nav-link-width);
 		font-family: $font__extra-navigation;
 		@include font-size($font__size-extra-navigation);
 		font-weight: normal;

@@ -1,5 +1,5 @@
 .site-main { // #main
-	@include rem(padding, $padding__content);
+	@include rem(padding, $spacing__main-height $spacing__main-width);
 	border-right: $border__secondary-column;
 	border: $border__primary;
 	background-color: $color__background-body;
@@ -8,8 +8,8 @@
 
 .page-header {
 	background: $color__background-page-header;
-	@include rem(margin, (-$padding__content) (-$padding__content) 0);
-	@include rem(padding, $padding__content);
+	@include rem(margin, $margin__page-header);
+	@include rem(padding, $padding__page-header);
 	
 	.page-title {
 		font-weight: bold;
@@ -25,12 +25,12 @@
 }
 
 .hentry {
-	@include rem(padding, $padding__content-article);
+	@include rem(padding, $spacing__article);
 }
 
 img.wp-post-image {
 	display: block;
-	@include rem(margin, 0 auto 1rem);
+	@include rem(margin, $spacing__post-image);
 }
 
 .home .entry-header {
@@ -38,7 +38,7 @@ img.wp-post-image {
 }
 
 .entry-header {
-	@include rem(margin-bottom, $margin__spacing-bottom);
+	@include rem(margin-bottom, $spacing__element-bottom);
 }
 
 h1.entry-title {
@@ -64,7 +64,7 @@ h1.entry-title {
 	color: $color__text-meta;
 	
 	.edit-link {
-		@include rem(margin-left, $margin__spacing-left);
+		@include rem(margin-left, $spacing__element-left);
 	}
 }
 
@@ -89,11 +89,11 @@ h1.entry-title {
 	h4,
 	h5,
 	h6 {
-		@include rem(padding, $margin__spacing-bottom 0);
+		@include rem(padding, $spacing__element-bottom 0);
 	}
 	
 	p {
-		@include rem(margin-bottom, $margin__spacing-bottom);
+		@include rem(margin-bottom, $spacing__element-bottom);
 	}
 }
 
@@ -104,7 +104,7 @@ h1.entry-title {
 	
 	span {
 		display: inline-block;
-		@include rem(margin-right, $margin__spacing-left);
+		@include rem(margin-right, $spacing__element-left);
 	}
 	
 	.edit-link {
