@@ -1,8 +1,8 @@
-@media (min-width: 700px) and (orientation: landscape) {
+@media (max-width: 700px) and (orientation: landscape) {
     
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
     #primary {
         float: left;
     }
