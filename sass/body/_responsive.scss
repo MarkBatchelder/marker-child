@@ -1,0 +1,19 @@
+@media (min-width: 700px) and (orientation: landscape) {
+    
+}
+
+@media (min-width: 500px) {
+    #primary {
+        float: left;
+    }
+    
+    #main {
+        float: left;
+        margin: 0;
+    }
+    
+    #secondary {
+        float: left;
+        width: 100%;
+    }
+}

@@ -54,13 +54,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	12.2 Sidebar Widget Area
 	12.3 Footer Widget Area
 13.0 Footer
-14.0 Infinite scroll
-15.0 Media
-	15.1 Captions
-	15.2 Galleries
-16.0 Plugins
-    16.1 Ninja Forms
-17.0 Theme Specific
+14.0 Theme Specific
+15.0 Plugins
+    15.1 Ninja Forms
+16.0 Infinite scroll
+17.0 Media
+	17.1 Captions
+	17.2 Galleries
+18.0 Mobile Responsive
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -211,31 +212,36 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "footer/footer";
 
 /*--------------------------------------------------------------
-14.0 Infinite scroll
+14.0 Theme Specific
+--------------------------------------------------------------*/
+	
+/*--------------------------------------------------------------
+15.0 Plugins
+--------------------------------------------------------------*/
+
+	/* 15.1 Ninja Forms
+	----------------------------------------------------------*/
+	@import "plugins/ninja-forms";
+
+/*--------------------------------------------------------------
+16.0 Infinite scroll
 --------------------------------------------------------------*/
 @import "modules/infinite-scroll";
 
 /*--------------------------------------------------------------
-15.0 Media
+17.0 Media
 --------------------------------------------------------------*/
 @import "media/media";
 
-	/* 15.1 Captions
+	/* 17.1 Captions
 	----------------------------------------------------------*/
 	@import "media/captions";
 
-	/* 15.2 Galleries
+	/* 17.2 Galleries
 	----------------------------------------------------------*/
 	@import "media/galleries";
-	
-/*--------------------------------------------------------------
-16.0 Plugins
---------------------------------------------------------------*/
 
-	/* 16.1 Ninja Forms
-	----------------------------------------------------------*/
-	@import "plugins/ninja-forms";
-	
 /*--------------------------------------------------------------
-17.0 Theme Specific
+18.0 Mobile Responsive
 --------------------------------------------------------------*/
+@import "body/responsive";
