@@ -3,6 +3,19 @@
 }
 
 @media (max-width: 500px) {
+    
+    .top-navigation {
+        display: none;
+    }
+    
+    .site-branding {
+        padding: 2rem;
+    }
+    
+    .main-navigation {
+        padding: 0 2rem;
+    }
+    
     #primary {
         float: left;
         margin: 0;
@@ -10,10 +23,24 @@
     
     #main {
         margin: 0;
+        padding: 1rem;
+    }
+    
+    .hentry {
+        padding: 1rem;
     }
     
     #secondary {
         float: left;
         width: 100%;
+        padding: 2rem;
+    }
+    
+    #tertiary {
+        padding: 1rem;
+        
+        .widget {
+            padding: 1rem;
+        }
     }
 }
