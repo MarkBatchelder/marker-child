@@ -9,11 +9,15 @@
     }
     
     .site-branding {
-        padding: 2rem;
+        @include rem(padding, 2rem);
     }
     
     .main-navigation {
-        padding: 0 2rem;
+        @include rem(padding, 0 2rem);
+        
+        a {
+            @include rem(padding, 0.5rem 1rem);
+        }
     }
     
     #primary {
@@ -23,24 +27,27 @@
     
     #main {
         margin: 0;
-        padding: 1rem;
+        @include rem(padding, 1rem);
     }
     
     .hentry {
-        padding: 1rem;
+        @include rem(padding, 1rem);
     }
     
     #secondary {
         float: left;
         width: 100%;
-        padding: 2rem;
+        @include rem(padding, 2rem);
     }
     
     #tertiary {
-        padding: 1rem;
         
         .widget {
-            padding: 1rem;
+            @include rem(padding, 2rem);
         }
+    }
+    
+    .site-footer .site-info {
+        @include rem(padding, 1rem 2rem);
     }
 }
