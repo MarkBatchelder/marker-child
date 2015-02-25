@@ -27,4 +27,8 @@ img {
 figure {
 	@include rem(margin, 0 0 $spacing__element-bottom);
 	line-height: 0; // Reset
+    
+    figcaption {
+        line-height: 1; // Caption Fix
+    }
 }
