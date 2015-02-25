@@ -2383,20 +2383,51 @@ object {
 18.0 Mobile Responsive
 --------------------------------------------------------------*/
 @media (max-width: 500px) {
-  /* line 6, sass/body/_responsive.scss */
+  /* line 7, sass/body/_responsive.scss */
+  .top-navigation {
+    display: none;
+  }
+
+  /* line 11, sass/body/_responsive.scss */
+  .site-branding {
+    padding: 2rem;
+  }
+
+  /* line 15, sass/body/_responsive.scss */
+  .main-navigation {
+    padding: 0 2rem;
+  }
+
+  /* line 19, sass/body/_responsive.scss */
   #primary {
     float: left;
     margin: 0;
   }
 
-  /* line 11, sass/body/_responsive.scss */
+  /* line 24, sass/body/_responsive.scss */
   #main {
     margin: 0;
+    padding: 1rem;
   }
 
-  /* line 15, sass/body/_responsive.scss */
+  /* line 29, sass/body/_responsive.scss */
+  .hentry {
+    padding: 1rem;
+  }
+
+  /* line 33, sass/body/_responsive.scss */
   #secondary {
     float: left;
     width: 100%;
+    padding: 2rem;
+  }
+
+  /* line 39, sass/body/_responsive.scss */
+  #tertiary {
+    padding: 1rem;
+  }
+  /* line 42, sass/body/_responsive.scss */
+  #tertiary .widget {
+    padding: 1rem;
   }
 }
