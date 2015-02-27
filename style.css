@@ -1685,7 +1685,7 @@ h1.entry-title a:active {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5em;
+  margin: 0 3rem 2rem;
   overflow: hidden;
 }
 /* line 10, sass/content/_navigation.scss */
@@ -2130,6 +2130,8 @@ table#wp-calendar a {
 ----------------------------------------------------------*/
 /* line 1, sass/sidebars/_tertiary.scss */
 #tertiary {
+  display: flex;
+  justify-content: space-around;
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
@@ -2147,23 +2149,29 @@ table#wp-calendar a {
   font-size: 14px;
   font-size: 0.875rem;
 }
-/* line 9, sass/sidebars/_tertiary.scss */
+/* line 11, sass/sidebars/_tertiary.scss */
 #tertiary .widget {
-  float: left;
   overflow: hidden;
-  width: 300px;
+  flex-grow: 1;
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px;
+  margin: 30px;
   /* We output the result */
-  padding: 3rem;
+  margin: 3rem;
+  /* We output the result */
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* If the two lists are the same, we ouput only one (like margin-top: 0) */
+  padding: 0;
   /* We output the result */
 }
-/* line 17, sass/sidebars/_tertiary.scss */
+/* line 19, sass/sidebars/_tertiary.scss */
 #tertiary .widget-title,
 #tertiary .widget_calendar caption {
   border-bottom: 1px solid gray;
@@ -2172,7 +2180,7 @@ table#wp-calendar a {
   font-size: 1rem;
   font-weight: bold;
 }
-/* line 24, sass/sidebars/_tertiary.scss */
+/* line 26, sass/sidebars/_tertiary.scss */
 #tertiary a {
   text-decoration: none;
 }
