@@ -31,6 +31,7 @@ $spacing__post-image: 0 auto 1rem;
 $spacing__element-bottom: 2rem;
 $spacing__element-left: 2rem;
 $spacing__list-left: ($spacing__element-left / 2);
+$spacing__post-nav-width: ($default__width / 2);
 $spacing__comment: ($spacing__element-left / 2);
 
 $margin-bottom__sidebar-title: 0.5rem;
@@ -38,7 +39,8 @@ $spacing__sidebar-list: ($spacing__element-left / 2);
 $spacing__secondary: 2rem 2rem 0;
 $spacing__secondary-widget: 2rem;
 $spacing__tertiary: ($default__width / 2);
-$spacing__tertiary-widget: ($default__width / 2);
+$margin__tertiary-widget: ($default__width / 2);
+$padding__tertiary-widget: 0;
 
 $spacing__footer-height: 1rem;
 $spacing__footer-width: $default__width;

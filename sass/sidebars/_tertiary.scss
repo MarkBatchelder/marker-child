@@ -1,4 +1,6 @@
 #tertiary { // Footer Widget Area
+    display: flex;
+    justify-content: space-around;
 	@include rem(padding, $spacing__tertiary);
 	border-top: $border__tertiary-top;
 	background-color: $color__background-tertiary;
@@ -7,10 +9,10 @@
 	@include font-size($font__size-tertiary);
 
 	.widget {
-		float: left;
 		overflow: hidden;
-		width: 300px;
-		@include rem(padding, $spacing__tertiary-widget);
+        flex-grow: 1;
+		@include rem(margin, $margin__tertiary-widget);
+		@include rem(padding, $padding__tertiary-widget);
 	}
 	
 	.widget-title,
