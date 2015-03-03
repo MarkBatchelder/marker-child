@@ -1019,7 +1019,7 @@ textarea {
 --------------------------------------------------------------*/
 /* line 1, sass/layout/_content-sidebar.scss */
 #page {
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
