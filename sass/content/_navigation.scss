@@ -3,8 +3,9 @@
 .post-navigation {
 
 	.site-main & {
-		margin: 0 $spacing__post-nav-width $spacing__element-bottom;
 		overflow: hidden;
+		margin: 0 $spacing__post-nav-width $spacing__element-bottom;
+        font-weight: bold;
 	}
 
 	& .nav-previous {

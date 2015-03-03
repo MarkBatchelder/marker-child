@@ -95,6 +95,10 @@ h1.entry-title {
 	p {
 		@include rem(margin-bottom, $spacing__element-bottom);
 	}
+    
+    .more-link {
+        font-weight: bold;
+    }
 }
 
 .entry-footer {
