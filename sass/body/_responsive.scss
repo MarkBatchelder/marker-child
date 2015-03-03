@@ -37,13 +37,20 @@
     #secondary {
         float: left;
         width: 100%;
-        @include rem(padding, 2rem);
+        @include rem(padding, 2rem 2rem 0);
+        
+        .widget {
+            @include rem(margin-bottom, 2rem);
+        }
     }
     
     #tertiary {
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include rem(padding, 1rem);
         
         .widget {
-            @include rem(padding, 2rem);
+            @include rem(margin, 1rem);
         }
     }
     
