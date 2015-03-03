@@ -1,27 +1,27 @@
-$default__width: 6rem;
+$default__width: 4rem;
 $default__height: ($default__width / 2);
 
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
-$spacing__extra-nav-width: 2rem;
+$spacing__extra-nav-width: 1rem;
 $spacing__extra-nav-link-height: 0.5rem;
-$spacing__extra-nav-link-width: 1rem;
+$spacing__extra-nav-link-width: 1rem; // $spacing__extra-nav-width + $spacing__extra-nav-link-width = $spacing__secondary
 $top__extra-nav-dropdown: 2.1rem;
 $width__extra-nav-dropdown: 150px;
 $spacing__extra-nav-dropdown: 0.25rem $spacing__extra-nav-link-width;
 
 $spacing__header: $default__height $default__width;
 
-$spacing__main-nav-width: 4rem;
+$spacing__main-nav-width: 2rem;
 $spacing__main-nav-link-height: 1rem;
-$spacing__main-nav-link-width: 2rem;
-$top__main-nav-dropdown: 3.35rem;
+$spacing__main-nav-link-width: 2rem; // $spacing__main-nav-width + $spacing__main-nav-link-width = $default__width
+$top__main-nav-dropdown: 3.275rem;
 $width__main-nav-dropdown: 200px;
 $spacing__main-nav-dropdown: 0.5rem $spacing__main-nav-link-width;
 
-$spacing__main-height: 3rem;
-$spacing__main-width: 3rem;
+$spacing__main-height: $default__height;
+$spacing__main-width: ($default__width / 2);
 
 $margin__page-header: (-$spacing__main-height) (-$spacing__main-width) 0;
 $padding__page-header: $spacing__main-height $spacing__main-width;
@@ -38,9 +38,10 @@ $margin-bottom__sidebar-title: 0.5rem;
 $spacing__sidebar-list: ($spacing__element-left / 2);
 $spacing__secondary: 2rem 2rem 0;
 $spacing__secondary-widget: 2rem;
-$spacing__tertiary: ($default__width / 2);
-$margin__tertiary-widget: ($default__width / 2);
-$padding__tertiary-widget: 0;
+$spacing__tertiary: 1rem;
+$margin__tertiary-widget: 1rem;
+$padding__tertiary-widget: 2rem;
+$width__teriary-widget: 300px;
 
 $spacing__footer-height: 1rem;
-$spacing__footer-width: $default__width;
+$spacing__footer-width: ($spacing__tertiary + $margin__tertiary-widget + $padding__tertiary-widget);
