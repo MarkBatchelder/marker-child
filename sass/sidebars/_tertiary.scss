@@ -9,8 +9,10 @@
 	@include font-size($font__size-tertiary);
 
 	.widget {
+        float: left; // Backwards compatibility
 		overflow: hidden;
         flex-grow: 1;
+        width: $width__teriary-widget;
 		@include rem(margin, $margin__tertiary-widget);
 		@include rem(padding, $padding__tertiary-widget);
 	}
