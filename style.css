@@ -1105,9 +1105,9 @@ textarea {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px 60px;
+  padding: 20px 40px;
   /* We output the result */
-  padding: 3rem 6rem;
+  padding: 2rem 4rem;
   /* We output the result */
 }
 
@@ -1217,9 +1217,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 0 20px;
+  padding: 0 10px;
   /* We output the result */
-  padding: 0 2rem;
+  padding: 0 1rem;
   /* We output the result */
   border-top: none;
   border-bottom: none;
@@ -1315,9 +1315,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 0 40px;
+  padding: 0 20px;
   /* We output the result */
-  padding: 0 4rem;
+  padding: 0 2rem;
   /* We output the result */
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -1331,9 +1331,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  top: 33.5px;
+  top: 32.75px;
   /* We output the result */
-  top: 3.35rem;
+  top: 3.275rem;
   /* We output the result */
   border: 1px solid gray;
   background-color: white;
@@ -1430,9 +1430,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px 30px;
+  padding: 20px 20px;
   /* We output the result */
-  padding: 3rem 3rem;
+  padding: 2rem 2rem;
   /* We output the result */
   border-right: none;
   border: none;
@@ -1455,9 +1455,9 @@ h2.site-description {
   /* We append according values to the lists depending on the unit of the given value */
   /* We iterate through each value in the given parameter $values */
   /* If the value is either auto or 0, we append it to the list as-is */
-  margin: -30px -30px 0;
+  margin: -20px -20px 0;
   /* We output the result */
-  margin: -3rem -3rem 0;
+  margin: -2rem -2rem 0;
   /* We output the result */
   /* We define a list of values for both units */
   /* We define a list of values for both units */
@@ -1469,9 +1469,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px 30px;
+  padding: 20px 20px;
   /* We output the result */
-  padding: 3rem 3rem;
+  padding: 2rem 2rem;
   /* We output the result */
 }
 /* line 14, sass/content/_content.scss */
@@ -1496,9 +1496,9 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px;
+  padding: 20px;
   /* We output the result */
-  padding: 3rem;
+  padding: 2rem;
   /* We output the result */
 }
 
@@ -1685,7 +1685,7 @@ h1.entry-title a:active {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 3rem 2rem;
+  margin: 0 2rem 2rem;
   overflow: hidden;
 }
 /* line 10, sass/content/_navigation.scss */
@@ -1739,9 +1739,9 @@ h1.entry-title a:active {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px;
+  padding: 20px;
   /* We output the result */
-  padding: 3rem;
+  padding: 2rem;
   /* We output the result */
   text-align: justify;
   font-size: 14px;
@@ -1945,9 +1945,9 @@ h1.entry-title a:active {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px;
+  padding: 20px;
   /* We output the result */
-  padding: 3rem;
+  padding: 2rem;
   /* We output the result */
 }
 /* line 4, sass/content/_404.scss */
@@ -2138,9 +2138,9 @@ table#wp-calendar a {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 30px;
+  padding: 10px;
   /* We output the result */
-  padding: 3rem;
+  padding: 1rem;
   /* We output the result */
   border-top: 1px solid gray;
   background-color: #f6f6f6;
@@ -2151,27 +2151,32 @@ table#wp-calendar a {
 }
 /* line 11, sass/sidebars/_tertiary.scss */
 #tertiary .widget {
+  float: left;
   overflow: hidden;
   flex-grow: 1;
+  width: 300px;
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin: 30px;
+  margin: 10px;
   /* We output the result */
-  margin: 3rem;
+  margin: 1rem;
   /* We output the result */
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
-  /* If the value is either auto or 0, we append it to the list as-is */
-  /* If the two lists are the same, we ouput only one (like margin-top: 0) */
-  padding: 0;
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 20px;
+  /* We output the result */
+  padding: 2rem;
   /* We output the result */
 }
-/* line 19, sass/sidebars/_tertiary.scss */
+/* line 21, sass/sidebars/_tertiary.scss */
 #tertiary .widget-title,
 #tertiary .widget_calendar caption {
   border-bottom: 1px solid gray;
@@ -2180,7 +2185,7 @@ table#wp-calendar a {
   font-size: 1rem;
   font-weight: bold;
 }
-/* line 26, sass/sidebars/_tertiary.scss */
+/* line 28, sass/sidebars/_tertiary.scss */
 #tertiary a {
   text-decoration: none;
 }
@@ -2200,9 +2205,9 @@ table#wp-calendar a {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 10px 60px;
+  padding: 10px 40px;
   /* We output the result */
-  padding: 1rem 6rem;
+  padding: 1rem 4rem;
   /* We output the result */
   border-top: 1px solid gray;
   background-color: white;
@@ -2492,13 +2497,47 @@ object {
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* We append according values to the lists depending on the unit of the given value */
-    padding: 20px;
+    /* We iterate through each value in the given parameter $values */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* We append according values to the lists depending on the unit of the given value */
+    /* We iterate through each value in the given parameter $values */
+    /* If the value is either auto or 0, we append it to the list as-is */
+    padding: 20px 20px 0;
     /* We output the result */
-    padding: 2rem;
+    padding: 2rem 2rem 0;
+    /* We output the result */
+  }
+  /* line 42, sass/body/_responsive.scss */
+  #secondary .widget {
+    /* We define a list of values for both units */
+    /* We define a list of values for both units */
+    /* We iterate through each value in the given parameter $values */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* We append according values to the lists depending on the unit of the given value */
+    margin-bottom: 20px;
+    /* We output the result */
+    margin-bottom: 2rem;
     /* We output the result */
   }
 
-  /* line 45, sass/body/_responsive.scss */
+  /* line 47, sass/body/_responsive.scss */
+  #tertiary {
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* We define a list of values for both units */
+    /* We define a list of values for both units */
+    /* We iterate through each value in the given parameter $values */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* We append according values to the lists depending on the unit of the given value */
+    padding: 10px;
+    /* We output the result */
+    padding: 1rem;
+    /* We output the result */
+  }
+  /* line 52, sass/body/_responsive.scss */
   #tertiary .widget {
     /* We define a list of values for both units */
     /* We define a list of values for both units */
@@ -2506,13 +2545,13 @@ object {
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* We append according values to the lists depending on the unit of the given value */
-    padding: 20px;
+    margin: 10px;
     /* We output the result */
-    padding: 2rem;
+    margin: 1rem;
     /* We output the result */
   }
 
-  /* line 50, sass/body/_responsive.scss */
+  /* line 57, sass/body/_responsive.scss */
   .site-footer .site-info {
     /* We define a list of values for both units */
     /* We define a list of values for both units */
