@@ -1,8 +1,9 @@
-$default__width: 4rem;
-$default__height: ($default__width / 2);
-
+$size__site: 1080px;
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
+
+$default__height: 2rem;
+$default__width: 4rem;
 
 $spacing__extra-nav-width: 1rem;
 $spacing__extra-nav-link-height: 0.5rem;
