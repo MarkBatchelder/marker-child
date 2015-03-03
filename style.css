@@ -1454,10 +1454,12 @@ h2.site-description {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
   /* We iterate through each value in the given parameter $values */
-  /* If the value is either auto or 0, we append it to the list as-is */
-  margin: -20px -20px 0;
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: -20px -20px 20px;
   /* We output the result */
-  margin: -2rem -2rem 0;
+  margin: -2rem -2rem 2rem;
   /* We output the result */
   /* We define a list of values for both units */
   /* We define a list of values for both units */
@@ -1644,15 +1646,21 @@ h1.entry-title a:active {
   margin-bottom: 2rem;
   /* We output the result */
 }
+/* line 99, sass/content/_content.scss */
+.page-content .more-link,
+.entry-content .more-link,
+.entry-summary .more-link {
+  font-weight: bold;
+}
 
-/* line 100, sass/content/_content.scss */
+/* line 104, sass/content/_content.scss */
 .entry-footer {
   font-family: sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   color: gray;
 }
-/* line 105, sass/content/_content.scss */
+/* line 109, sass/content/_content.scss */
 .entry-footer span {
   display: inline-block;
   /* We define a list of values for both units */
@@ -1666,7 +1674,7 @@ h1.entry-title a:active {
   margin-right: 2rem;
   /* We output the result */
 }
-/* line 110, sass/content/_content.scss */
+/* line 114, sass/content/_content.scss */
 .entry-footer .edit-link {
   margin-right: 0;
 }
@@ -1685,17 +1693,18 @@ h1.entry-title a:active {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 2rem 2rem;
   overflow: hidden;
+  margin: 0 2rem 2rem;
+  font-weight: bold;
 }
-/* line 10, sass/content/_navigation.scss */
+/* line 11, sass/content/_navigation.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 15, sass/content/_navigation.scss */
+/* line 16, sass/content/_navigation.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1704,7 +1713,7 @@ h1.entry-title a:active {
   width: 50%;
 }
 
-/* line 22, sass/content/_navigation.scss */
+/* line 23, sass/content/_navigation.scss */
 .page-links {
   clear: both;
   /* We define a list of values for both units */
@@ -1719,12 +1728,12 @@ h1.entry-title a:active {
   /* We output the result */
   font-weight: bold;
 }
-/* line 27, sass/content/_navigation.scss */
+/* line 28, sass/content/_navigation.scss */
 .page-links a {
   text-decoration: none;
 }
 
-/* line 32, sass/content/_navigation.scss */
+/* line 33, sass/content/_navigation.scss */
 .post-navigation {
   display: none;
 }
