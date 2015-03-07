@@ -38,28 +38,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 7.0 Clearings
 8.0 Layout
 9.0 Body (Background)
-10.0 Header
-	10.1 Navigation Menus
-	10.2 Top Navigation
-	10.3 Primary Navigation
-11.0 Content
-	11.1 Asides
-	11.2 Single
-	11.3 Comments
-	11.4 404
+10.0 Navigation
+	10.1 Top Navigation
+	10.2 Primary Navigation
+11.0 Header
 12.0 Sidebars
 	12.1 Widgets
 	12.2 Sidebar Widget Area
 	12.3 Footer Widget Area
-13.0 Footer
-14.0 Theme Specific
-15.0 Plugins
-    15.1 Ninja Forms
-16.0 Infinite scroll
-17.0 Media
-	17.1 Captions
-	17.2 Galleries
-18.0 Mobile Responsive
+13.0 Content
+	13.1 Asides
+	13.2 Single
+	13.3 Comments
+	13.4 404
+14.0 Footer
+15.0 Theme Specific
+16.0 Plugins
+    16.1 Ninja Forms
+17.0 Infinite scroll
+18.0 Media
+	18.1 Captions
+	18.2 Galleries
+19.0 Mobile Responsive
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -150,42 +150,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "body/body";
 
 /*--------------------------------------------------------------
-10.0 Header
+10.0 Navigation
+--------------------------------------------------------------*/
+@import "navigation/menus";
+
+	/* 10.1 Top Navigation
+	----------------------------------------------------------*/
+	@import "navigation/secondary-navigation";
+
+	/* 10.2 Primary Navigation
+	----------------------------------------------------------*/
+	@import "navigation/main-navigation";
+
+/*--------------------------------------------------------------
+11.0 Header
 --------------------------------------------------------------*/
 @import "header/header";
-
-	/* 10.1 Navigation Menus
-	----------------------------------------------------------*/
-	@import "header/menus";
-
-	/* 10.2 Top Navigation
-	----------------------------------------------------------*/
-	@import "header/extra-navigation";
-
-	/* 10.3 Primary Navigation
-	----------------------------------------------------------*/
-	@import "header/site-navigation";
-	
-/*--------------------------------------------------------------
-11.0 Content
---------------------------------------------------------------*/
-@import "content/content";
-
-	/* 11.1 Asides
-	----------------------------------------------------------*/
-	@import "content/asides";
-	
-	/* 11.2 Navigation
-	----------------------------------------------------------*/
-	@import "content/navigation";
-		
-	/* 11.3 Comments
-	----------------------------------------------------------*/
-	@import "content/comments";
-		
-	/* 11.4 404
-	----------------------------------------------------------*/
-	@import "content/404";
 	
 /*--------------------------------------------------------------
 12.0 Sidebars
@@ -203,43 +183,64 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	/* 12.3 Footer Widget Area
 	----------------------------------------------------------*/
 	@import "sidebars/tertiary";
+
+/*--------------------------------------------------------------
+13.0 Content
+--------------------------------------------------------------*/
+@import "content/content";
+
+	/* 13.1 Asides
+	----------------------------------------------------------*/
+	@import "content/asides";
+	
+	/* 13.2 Navigation
+	----------------------------------------------------------*/
+	@import "content/navigation";
+		
+	/* 13.3 Comments
+	----------------------------------------------------------*/
+	@import "content/comments";
+		
+	/* 13.4 404
+	----------------------------------------------------------*/
+	@import "content/404";
 		
 /*--------------------------------------------------------------
-13.0 Footer
+14.0 Footer
 --------------------------------------------------------------*/
 @import "footer/footer";
 
 /*--------------------------------------------------------------
-14.0 Theme Specific
+15.0 Theme Specific
 --------------------------------------------------------------*/
 	
 /*--------------------------------------------------------------
-15.0 Plugins
+16.0 Plugins
 --------------------------------------------------------------*/
 
-	/* 15.1 Ninja Forms
+	/* 16.1 Ninja Forms
 	----------------------------------------------------------*/
 	@import "plugins/ninja-forms";
 
 /*--------------------------------------------------------------
-16.0 Infinite scroll
+17.0 Infinite scroll
 --------------------------------------------------------------*/
 @import "modules/infinite-scroll";
 
 /*--------------------------------------------------------------
-17.0 Media
+18.0 Media
 --------------------------------------------------------------*/
 @import "media/media";
 
-	/* 17.1 Captions
+	/* 18.1 Captions
 	----------------------------------------------------------*/
 	@import "media/captions";
 
-	/* 17.2 Galleries
+	/* 18.2 Galleries
 	----------------------------------------------------------*/
 	@import "media/galleries";
 
 /*--------------------------------------------------------------
-18.0 Mobile Responsive
+19.0 Mobile Responsive
 --------------------------------------------------------------*/
 @import "body/responsive";

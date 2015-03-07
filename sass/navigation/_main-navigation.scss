@@ -1,0 +1,76 @@
+.main-navigation {
+	@include rem(padding, 0 $spacing__main-nav-width);
+	border-top: $border__main-nav-top;
+	border-bottom: $border__main-nav-bottom;
+	background-color: $color__background-main-nav;
+
+	ul {
+
+		ul {
+			top: $top__main-nav-dropdown;
+			border: $border__main-nav-dropdown;
+			background-color: $color__background-main-nav;
+			background-color: $color__background-main-nav-dropdown;
+
+			ul {
+				margin-top: $margin-top__main-nav-border-fix; // Aligns top border
+            }
+
+			a {
+				width: $width__main-nav-dropdown;
+				@include rem(padding, $spacing__main-nav-dropdown);
+			}
+
+			:hover > a {
+			}
+
+			a:hover {
+			}
+		}
+	}
+	
+	li {
+
+		&:hover > a {
+			background-color: $color__background-main-nav-hover;
+			color: $color__main-nav-link-hover;
+		}
+	}
+	
+	a {
+		@include rem(padding, $spacing__main-nav-link-height $spacing__main-nav-link-width);
+		font-family: $font__main-nav;
+		@include font-size($font__size-main-nav);
+		font-weight: bold;
+		text-decoration: none;
+		color: $color__main-nav-link;
+		
+		&:visited {
+			color: $color__main-nav-link;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+			background-color: $color__background-main-nav-current;
+			color: $color__main-nav-link-current;
+	}
+}
+
+/* Small menu */
+
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}

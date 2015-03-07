@@ -1,5 +1,5 @@
 .main-navigation,
-.top-navigation {
+.secondary-navigation {
 	clear: both;
 	display: block;
 	float: left;
@@ -19,7 +19,6 @@
 			ul {
 				top: 0;
 				left: -999em;
-				@include rem(margin-top, -0.1rem); // Aligns top border
 			}
 
 			li {
@@ -44,8 +43,8 @@
 	}
 	
 	li {
-		float: left;
 		position: relative;
+		float: left;
 
 		&:hover > a {
 		}

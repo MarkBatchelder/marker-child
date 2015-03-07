@@ -1,0 +1,60 @@
+.secondary-navigation {
+	@include rem(padding, 0 $spacing__secondary-nav-width);
+	border-top: $border__secondary-nav-top;
+	border-bottom: $border__secondary-nav-bottom;
+	background-color: $color__background-secondary-nav;
+
+	ul {
+		float: right;
+
+		ul {
+			top: $top__secondary-nav-dropdown;
+			border: $border__secondary-nav-dropdown;
+			background-color: $color__background-secondary-nav;
+			background-color: $color__background-secondary-nav-dropdown;
+
+			ul {
+				margin-top: $margin-top__secondary-nav-border-fix; // Aligns top border
+            }
+
+			a {
+				width: $width__secondary-nav-dropdown;
+				@include rem(padding, $spacing__secondary-nav-dropdown);
+			}
+
+			:hover > a {
+			}
+
+			a:hover {
+			}
+		}
+	}
+	
+	li {
+
+		&:hover > a {
+			background-color: $color__background-secondary-nav-hover;
+			color: $color__secondary-nav-link-hover;
+		}
+	}
+	
+	a {
+		@include rem(padding, $spacing__secondary-nav-link-height $spacing__secondary-nav-link-width);
+		font-family: $font__secondary-nav;
+		@include font-size($font__size-secondary-nav);
+		font-weight: normal;
+		text-decoration: none;
+		color: $color__secondary-nav-link;
+		
+		&:visited {
+			color: $color__secondary-nav-link;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+			background-color: $color__background-secondary-nav-current;
+			color: $color__secondary-nav-link-current;
+	}
+}

@@ -5,21 +5,23 @@ $size__site-sidebar: 25%;
 $default__height: 2rem;
 $default__width: 4rem;
 
-$spacing__extra-nav-width: 1rem;
-$spacing__extra-nav-link-height: 0.5rem;
-$spacing__extra-nav-link-width: 1rem; // $spacing__extra-nav-width + $spacing__extra-nav-link-width = $spacing__secondary
-$top__extra-nav-dropdown: 2.1rem;
-$width__extra-nav-dropdown: 150px;
-$spacing__extra-nav-dropdown: 0.25rem $spacing__extra-nav-link-width;
+$spacing__secondary-nav-width: 1rem;
+$spacing__secondary-nav-link-height: 5px;
+$spacing__secondary-nav-link-width: 1rem; // $spacing__secondary-nav-width + $spacing__secondary-nav-link-width = $spacing__secondary
+$top__secondary-nav-dropdown: 34px;
+$margin-top__secondary-nav-border-fix: 0;
+$width__secondary-nav-dropdown: 150px;
+$spacing__secondary-nav-dropdown: 2.5px $spacing__secondary-nav-link-width;
 
 $spacing__header: $default__height $default__width;
 
 $spacing__main-nav-width: 2rem;
-$spacing__main-nav-link-height: 1rem;
+$spacing__main-nav-link-height: 10px;
 $spacing__main-nav-link-width: 2rem; // $spacing__main-nav-width + $spacing__main-nav-link-width = $default__width
-$top__main-nav-dropdown: 3.275rem;
+$top__main-nav-dropdown: 53px;
+$margin-top__main-nav-border-fix: -1px;
 $width__main-nav-dropdown: 200px;
-$spacing__main-nav-dropdown: 0.5rem $spacing__main-nav-link-width;
+$spacing__main-nav-dropdown: 5px $spacing__main-nav-link-width;
 
 $spacing__main-height: $default__height;
 $spacing__main-width: ($default__width / 2);
