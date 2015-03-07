@@ -1518,15 +1518,9 @@ table#wp-calendar a {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  /* We iterate through each value in the given parameter $values */
-  /* If the value has a unit, we split it to get both the unit and the raw value */
-  /* If the value has a unit, we split it to get both the unit and the raw value */
-  /* We append according values to the lists depending on the unit of the given value */
-  /* We iterate through each value in the given parameter $values */
-  /* If the value is either auto or 0, we append it to the list as-is */
-  padding: 20px 20px 0;
+  padding: 10px;
   /* We output the result */
-  padding: 2rem 2rem 0;
+  padding: 1rem;
   /* We output the result */
   border: none;
   font-family: sans-serif;
@@ -1537,18 +1531,26 @@ table#wp-calendar a {
 /* line 12, sass/sidebars/_secondary.scss */
 #secondary .widget {
   overflow: hidden;
+  width: 100%;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* If the two lists are the same, we ouput only one (like margin-top: 0) */
+  margin: 0;
+  /* We output the result */
   /* We define a list of values for both units */
   /* We define a list of values for both units */
   /* We iterate through each value in the given parameter $values */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  margin-bottom: 20px;
+  padding: 10px;
   /* We output the result */
-  margin-bottom: 2rem;
+  padding: 1rem;
   /* We output the result */
 }
-/* line 18, sass/sidebars/_secondary.scss */
+/* line 20, sass/sidebars/_secondary.scss */
 #secondary .widget-title,
 #secondary .widget_calendar caption {
   border-bottom: 1px solid gray;
@@ -1557,7 +1559,7 @@ table#wp-calendar a {
   font-size: 1rem;
   font-weight: bold;
 }
-/* line 25, sass/sidebars/_secondary.scss */
+/* line 27, sass/sidebars/_secondary.scss */
 #secondary a {
   text-decoration: none;
 }
@@ -2390,7 +2392,7 @@ object {
 --------------------------------------------------------------*/
 @media (max-width: 500px) {
   /* line 7, sass/body/_responsive.scss */
-  .top-navigation {
+  .secondary-navigation {
     display: none;
   }
 
@@ -2486,15 +2488,9 @@ object {
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* We append according values to the lists depending on the unit of the given value */
-    /* We iterate through each value in the given parameter $values */
-    /* If the value has a unit, we split it to get both the unit and the raw value */
-    /* If the value has a unit, we split it to get both the unit and the raw value */
-    /* We append according values to the lists depending on the unit of the given value */
-    /* We iterate through each value in the given parameter $values */
-    /* If the value is either auto or 0, we append it to the list as-is */
-    padding: 20px 20px 0;
+    padding: 10px;
     /* We output the result */
-    padding: 2rem 2rem 0;
+    padding: 1rem;
     /* We output the result */
   }
   /* line 42, sass/body/_responsive.scss */
@@ -2502,16 +2498,23 @@ object {
     /* We define a list of values for both units */
     /* We define a list of values for both units */
     /* We iterate through each value in the given parameter $values */
+    /* If the value is either auto or 0, we append it to the list as-is */
+    /* If the two lists are the same, we ouput only one (like margin-top: 0) */
+    margin: 0;
+    /* We output the result */
+    /* We define a list of values for both units */
+    /* We define a list of values for both units */
+    /* We iterate through each value in the given parameter $values */
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* We append according values to the lists depending on the unit of the given value */
-    margin-bottom: 20px;
+    padding: 10px;
     /* We output the result */
-    margin-bottom: 2rem;
+    padding: 1rem;
     /* We output the result */
   }
 
-  /* line 47, sass/body/_responsive.scss */
+  /* line 48, sass/body/_responsive.scss */
   #tertiary {
     flex-direction: column;
     flex-wrap: wrap;
@@ -2526,21 +2529,28 @@ object {
     padding: 1rem;
     /* We output the result */
   }
-  /* line 52, sass/body/_responsive.scss */
+  /* line 53, sass/body/_responsive.scss */
   #tertiary .widget {
+    /* We define a list of values for both units */
+    /* We define a list of values for both units */
+    /* We iterate through each value in the given parameter $values */
+    /* If the value is either auto or 0, we append it to the list as-is */
+    /* If the two lists are the same, we ouput only one (like margin-top: 0) */
+    margin: 0;
+    /* We output the result */
     /* We define a list of values for both units */
     /* We define a list of values for both units */
     /* We iterate through each value in the given parameter $values */
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* If the value has a unit, we split it to get both the unit and the raw value */
     /* We append according values to the lists depending on the unit of the given value */
-    margin: 10px;
+    padding: 10px;
     /* We output the result */
-    margin: 1rem;
+    padding: 1rem;
     /* We output the result */
   }
 
-  /* line 57, sass/body/_responsive.scss */
+  /* line 59, sass/body/_responsive.scss */
   .site-footer .site-info {
     /* We define a list of values for both units */
     /* We define a list of values for both units */
@@ -2556,5 +2566,9 @@ object {
     /* We output the result */
     padding: 1rem 2rem;
     /* We output the result */
+  }
+  /* line 62, sass/body/_responsive.scss */
+  .site-footer .site-info .theme-info {
+    float: left;
   }
 }
