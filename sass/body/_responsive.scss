@@ -4,7 +4,7 @@
 
 @media (max-width: 500px) {
     
-    .top-navigation {
+    .secondary-navigation {
         display: none;
     }
     
@@ -37,10 +37,11 @@
     #secondary {
         float: left;
         width: 100%;
-        @include rem(padding, 2rem 2rem 0);
+        @include rem(padding, 1rem);
         
         .widget {
-            @include rem(margin-bottom, 2rem);
+            @include rem(margin, 0);
+            @include rem(padding, 1rem);
         }
     }
     
@@ -50,11 +51,16 @@
         @include rem(padding, 1rem);
         
         .widget {
-            @include rem(margin, 1rem);
+            @include rem(margin, 0);
+            @include rem(padding, 1rem);
         }
     }
     
     .site-footer .site-info {
         @include rem(padding, 1rem 2rem);
+	
+        .theme-info {
+            float: left;
+        }
     }
 }
