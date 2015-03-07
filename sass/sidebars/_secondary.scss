@@ -11,7 +11,9 @@
 
 	.widget {
 		overflow: hidden;
-		@include rem(margin-bottom, $spacing__secondary-widget);
+        width: 100%;
+		@include rem(margin, $margin__secondary-widget);
+		@include rem(padding, $padding__secondary-widget);
 	}
 	
 	.widget-title,
