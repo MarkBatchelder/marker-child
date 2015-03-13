@@ -34,6 +34,15 @@
         @include rem(padding, 1rem);
     }
     
+    .comment-navigation,
+    .posts-navigation,
+    .post-navigation {
+        
+        .site-main & {
+		@include rem(margin, 2rem 1rem);
+        }
+    }
+    
     #secondary {
         float: left;
         width: 100%;
@@ -47,7 +56,6 @@
     
     #tertiary {
         flex-direction: column;
-        flex-wrap: wrap;
         @include rem(padding, 1rem);
         
         .widget {
