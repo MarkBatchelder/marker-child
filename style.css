@@ -1358,27 +1358,38 @@ textarea {
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* If the value has a unit, we split it to get both the unit and the raw value */
   /* We append according values to the lists depending on the unit of the given value */
-  padding: 20px 40px;
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  padding: 20px 40px 40px;
   /* We output the result */
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 4rem;
   /* We output the result */
 }
 
 /* line 10, sass/header/_header.scss */
 h1.site-title {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* If the two lists are the same, we ouput only one (like margin-top: 0) */
+  margin: 0;
+  /* We output the result */
   margin-left: -2px;
   font-family: sans-serif;
   font-size: 48px;
   font-size: 3rem;
-  line-height: 0.1;
+  line-height: 1;
 }
-/* line 17, sass/header/_header.scss */
+/* line 18, sass/header/_header.scss */
 h1.site-title a,
 h1.site-title a:visited {
   text-decoration: none;
   color: royalblue;
 }
-/* line 24, sass/header/_header.scss */
+/* line 25, sass/header/_header.scss */
 h1.site-title a:hover,
 h1.site-title a:focus,
 h1.site-title a:active {
@@ -1386,12 +1397,19 @@ h1.site-title a:active {
   color: midnightblue;
 }
 
-/* line 30, sass/header/_header.scss */
+/* line 31, sass/header/_header.scss */
 h2.site-description {
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value is either auto or 0, we append it to the list as-is */
+  /* If the two lists are the same, we ouput only one (like margin-top: 0) */
+  margin: 0;
+  /* We output the result */
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 0.3;
+  line-height: 1;
   font-weight: bold;
 }
 
@@ -1907,7 +1925,24 @@ h1.entry-title a:active {
 .posts-navigation, .site-main
 .post-navigation {
   overflow: hidden;
-  margin: 0 2rem 2rem;
+  /* We define a list of values for both units */
+  /* We define a list of values for both units */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  /* We iterate through each value in the given parameter $values */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* If the value has a unit, we split it to get both the unit and the raw value */
+  /* We append according values to the lists depending on the unit of the given value */
+  margin: 20px 20px 20px;
+  /* We output the result */
+  margin: 2rem 2rem 2rem;
+  /* We output the result */
   font-weight: bold;
 }
 /* line 11, sass/content/_navigation.scss */
@@ -2478,7 +2513,27 @@ object {
     /* We output the result */
   }
 
-  /* line 37, sass/body/_responsive.scss */
+  /* line 41, sass/body/_responsive.scss */
+  .site-main .comment-navigation, .site-main
+  .posts-navigation, .site-main
+  .post-navigation {
+    /* We define a list of values for both units */
+    /* We define a list of values for both units */
+    /* We iterate through each value in the given parameter $values */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* We append according values to the lists depending on the unit of the given value */
+    /* We iterate through each value in the given parameter $values */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* If the value has a unit, we split it to get both the unit and the raw value */
+    /* We append according values to the lists depending on the unit of the given value */
+    margin: 20px 10px;
+    /* We output the result */
+    margin: 2rem 1rem;
+    /* We output the result */
+  }
+
+  /* line 46, sass/body/_responsive.scss */
   #secondary {
     float: left;
     width: 100%;
@@ -2493,7 +2548,7 @@ object {
     padding: 1rem;
     /* We output the result */
   }
-  /* line 42, sass/body/_responsive.scss */
+  /* line 51, sass/body/_responsive.scss */
   #secondary .widget {
     /* We define a list of values for both units */
     /* We define a list of values for both units */
@@ -2514,10 +2569,9 @@ object {
     /* We output the result */
   }
 
-  /* line 48, sass/body/_responsive.scss */
+  /* line 57, sass/body/_responsive.scss */
   #tertiary {
     flex-direction: column;
-    flex-wrap: wrap;
     /* We define a list of values for both units */
     /* We define a list of values for both units */
     /* We iterate through each value in the given parameter $values */
@@ -2529,7 +2583,7 @@ object {
     padding: 1rem;
     /* We output the result */
   }
-  /* line 53, sass/body/_responsive.scss */
+  /* line 61, sass/body/_responsive.scss */
   #tertiary .widget {
     /* We define a list of values for both units */
     /* We define a list of values for both units */
@@ -2550,7 +2604,7 @@ object {
     /* We output the result */
   }
 
-  /* line 59, sass/body/_responsive.scss */
+  /* line 67, sass/body/_responsive.scss */
   .site-footer .site-info {
     /* We define a list of values for both units */
     /* We define a list of values for both units */
@@ -2567,7 +2621,7 @@ object {
     padding: 1rem 2rem;
     /* We output the result */
   }
-  /* line 62, sass/body/_responsive.scss */
+  /* line 70, sass/body/_responsive.scss */
   .site-footer .site-info .theme-info {
     float: left;
   }
