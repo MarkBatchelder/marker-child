@@ -4,7 +4,7 @@
 
 	.site-main & {
 		overflow: hidden;
-		margin: 0 $spacing__post-nav-width $spacing__element-bottom;
+		@include rem(margin, $spacing__post-nav);
         font-weight: bold;
 	}
 

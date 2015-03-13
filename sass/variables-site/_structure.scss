@@ -2,7 +2,7 @@ $size__site: 1080px;
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
-$default__height: 2rem;
+$default__height: 4rem;
 $default__width: 4rem;
 
 $spacing__secondary-nav-width: 1rem;
@@ -13,7 +13,7 @@ $margin-top__secondary-nav-border-fix: 0;
 $width__secondary-nav-dropdown: 150px;
 $spacing__secondary-nav-dropdown: 2.5px $spacing__secondary-nav-link-width;
 
-$spacing__header: $default__height $default__width;
+$spacing__header: ($default__height / 2) $default__width $default__height;
 
 $spacing__main-nav-width: 2rem;
 $spacing__main-nav-link-height: 10px;
@@ -23,10 +23,10 @@ $margin-top__main-nav-border-fix: -1px;
 $width__main-nav-dropdown: 200px;
 $spacing__main-nav-dropdown: 5px $spacing__main-nav-link-width;
 
-$spacing__main-height: $default__height;
+$spacing__main-height: ($default__height / 2);
 $spacing__main-width: ($default__width / 2);
 
-$margin__page-header: (-$spacing__main-height) (-$spacing__main-width) $default__height;
+$margin__page-header: (-$spacing__main-height) (-$spacing__main-width) $spacing__main-height;
 $padding__page-header: $spacing__main-height $spacing__main-width;
 
 $spacing__article: ($default__width / 2);
@@ -34,7 +34,7 @@ $spacing__post-image: 0 auto 1rem;
 $spacing__element-bottom: 2rem;
 $spacing__element-left: 2rem;
 $spacing__list-left: ($spacing__element-left / 2);
-$spacing__post-nav-width: ($default__width / 2);
+$spacing__post-nav: $spacing__main-height $spacing__main-width $spacing__element-bottom;
 $spacing__comment: ($spacing__element-left / 2);
 
 $margin-bottom__sidebar-title: 0.5rem;
