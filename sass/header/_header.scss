@@ -8,6 +8,7 @@
 }
 
 h1.site-title {
+    @include rem(margin, 0); // Line height fix
 	margin-left: -2px; // Fixes larger font alignment with smaller fonts
 	font-family: $font__site-title;
 	@include font-size($font__size-site-title);
@@ -28,6 +29,7 @@ h1.site-title {
 }
 
 h2.site-description {
+    @include rem(margin, 0); // Line height fix
 	font-family: $font__site-description;
 	@include font-size($font__size-site-description);
 	line-height: $font__line-height-site-description;
