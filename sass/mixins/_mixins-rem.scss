@@ -1,40 +1,65 @@
-/* The mixin relies on a baseline of 10px (font-size: 62.5%) */
+$rem-baseline: 16px !default;
+$rem-fallback: true !default;
+$rem-px-only: false !default;
 
-@function parseInt($n) { /* The mixin relies on a function to parse the integer from a value with a unit */
-	@return $n / ($n * 0 + 1);
+// list-separator polyfill by Hugo Giraudel (https://sass-compatibility.github.io/#list_separator_function)
+@function rem-separator($list) {
+  @if function-exists("list-separator") == true {
+    @return list-separator($list);
+  }
+
+  $test-list: ();
+  @each $item in $list {
+    $test-list: append($test-list, $item, space);
+  }
+
+  @return if($test-list == $list, space, comma);
 }
 
-@mixin rem($property, $values) {
-	$px : (); /* We define a list of values for both units */
-	$rem: (); /* We define a list of values for both units */
-	
-	@each $value in $values { /* We iterate through each value in the given parameter $values */
-	
-		@if $value == 0 or $value == auto { /* If the value is either auto or 0, we append it to the list as-is */
-			$px : append($px , $value);
-			$rem: append($rem, $value);
-		}
-		
-		@else { 
-			$unit: unit($value);    /* If the value has a unit, we split it to get both the unit and the raw value */
-			$val: parseInt($value); /* If the value has a unit, we split it to get both the unit and the raw value */
-			
-			@if $unit == "px" {  /* We append according values to the lists depending on the unit of the given value */
-				$px : append($px,  $value);
-				$rem: append($rem, ($val / 10 + rem));
-			}
-			
-			@if $unit == "rem" { /* We append according values to the lists depending on the unit of the given value */
-				$px : append($px,  ($val * 10 + px));
-				$rem: append($rem, $value);
-			}
-		}
-	}
-	
-	@if $px == $rem {     /* If the two lists are the same, we ouput only one (like margin-top: 0) */
-		#{$property}: $px;  /* We output the result */
-	} @else {
-		#{$property}: $px;  /* We output the result */
-		#{$property}: $rem; /* We output the result */
-	}
+@mixin rem-baseline($zoom: 100%) {
+  font-size: $zoom / 16px * $rem-baseline;
+}
+
+@function rem-convert($to, $values...) {
+  $result: ();
+  $separator: rem-separator($values);
+
+  @each $value in $values {
+    @if type-of($value) == "number" and unit($value) == "rem" and $to == "px" {
+      $result: append($result, $value / 1rem * $rem-baseline, $separator);
+    } @else if type-of($value) == "number" and unit($value) == "px" and $to == "rem" {
+      $result: append($result, $value / ($rem-baseline / 1rem), $separator);
+    } @else if type-of($value) == "list" {
+      $result: append($result, rem-convert($to, $value...), $separator);
+    } @else {
+      $result: append($result, $value, $separator);
+    }
+  }
+
+  @return $result;
+}
+
+@function rem($values...) {
+  @if $rem-px-only {
+    @return rem-convert(px, $values...);
+  } @else {
+    @return rem-convert(rem, $values...);
+  }
+}
+
+@mixin rem($properties, $values...) {
+  @if type-of($properties) == "map" {
+    @each $property, $values in $properties {
+      @include rem($property, $values...);
+    }
+  } @else {
+    @each $property in $properties {
+      @if $rem-fallback or $rem-px-only {
+        #{$property}: rem-convert(px, $values...);
+      }
+      @if not $rem-px-only {
+        #{$property}: rem-convert(rem, $values...);
+      }
+    }
+  }
 }
