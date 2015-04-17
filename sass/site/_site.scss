@@ -2,7 +2,7 @@
 }
 
 .site { // #page
-	border: $border__body;
 	box-shadow: $box-shadow__body;
+	@include border($border__body);
 	background-color: $color__background-body;
 }
