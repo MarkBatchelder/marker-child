@@ -10,6 +10,7 @@
 		margin: 0;
 		@include font-size($font__size-caption);
 		font-style: italic;
+        color: $color__caption;
 	}
 }
 

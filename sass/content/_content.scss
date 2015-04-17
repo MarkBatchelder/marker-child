@@ -1,7 +1,7 @@
 .site-main { // #main
 	@include rem(padding, $spacing__main-height $spacing__main-width);
 	border-right: $border__secondary-column;
-	border: $border__primary;
+	@include border($border__primary);
 	background-color: $color__background-body;
 	background-color: $color__background-primary;
 }
@@ -33,16 +33,13 @@ img.wp-post-image {
 	@include rem(margin, $spacing__post-image);
 }
 
-.home .entry-header {
-	display: none;
-}
-
 .entry-header {
 	@include rem(margin-bottom, $spacing__element-bottom);
 }
 
 h1.entry-title {
 	margin-left: -2px; // Fixes larger font alignment with smaller fonts
+    color: $color__title;
 	
 	a,
 	a:visited {
@@ -66,6 +63,10 @@ h1.entry-title {
 	.edit-link {
 		@include rem(margin-left, $spacing__element-left);
 	}
+    
+	a:visited {
+        color: $color__link;
+    }
 }
 
 .byline,
@@ -83,7 +84,10 @@ h1.entry-title {
 .entry-summary {
 	text-align: justify;
 	
-	h1,
+	h1 {
+        display: none;
+    }
+    
 	h2,
 	h3,
 	h4,
@@ -93,7 +97,7 @@ h1.entry-title {
 	}
 	
 	p {
-		@include rem(margin-bottom, $spacing__element-bottom);
+		@include rem(margin, 0 0 $spacing__element-bottom);
 	}
     
     .more-link {
@@ -114,4 +118,8 @@ h1.entry-title {
 	.edit-link {
 		margin-right: 0; // Reset
 	}
+    
+	a:visited {
+        color: $color__link;
+    }
 }

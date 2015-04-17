@@ -1,8 +1,8 @@
-#tertiary { // Footer Widget Area
+.footer-widget-area { // #tertiary
     display: flex;
     justify-content: space-around;
 	@include rem(padding, $spacing__tertiary);
-	border-top: $border__tertiary-top;
+	@include border($border__tertiary);
 	background-color: $color__background-tertiary;
 	color: $color__tertiary-text;
 	font-family: $font__tertiary;

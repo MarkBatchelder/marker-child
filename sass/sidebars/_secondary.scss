@@ -2,12 +2,13 @@
 	background-color: $color__background-secondary-column; // Sidebar Column Background
 }
 
-#secondary { // Sidebar Widget Area
+.sidebar-widget-area { // #secondary
 	@include rem(padding, $spacing__secondary);
-	border: $border__secondary;
+	@include border($border__secondary);
+	background-color: $color__background-secondary;
+	color: $color__secondary-text;
 	font-family: $font__secondary;
 	@include font-size($font__size-secondary);
-	background-color: $color__background-secondary;
 
 	.widget {
 		overflow: hidden;

@@ -1,7 +1,6 @@
-.secondary-navigation {
+.top-navigation {
 	@include rem(padding, 0 $spacing__secondary-nav-width);
-	border-top: $border__secondary-nav-top;
-	border-bottom: $border__secondary-nav-bottom;
+    @include border($border__secondary-nav);
 	background-color: $color__background-secondary-nav;
 
 	ul {
@@ -9,7 +8,7 @@
 
 		ul {
 			top: $top__secondary-nav-dropdown;
-			border: $border__secondary-nav-dropdown;
+			@include border($border__secondary-nav-dropdown);
 			background-color: $color__background-secondary-nav;
 			background-color: $color__background-secondary-nav-dropdown;
 

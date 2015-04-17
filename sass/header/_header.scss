@@ -1,10 +1,13 @@
 .site-header { // #masthead
+    @include border($border__header);
 	background-color: $color__background-header;
 }
 
 .site-branding {
 	clear: both;
-	@include rem(padding, $spacing__header);
+	@include rem(padding, $spacing__branding);
+    @include border($border__branding);
+	background-color: $color__background-branding;
 }
 
 h1.site-title {

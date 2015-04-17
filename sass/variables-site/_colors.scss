@@ -1,103 +1,148 @@
 /* Body */
 
 $color__background: #eee;
-$color__background-body: #fff;
 
-$border__body: none;
 $box-shadow__body: 0 0 10px rgba(0, 0, 0, 0.2);
+$border__body: none;
+$color__background-body: #fff;
 
 $color__text-body: #404040;
 $color__link: royalblue;
-$color__link-visited: purple;
 $color__link-hover: midnightblue;
+$color__link-visited: purple;
+
+$color__text-screen: #21759b;
+
 
 /* Top Navigation */
 
+$border__secondary-nav: none;
 $color__background-secondary-nav: #fff;
+
+$border__secondary-nav-dropdown: 1px solid #808080;
 $color__background-secondary-nav-dropdown: #fff;
+
 $color__background-secondary-nav-hover: #808080;
 $color__background-secondary-nav-current: #f6f6f6;
-
-$border__secondary-nav-top: none;
-$border__secondary-nav-bottom: none;
-$border__secondary-nav-dropdown: 1px solid #808080;
 
 $color__secondary-nav-link: royalblue;
 $color__secondary-nav-link-hover: midnightblue;
 $color__secondary-nav-link-current: purple;
 
-/* Primary Navigation */
 
-$color__background-main-nav: #fff;
-$color__background-main-nav-dropdown: #fff;
-$color__background-main-nav-hover: #808080;
-$color__background-main-nav-current: #f6f6f6;
+/* Header */
 
-$border__main-nav-top: 1px solid #808080;
-$border__main-nav-bottom: 1px solid #808080;
-$border__main-nav-dropdown: 1px solid #808080;
-
-$color__main-nav-link: royalblue;
-$color__main-nav-link-hover: midnightblue;
-$color__main-nav-link-current: purple;
-
-/* Sections */
-
+$border__header: none;
 $color__background-header: transparent;
-$color__background-page-header: #f6f6f6;
-$color__background-primary: #fff;
-$color__background-secondary-column: #f6f6f6;
-$color__background-secondary: $color__background-secondary-column; // Equal to secondary-column unless transparent.
-$color__background-tertiary: #f6f6f6;
-$color__background-footer: #fff;
 
-$border__primary: none;
-$border__secondary-column: none;
-$border__secondary: none;
-$border__secondary-title-bottom: 1px solid #808080;
-$border__tertiary-top: 1px solid #808080;
-$border__tertiary-title-bottom: 1px solid #808080;
-$border__footer-top: 1px solid #808080;
+$border__branding: none;
+$color__background-branding: transparent;
 
 $color__site-title-link: royalblue;
 $color__site-title-link-hover: midnightblue;
+
+
+/* Main Navigation */
+
+$border__primary-nav: 1px solid #808080, none;
+$color__background-primary-nav: #fff;
+
+$border__primary-nav-dropdown: 1px solid #808080;
+$color__background-primary-nav-dropdown: #fff;
+
+$color__background-primary-nav-hover: #808080;
+$color__background-primary-nav-current: #f6f6f6;
+
+$color__primary-nav-link: royalblue;
+$color__primary-nav-link-hover: midnightblue;
+$color__primary-nav-link-current: purple;
+
+
+/* Primary */
+
+$color__background-page-header: #f6f6f6;
+
+$border__primary: none;
+$color__background-primary: #fff;
+
+$color__title: royalblue;
 $color__title-link: royalblue;
 $color__title-link-hover: midnightblue;
-$color__tertiary-text: #404040;
-$color__footer-text: #404040;
+$color__text-meta: #808080;
 
 
-/* Elements & Forms */
+/* Elements */
 
 $color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-code: #eee;
-$color__background-mark: #fff9c0;
-$color__background-table-th: transparent;
-$color__background-table-tr: #eee;
-$color__background-button: #e6e6e6;
-
-$border__blockquote-left: 5px solid #eee;
-$border__table: 1px solid #808080;
 
 $color__border-abbr: #666;
+$color__background-mark: #fff9c0;
+
+$border__blockquote-left: 5px solid #eee;
+
+$color__background-code: #eee;
+$color__background-pre: #eee;
+
+$border__table: 1px solid #808080;
+$color__background-table-th: transparent;
+$color__background-table-tr: #eee;
+
+$color__caption: #404040;
+
+
+/* Forms */
+
+$color__border-input: #ccc;
+
+$color__text-input: #666;
+$color__text-input-focus: #111;
+
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
+$color__background-button: #e6e6e6;
 
-$color__text-meta: #808080;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__text-screen: #21759b;
 
 /* Comments */
 
+$border__comment: none;
+$color__background-comment: transparent;
+
+$color__text-form-allowed-tags: #808080;
+
 $color__background-comment-even: #f6f6f6;
 $color__background-comment-odd: #fff;
-$color__background-bypostauthor: transparent;
 
 $border__bypostauthor-top: 5px solid #eee;
+$color__background-bypostauthor: transparent;
 
 $color__text-bypostauthor: inherit;
-$color__text-form-allowed-tags: #808080;
+
+
+/* Secondary */
+
+$border__secondary-column: none;
+$color__background-secondary-column: #f6f6f6;
+
+$border__secondary: none;
+$color__background-secondary: $color__background-secondary-column; // Equal to secondary-column unless transparent.
+
+$border__secondary-title-bottom: 1px solid #808080;
+$color__secondary-text: #404040;
+
+
+/* Tertiary */
+
+$border__tertiary: 1px solid #808080, none, none;
+$color__background-tertiary: #f6f6f6;
+
+$border__tertiary-title-bottom: 1px solid #808080;
+$color__tertiary-text: #404040;
+
+
+/* Footer */
+
+$border__footer: 1px solid #808080, none, none;
+$color__background-footer: #fff;
+
+$color__footer-text: #404040;

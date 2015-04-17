@@ -1,5 +1,7 @@
 .comments-area {
 	@include rem(padding, $spacing__article);
+    @include border($border__comment);
+	background-color: $color__background-comment;
 	text-align: justify;
 	@include font-size($font__size-comments);
 	
