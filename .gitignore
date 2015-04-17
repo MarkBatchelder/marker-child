@@ -1,4 +1,6 @@
 .sass-cache
+koala-config.json
+prepros.cfg
 *.css
 *.css.map
 *.png
