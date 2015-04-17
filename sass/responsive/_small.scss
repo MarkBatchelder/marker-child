@@ -1,9 +1,6 @@
-@media (max-width: 700px) and (orientation: landscape) {
-}
-
 @media (max-width: 500px) {
     
-    .secondary-navigation {
+    .top-navigation { // Secondary Navigation
         display: none;
     }
     
@@ -11,15 +8,9 @@
         @include rem(padding, 2rem);
     }
     
-    .main-navigation {
-        @include rem(padding, 0 2rem);
-        
-        a {
-            @include rem(padding, 0.5rem 1rem);
-        }
-    }
+    // Primary Navigation is in Small Navigation.
     
-    #primary {
+    #primary { // Content
         float: left;
         margin: 0;
     }
@@ -31,6 +22,10 @@
     
     .hentry {
         @include rem(padding, 1rem);
+        
+        p {
+            word-wrap: break-word;
+        }
     }
     
     .comment-navigation,
@@ -42,7 +37,7 @@
         }
     }
     
-    #secondary {
+    #secondary { // Sidebar Widget Area
         float: left;
         width: 100%;
         @include rem(padding, 1rem);
@@ -53,7 +48,7 @@
         }
     }
     
-    #tertiary {
+    #tertiary { // Footer Widget Area
         flex-direction: column;
         @include rem(padding, 1rem);
         
