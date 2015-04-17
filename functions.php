@@ -102,6 +102,7 @@ function marker_widgets_init() {
 		'name'          => __( 'Sidebar Widget Area', 'marker' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
+        'class'         => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<span class="widget-title">',
@@ -109,13 +110,14 @@ function marker_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-        'name'			=> __( 'Footer Widget Area', 'marker' ),
-        'id'			=> 'sidebar-2',
+        'name'          => __( 'Footer Widget Area', 'marker' ),
+        'id'            => 'sidebar-2',
 		'description'   => '',
-        'before_widget'	=> '<aside id="%1$s" class="widget %2$s">',
-        'after_widget'	=> '</aside>',
-        'before_title'	=> '<span class="widget-title">',
-        'after_title'	=> '</span>',
+        'class'         => '',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<span class="widget-title">',
+        'after_title'   => '</span>',
     ) );
 }
 add_action( 'widgets_init', 'marker_widgets_init' );
