@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name:		Marker Child
 Theme URI:		https://github.com/WPAddiction/marker
 Author:			Web First Designs
@@ -37,7 +37,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 6.0 Alignments
 7.0 Clearings
 8.0 Layout
-9.0 Body (Background)
+9.0 Site Backgroud & Borders
 10.0 Navigation
 	10.1 Top Navigation
 	10.2 Primary Navigation
@@ -60,11 +60,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	18.1 Captions
 	18.2 Galleries
 19.0 Mobile Responsive
+    19.1 Medium Screen
+    19.2 Small Screen
+    19.3 Small Screen Navigation
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 @import "mixins/mixins-rem";
-// @import "mixins/mixins-border";
+@import "mixins/mixins-border";
 
 /*--------------------------------------------------------------
 1.0 Normalize
@@ -145,9 +148,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 // @import "layout/content";
 
 /*--------------------------------------------------------------
-9.0 Body (Background)
+9.0 Site Background & Borders
 --------------------------------------------------------------*/
-@import "body/body";
+@import "site/site";
 
 /*--------------------------------------------------------------
 10.0 Navigation
@@ -243,4 +246,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 19.0 Mobile Responsive
 --------------------------------------------------------------*/
-@import "body/responsive";
+
+	/* 19.1 Medium Screen
+	----------------------------------------------------------*/
+	@import "responsive/medium";
+
+	/* 19.2 Small Screen
+	----------------------------------------------------------*/
+	@import "responsive/small";
+
+	/* 19.3 Small Screen Navigation
+	----------------------------------------------------------*/
+	@import "responsive/small-navigation";
