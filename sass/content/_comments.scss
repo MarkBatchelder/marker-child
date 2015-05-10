@@ -6,6 +6,7 @@
 	@include font-size($font__size-comments);
 	
 	h2.comments-title {
+        @include rem(margin-bottom, $spacing__comment);
 		margin-left: -1px; /* Fixes larger font alignment with smaller fonts */
 		@include font-size($font__size-comments-title);
 		line-height: $font__line-height-comments-title;
@@ -16,7 +17,7 @@
 		list-style: none;
 	
 		ol.children {
-			@include rem(margin, $spacing__comment (-$spacing__comment) $spacing__comment $spacing__element-left);
+			@include rem(margin, $spacing__comment (-$spacing__comment) $spacing__comment $spacing__comment);
 			list-style: none;
 		}
 		
@@ -74,14 +75,19 @@
 	@include rem(margin-top, $spacing__element-bottom);
 	
 	h3 {
+        @include rem(margin-bottom, $spacing__comment);
 		margin-left: -1px; /* Fixes larger font alignment with smaller fonts */
 		@include font-size($font__size-comments-title);
 		line-height: $font__line-height-comments-title;
 	}
 	
 	p {
-		@include rem(margin-bottom, $spacing__comment);
+		@include rem(margin, 0 0 $spacing__comment);
 	}
+    
+    p.comment-notes {
+        font-style: italic;
+    }
 	
 	p.form-submit {
 		margin-bottom: 0;
@@ -89,8 +95,12 @@
 	
 	label {
 		display: inline-block;
-		width: 70px;
+		width: $width__comment-label;
 	}
+    
+    .required {
+        color: #F00;
+    }
 	
 	.form-allowed-tags,
 	.form-allowed-tags code {
