@@ -1,3 +1,15 @@
+/* Defaults */
+
+$back-color: #f6f6f6;
+$border-color: #808080;
+
+$text-color1: #404040;
+$text-color2: #808080;
+
+$main-color1: #3498db;
+$main-color2: #9b59b6;
+
+
 /* Body */
 
 $color__background: #eee;
@@ -6,10 +18,13 @@ $box-shadow__body: 0 0 10px rgba(0, 0, 0, 0.2);
 $border__body: none;
 $color__background-body: #fff;
 
-$color__text-body: #404040;
-$color__link: royalblue;
-$color__link-hover: midnightblue;
-$color__link-visited: purple;
+$color__text-body: $text-color1;
+$color__link: $main-color1;
+$color__link-hover: $main-color2;
+$color__link-visited: $main-color1;
+
+$color__text-selection: $text-color1;
+$color__background-selection: $main-color1;
 
 $color__text-screen: #21759b;
 
@@ -18,16 +33,15 @@ $color__text-screen: #21759b;
 
 $border__secondary-nav: none;
 $color__background-secondary-nav: #fff;
+$color__background-secondary-nav-hover: $back-color;
+$color__background-secondary-nav-current: #fff;
 
-$border__secondary-nav-dropdown: 1px solid #808080;
+$color__secondary-nav-link: $main-color1;
+$color__secondary-nav-link-hover: $main-color1;
+$color__secondary-nav-link-current: $main-color1;
+
+$border__secondary-nav-dropdown: 1px solid $back-color;
 $color__background-secondary-nav-dropdown: #fff;
-
-$color__background-secondary-nav-hover: #808080;
-$color__background-secondary-nav-current: #f6f6f6;
-
-$color__secondary-nav-link: royalblue;
-$color__secondary-nav-link-hover: midnightblue;
-$color__secondary-nav-link-current: purple;
 
 
 /* Header */
@@ -38,69 +52,88 @@ $color__background-header: transparent;
 $border__branding: none;
 $color__background-branding: transparent;
 
-$color__site-title-link: royalblue;
-$color__site-title-link-hover: midnightblue;
+$color__site-title-link: $main-color1;
+$color__site-title-link-hover: $main-color1;
 
 
 /* Main Navigation */
 
-$border__primary-nav: 1px solid #808080, none;
+$border__primary-nav: 1px solid $border-color, none;
 $color__background-primary-nav: #fff;
+$color__background-primary-nav-hover: $main-color1;
+$color__background-primary-nav-current: $main-color2;
 
-$border__primary-nav-dropdown: 1px solid #808080;
+$color__primary-nav-link: $main-color1;
+$color__primary-nav-link-hover: #fff;
+$color__primary-nav-link-current: $main-color1;
+
+$border__primary-nav-dropdown: 1px solid $border-color;
 $color__background-primary-nav-dropdown: #fff;
 
-$color__background-primary-nav-hover: #808080;
-$color__background-primary-nav-current: #f6f6f6;
-
-$color__primary-nav-link: royalblue;
-$color__primary-nav-link-hover: midnightblue;
-$color__primary-nav-link-current: purple;
-
-
-/* Primary */
-
-$color__background-page-header: #f6f6f6;
+/* Content Area */
 
 $border__primary: none;
-$color__background-primary: #fff;
+$color__background-primary: $back-color;
 
-$color__title: royalblue;
-$color__title-link: royalblue;
-$color__title-link-hover: midnightblue;
-$color__text-meta: #808080;
+
+/* Sidebar Column */
+
+$border__secondary-column: none; // Used as 2nd border in $border__main and the 4th border in $border__secondary.
+$margin__secondary-column: 0; // Equal to $border__secondary-column border width to overlap borders.
+$color__background-secondary-column: $color__background-primary; // Equal to $color__background-primary.
+
+
+/* Site Main */
+
+$border__main: none, $border__secondary-column, none, none; // 2nd border also used for Secondary Column.
+$color__background-main: #fff;
+
+$color__background-page-header: $back-color;
+
+$color__title: $main-color1;
+$color__title-link: $main-color1;
+$color__title-link-hover: $main-color2;
+$color__text-meta: $text-color2;
 
 
 /* Elements */
 
-$color__background-hr: #ccc;
+$color__background-hr: $border-color;
 
-$color__border-abbr: #666;
-$color__background-mark: #fff9c0;
+$color__border-abbr: $border-color;
+$color__background-mark: $main-color2;
 
-$border__blockquote-left: 5px solid #eee;
+$border__blockquote-left: 5px solid $border-color;
 
-$color__background-code: #eee;
-$color__background-pre: #eee;
+$color__background-code: $back-color;
+$color__background-pre: $back-color;
 
-$border__table: 1px solid #808080;
+$border__table: 1px solid $border-color;
 $color__background-table-th: transparent;
-$color__background-table-tr: #eee;
+$color__background-table-tr: $back-color;
 
-$color__caption: #404040;
+$color__caption: $text-color2;
 
 
 /* Forms */
 
-$color__border-input: #ccc;
+$border__input: 1px solid $border-color;
+$color__border-input-focus: $main-color1;
 
-$color__text-input: #666;
-$color__text-input-focus: #111;
+$color__text-input: $text-color2;
+$color__text-input-focus: $text-color1;
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__background-button: #e6e6e6;
+$border__button: 1px solid $border-color;
+$color__border-button-hover: $border-color;
+$color__border-button-focus: $border-color;
+
+$color__background-button: $main-color1;
+$color__background-button-hover: $main-color2;
+$color__background-button-focus: $main-color1;
+
+$color__text-button: $back-color;
+$color__text-button-hover: $back-color;
+$color__text-button-focus: $back-color;
 
 
 /* Comments */
@@ -108,41 +141,38 @@ $color__background-button: #e6e6e6;
 $border__comment: none;
 $color__background-comment: transparent;
 
-$color__text-form-allowed-tags: #808080;
+$color__text-form-allowed-tags: $text-color2;
 
-$color__background-comment-even: #f6f6f6;
+$color__background-comment-even: $back-color;
 $color__background-comment-odd: #fff;
 
-$border__bypostauthor-top: 5px solid #eee;
+$border__bypostauthor-top: 5px solid $border-color;
 $color__background-bypostauthor: transparent;
 
 $color__text-bypostauthor: inherit;
 
 
-/* Secondary */
+/* Sidebar Widget Area */
 
-$border__secondary-column: none;
-$color__background-secondary-column: #f6f6f6;
+$border__secondary: none, none, none, $border__secondary-column; // 4th border also used for Secondary Column.
+$color__background-secondary: $color__background-secondary-column; // Equal to $color__background-secondary-column when using Secondary Column.
 
-$border__secondary: none;
-$color__background-secondary: $color__background-secondary-column; // Equal to secondary-column unless transparent.
-
-$border__secondary-title-bottom: 1px solid #808080;
-$color__secondary-text: #404040;
+$border__secondary-title-bottom: 1px solid $border-color;
+$color__secondary-text: $text-color1;
 
 
-/* Tertiary */
+/* Footer Widget Area */
 
-$border__tertiary: 1px solid #808080, none, none;
-$color__background-tertiary: #f6f6f6;
+$border__tertiary: 1px solid $border-color, none, none;
+$color__background-tertiary: $back-color;
 
-$border__tertiary-title-bottom: 1px solid #808080;
-$color__tertiary-text: #404040;
+$border__tertiary-title-bottom: 1px solid $border-color;
+$color__tertiary-text: $text-color1;
 
 
 /* Footer */
 
-$border__footer: 1px solid #808080, none, none;
+$border__footer: 1px solid $border-color, none, none;
 $color__background-footer: #fff;
 
-$color__footer-text: #404040;
+$color__footer-text: $text-color1;

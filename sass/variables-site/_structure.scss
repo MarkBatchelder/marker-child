@@ -1,51 +1,108 @@
+/* Defaults */
+
+$default-height: 4rem;
+$default-width: 4rem;
+
+
+/* body */
+
 $size__site: 1080px;
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
 
-$default__height: 4rem;
-$default__width: 4rem;
+
+/* Top Navigation */
 
 $spacing__secondary-nav-width: 1rem;
 $spacing__secondary-nav-link-height: 5px;
 $spacing__secondary-nav-link-width: 1rem; // $spacing__secondary-nav-width + $spacing__secondary-nav-link-width = $spacing__secondary
-$top__secondary-nav-dropdown: 34px;
+
+$top__secondary-nav-dropdown: 28px;
 $margin-top__secondary-nav-border-fix: 0;
+
 $width__secondary-nav-dropdown: 150px;
 $spacing__secondary-nav-dropdown: 2.5px $spacing__secondary-nav-link-width;
 
-$spacing__header: ($default__height / 2) $default__width $default__height;
 
-$spacing__main-nav-width: 2rem;
-$spacing__main-nav-link-height: 10px;
-$spacing__main-nav-link-width: 2rem; // $spacing__main-nav-width + $spacing__main-nav-link-width = $default__width
-$top__main-nav-dropdown: 53px;
-$margin-top__main-nav-border-fix: -1px;
-$width__main-nav-dropdown: 200px;
-$spacing__main-nav-dropdown: 5px $spacing__main-nav-link-width;
+/* Header */
 
-$spacing__main-height: ($default__height / 2);
-$spacing__main-width: ($default__width / 2);
+$spacing__branding: ($default-height / 2) $default-width $default-height;
+
+
+/* Main Navigation */
+
+$spacing__primary-nav-width: 2rem;
+$spacing__primary-nav-link-height: 10px;
+$spacing__primary-nav-link-width: 2rem; // $spacing__primary-nav-width + $spacing__primary-nav-link-width = $default-width
+
+$top__primary-nav-dropdown: 41px;
+$margin-top__primary-nav-border-fix: -1px;
+
+$width__primary-nav-dropdown: 200px;
+$spacing__primary-nav-dropdown: 5px $spacing__primary-nav-link-width;
+
+
+/* Content Area */
+
+$margin__primary: 0;
+$padding__primary: 0;
+
+
+/* Site Main */
+
+$spacing__main-height: ($default-height / 2);
+$spacing__main-width: ($default-width / 2);
 
 $margin__page-header: (-$spacing__main-height) (-$spacing__main-width) $spacing__main-height;
 $padding__page-header: $spacing__main-height $spacing__main-width;
 
-$spacing__article: ($default__width / 2);
+$spacing__article: ($default-width / 2);
+
 $spacing__post-image: 0 auto 1rem;
+
+
+/* Elements */
+
 $spacing__element-bottom: 2rem;
 $spacing__element-left: 2rem;
+
 $spacing__list-left: ($spacing__element-left / 2);
+
 $spacing__post-nav: $spacing__main-height $spacing__main-width $spacing__element-bottom;
+
+
+/* Comments */
+
 $spacing__comment: ($spacing__element-left / 2);
 
-$margin-bottom__sidebar-title: 0.5rem;
-$spacing__sidebar-list: ($spacing__element-left / 2);
+$width__comment-label: 70px;
+
+
+/* Widgets */
+
+$margin-bottom__widget-title: 0.5rem;
+
+$spacing__widget-list-left: ($spacing__element-left / 2);
+
+
+/* Sidebar Widget Area */
+
 $spacing__secondary: 1rem;
+
 $margin__secondary-widget: 0;
 $padding__secondary-widget: 1rem;
+
+
+/* Footer Widget Area */
+
 $spacing__tertiary: 1rem;
+
 $margin__tertiary-widget: 1rem;
 $padding__tertiary-widget: 2rem;
-$width__teriary-widget: 300px;
+$width__teriary-widget: 640px;
+
+
+/* Footer */
 
 $spacing__footer-height: 1rem;
 $spacing__footer-width: ($spacing__tertiary + $margin__tertiary-widget + $padding__tertiary-widget);
