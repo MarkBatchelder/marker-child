@@ -1,9 +1,15 @@
+.content-area { // #primary
+	@include rem(margin, $margin__primary);
+	@include rem(padding, $padding__primary);
+	@include border($border__primary);
+	background-color: $color__background-primary; // Also Sidebar Column background.
+}
+
 .site-main { // #main
 	@include rem(padding, $spacing__main-height $spacing__main-width);
-	border-right: $border__secondary-column;
-	@include border($border__primary);
+	@include border($border__main);
 	background-color: $color__background-body;
-	background-color: $color__background-primary;
+	background-color: $color__background-main;
 }
 
 .page-header {
