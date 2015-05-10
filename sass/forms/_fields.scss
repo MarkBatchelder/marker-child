@@ -4,12 +4,14 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: $color__text-input;
-	border: 1px solid $color__border-input;
+    outline: none;
+	@include border($border__input);
 	border-radius: 3px;
+	color: $color__text-input;
 
 	&:focus {
-		color: $color__text-input-focus;
+        border-color: $color__border-input-focus;
+        color: $color__text-input-focus;
 	}
 }
 
