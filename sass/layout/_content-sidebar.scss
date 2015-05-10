@@ -45,3 +45,21 @@
 	overflow: hidden;
 	width: 100%
 }
+
+
+/* Medium Screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { // min-width 641px and max-width 1024px
+    
+    #primary { // Content
+        margin: 0 -33% 0 0;
+    }
+
+    #main {
+        margin: 0 33% 0 0;
+    }
+
+    #secondary { // Sidebar Widget Area
+        width: 33%;
+    }
+}

@@ -1,4 +1,122 @@
-/*
-@media (max-width: 700px) and (orientation: landscape) {
+/* Medium Screens */
+
+@media only screen and (max-width: 64em) { // min-width 641px and max-width 1024px
+    
+    /* Top Navigation */
+
+    .top-navigation {
+        @include rem(padding, 0 0.5rem);
+
+        ul {
+
+            ul {
+                top: 23px;
+
+                a {
+                    width: 150px;
+                    @include rem(padding, 1.75px 0.5rem);
+                }
+            }
+        }
+
+        a {
+            @include rem(padding, 2.5px 0.5rem);
+        }
+    }
+
+
+    /* Header */
+
+    .site-branding {
+        @include rem(padding, 2rem 4rem 4rem);
+    }
+
+
+    /* Main Navigation */
+
+    .main-navigation {
+        @include rem(padding, 0 1rem);
+
+        ul {
+
+            ul {
+                top: 31px;
+
+                a {
+                    width: 200px;
+                    @include rem(padding, 2.5px 1rem);
+                }
+            }
+        }
+
+        a {
+            @include rem(padding, 5px 1rem);
+        }
+    }
+
+
+    /* Site Main */
+
+    .site-main { // #main
+        @include rem(padding, 1rem 1rem);
+    }
+
+    .page-header {
+        @include rem(margin, -1rem -1rem 1rem);
+        @include rem(padding, 1rem 1rem);
+    }
+
+    .hentry {
+        @include rem(padding, 1rem);
+    }
+
+
+    /* Comments */
+
+    .comments-area {
+        @include rem(padding, 1rem);
+
+        ol.comment-list {
+
+            ol.children {
+                @include rem(margin, 0.5rem -0.5rem 0.5rem 0.5rem);
+                list-style: none;
+            }
+
+            li.comment {
+                @include rem(padding, 0.5rem);
+            }
+        }
+    }
+    
+    
+    /* Sidebar Widget Area */
+    
+    .sidebar-widget-area { // #secondary
+        @include rem(padding, 0.5rem);
+
+        .widget {
+            @include rem(margin, 0);
+            @include rem(padding, 0.5rem);
+        }
+    }
+    
+    
+    /* Footer Widget Area */
+    
+    .footer-widget-area { // #tertiary
+        @include rem(padding, 1rem);
+
+        .widget {
+            @include rem(margin, 0.5rem);
+            @include rem(padding, 1rem);
+        }
+    }
+    
+    
+    /* Footer */
+    
+    .site-footer .site-info {
+        @include rem(padding, 0.5rem 2.5rem);
+    }
 }
-*/
