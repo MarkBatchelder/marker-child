@@ -1,7 +1,7 @@
 .widget-title {
 	display: inline-block;
 	width: 100%;
-    @include rem(margin-bottom, $margin-bottom__sidebar-title);
+    @include rem(margin-bottom, $margin-bottom__widget-title);
 }
 
 .widget ul {
@@ -10,14 +10,14 @@
 	list-style: none;
 	
 	ul {
-		@include rem(padding-left, $spacing__sidebar-list);
+		@include rem(padding-left, $spacing__widget-list-left);
 		list-style-type: circle;
 	}
 }
 
 .widget ol {
 	margin: 0; // Reset
-    @include rem(padding, 0 0 0 $spacing__sidebar-list);
+    @include rem(padding, 0 0 0 $spacing__widget-list-left);
 	list-style-type: decimal;
 }
 
