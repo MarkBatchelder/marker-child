@@ -1,6 +1,8 @@
 <?php
 /**
- * Marker Child functions and definitions
+ * Marker Child functions and definitions.
+ *
+ * @link https://codex.wordpress.org/Functions_File_Explained
  *
  * @package Marker Child
  */
