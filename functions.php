@@ -1,6 +1,6 @@
 <?php
 /**
- * Makrer Child Functions and definitions.
+ * Marker Child functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -86,7 +86,7 @@ function marker_setup() {
 	) );
 	 */
 
-	// Setup the WordPress core custom background feature.
+	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'marker_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
