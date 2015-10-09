@@ -1,0 +1,3 @@
+[submodule "sass/mixins/sass-rem"]
+	path = sass/mixins/sass-rem
+	url = https://github.com/pierreburel/sass-rem.git
