@@ -1,6 +1,9 @@
-.sass-cache
-koala-config.json
+node_modules
+package.json
+gulpfile.js
 prepros.cfg
+koala-config.json
+.sass-cache
 *.css
 *.css.map
 *.png
