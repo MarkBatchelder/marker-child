@@ -41,6 +41,7 @@ $color__secondary-nav-link-hover: $main-color1;
 $color__secondary-nav-link-current: $main-color1;
 
 $border__secondary-nav-dropdown: 1px solid $back-color;
+$margin-top__secondary-nav-dropdown-border-fix: 0; // Used in structure.scss.
 $color__background-secondary-nav-dropdown: #fff;
 
 
@@ -68,6 +69,7 @@ $color__primary-nav-link-hover: #fff;
 $color__primary-nav-link-current: $main-color1;
 
 $border__primary-nav-dropdown: 1px solid $border-color;
+$margin-top__primary-nav-dropdown-border-fix: -1px; // Used in structure.scss.
 $color__background-primary-nav-dropdown: #fff;
 
 /* Content Area */
@@ -79,7 +81,7 @@ $color__background-primary: $back-color;
 /* Sidebar Column */
 
 $border__secondary-column: none; // Used as 2nd border in $border__main and the 4th border in $border__secondary.
-$margin__secondary-column: 0; // Equal to $border__secondary-column border width to overlap borders.
+$margin__secondary-column-border-fix: 0; // Equal to $border__secondary-column border width to overlap borders. Used in structure.scss.
 $color__background-secondary-column: $color__background-primary; // Equal to $color__background-primary.
 
 
@@ -125,15 +127,15 @@ $color__text-input-focus: $text-color1;
 
 $border__button: 1px solid $border-color;
 $color__border-button-hover: $border-color;
-$color__border-button-focus: $border-color;
+$color__border-button-active: $border-color;
 
 $color__background-button: $main-color1;
 $color__background-button-hover: $main-color2;
-$color__background-button-focus: $main-color1;
+$color__background-button-active: $main-color2;
 
 $color__text-button: $back-color;
 $color__text-button-hover: $back-color;
-$color__text-button-focus: $back-color;
+$color__text-button-active: $back-color;
 
 
 /* Comments */
@@ -146,7 +148,7 @@ $color__text-form-allowed-tags: $text-color2;
 $color__background-comment-even: $back-color;
 $color__background-comment-odd: #fff;
 
-$border__bypostauthor-top: 5px solid $border-color;
+$border__bypostauthor: 5px solid $border-color, none, none;
 $color__background-bypostauthor: transparent;
 
 $color__text-bypostauthor: inherit;

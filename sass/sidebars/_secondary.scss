@@ -3,9 +3,8 @@
 }
 
 .sidebar-widget-area { // #secondary
-    margin-right: $margin__secondary-column; // Secondary Column border fix. Variable defined in colors.
-    margin-left: (-$margin__secondary-column); // Secondary Column border fix. Variable defined in colors.
-	@include rem(padding, $spacing__secondary);
+    @include rem(margin, $margin__secondary-area);
+	@include rem(padding, $padding__secondary-area);
 	@include border($border__secondary);
 	background-color: $color__background-secondary;
 	color: $color__secondary-text;
@@ -24,10 +23,16 @@
 		border-bottom: $border__secondary-title-bottom;
 		font-family: $font__title-secondary;
 		@include font-size($font__size-title-secondary);
+        line-height: $font__line-height-secondary-title;
 		font-weight: bold;
+        text-align: left; // Calendar title fix.
 	}
 	
 	a {
 		text-decoration: none;
 	}
+    
+    p {
+        margin-bottom: 0;
+    }
 }
