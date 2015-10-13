@@ -1,5 +1,6 @@
 .comments-area {
-	@include rem(padding, $spacing__article);
+    @include rem(margin, $margin__comments);
+	@include rem(padding, $padding__comments);
     @include border($border__comment);
 	background-color: $color__background-comment;
 	text-align: justify;
@@ -7,13 +8,12 @@
 	
 	h2.comments-title {
         @include rem(margin-bottom, $spacing__comment);
-		margin-left: -1px; /* Fixes larger font alignment with smaller fonts */
 		@include font-size($font__size-comments-title);
 		line-height: $font__line-height-comments-title;
 	}
 
 	ol.comment-list {
-		margin: 0;
+		@include rem(margin, 0 0 $spacing__element-vertical);
 		list-style: none;
 	
 		ol.children {
@@ -46,7 +46,7 @@
 
 .bypostauthor { /* Comments by post author */
 	display: block;
-	border-top: $border__bypostauthor-top;
+	border: $border__bypostauthor;
 	background-color: $color__background-bypostauthor;
 	
 	.fn {
@@ -72,11 +72,9 @@
 }
 
 .comment-respond {
-	@include rem(margin-top, $spacing__element-bottom);
 	
 	h3 {
         @include rem(margin-bottom, $spacing__comment);
-		margin-left: -1px; /* Fixes larger font alignment with smaller fonts */
 		@include font-size($font__size-comments-title);
 		line-height: $font__line-height-comments-title;
 	}
@@ -92,6 +90,10 @@
 	p.form-submit {
 		margin-bottom: 0;
 	}
+    
+    p.comment-subscription-form {
+        @include rem(margin, $spacing__comment 0 0);
+    }
 	
 	label {
 		display: inline-block;
