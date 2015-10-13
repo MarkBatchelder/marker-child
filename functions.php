@@ -64,7 +64,7 @@ function marker_setup() {
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'top' => __( 'Top Menu', 'marker' ),
-		'primary' => __( 'Primary Menu', 'marker' ),
+		'main' => __( 'Main Menu', 'marker' ),
 	) );
 
 	/*
