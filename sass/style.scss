@@ -55,6 +55,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 15.0 Theme Specific
 16.0 Plugins
     16.1 Ninja Forms
+    16.2 Yet Another Related Posts Plugin
 17.0 Infinite scroll
 18.0 Media
 	18.1 Captions
@@ -66,8 +67,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
-@import "mixins/mixins-rem";
-@import "mixins/mixins-border";
+@import "mixins/rem";
+@import "mixins/border";
+@import "mixins/flexbox";
 
 /*--------------------------------------------------------------
 1.0 Normalize
@@ -224,6 +226,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	/* 16.1 Ninja Forms
 	----------------------------------------------------------*/
 	@import "plugins/ninja-forms";
+
+	/* 16.2 Yet Another Related Posts Plugin
+	----------------------------------------------------------*/
+	@import "plugins/yarpp";
 
 /*--------------------------------------------------------------
 17.0 Infinite scroll
