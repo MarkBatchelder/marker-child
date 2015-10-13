@@ -10,16 +10,16 @@ input[type="submit"] {
 	@include font-size($font__size-button);
 	line-height: $font__line-height-button;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		border-color: $color__border-button-hover;
         background: $color__background-button-hover;
         color: $color__text-button-hover;
 	}
 
-	&:active,
-	&:focus {
-		border-color: $color__border-button-focus;
-        background: $color__background-button-focus;
-        color: $color__text-button-focus;
+	&:active {
+		border-color: $color__border-button-active;
+        background: $color__background-button-active;
+        color: $color__text-button-active;
 	}
 }
