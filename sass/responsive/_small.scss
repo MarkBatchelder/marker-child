@@ -1,68 +1,113 @@
-@media (max-width: 500px) {
-    
-    .top-navigation { // Secondary Navigation
-        display: none;
-    }
-    
-    .site-branding {
-        @include rem(padding, 2rem);
-    }
-    
-    // Primary Navigation is in Small Navigation.
-    
-    #primary { // Content
-        float: left;
-        margin: 0;
-    }
-    
-    #main {
-        margin: 0;
+/* Small Screens */
+
+@media only screen and (max-width: 40em) { // max-width 640px, mobile-only styles
+
+
+/* Secondary Navigation */
+
+.secondary-navigation { // Secondary Navigation
+}
+
+
+/* Header */
+
+.site-branding {
+    @include rem(margin, 2rem);
+}
+
+
+/* Primary Navigation */
+
+.main-navigation { // Primary Navigation
+}
+
+
+/* Content */
+
+.content-area {
+    @include border(1px solid $border-color, none);
+
+    .site-main {
         @include rem(padding, 1rem);
-    }
-    
-    .hentry {
-        @include rem(padding, 1rem);
-        
-        p {
-            word-wrap: break-word;
+
+        .hentry {
+            @include rem(padding, 1rem);
+
+            p {
+                word-wrap: break-word;
+            }
         }
     }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
     
-    .comment-navigation,
-    .posts-navigation,
-    .post-navigation {
-        
-        .site-main & {
-		@include rem(margin, 2rem 1rem);
+    .site-main & {
+	@include rem(margin, 1rem);
+    }
+}
+
+
+/* Comments */
+
+.comments-area {
+    @include rem(padding, 1rem);
+
+    ol.comment-list {
+
+        ol.children {
+            @include rem(margin, 0.5rem -0.5rem 0.5rem 0.5rem);
+        }
+
+        li.comment {
+            @include rem(padding, 0.5rem);
         }
     }
+}
+
+
+/* Secondary */
+
+.sidebar-widget-area { // #secondary
+    @include rem(padding, 1rem);
     
-    #secondary { // Sidebar Widget Area
-        float: left;
+    .widget {
+        @include rem(margin, 0);
+        @include rem(padding, 1rem);
+    }
+}
+
+
+/* Tertiary */
+
+.footer-widget-area { // #tertiary
+    @include flex-direction(column);
+    @include rem(margin, 0);
+    @include rem(padding, 1rem);
+    
+    .widget {
         width: 100%;
+        @include rem(margin, 0);
         @include rem(padding, 1rem);
-        
-        .widget {
-            @include rem(margin, 0);
-            @include rem(padding, 1rem);
-        }
     }
+}
+
+
+/* Footer */
+
+.site-footer {
     
-    #tertiary { // Footer Widget Area
-        flex-direction: column;
-        @include rem(padding, 1rem);
-        
-        .widget {
-            @include rem(margin, 0);
-            @include rem(padding, 1rem);
-        }
-    }
-    
-    .site-footer .site-info {
+    .site-info {
         @include rem(padding, 1rem 2rem);
-	
+
+        .copyright,
         .theme-info {
             float: left;
+            width: 100%;
         }
     }
+}
+
 }
