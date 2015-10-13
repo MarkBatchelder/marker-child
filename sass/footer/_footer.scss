@@ -1,20 +1,24 @@
-.site-footer .site-info {
-    @include rem(padding, $spacing__footer-height $spacing__footer-width);
-	@include border($border__footer);
-	background-color: $color__background-footer;
-	color: $color__footer-text;
-	font-family: $font__footer;
-	@include font-size($font__size-footer);
-	
-	.copyright {
-		float: left;
-	}
-	
-	.theme-info {
-		float: right;
-	}
-	
-	a {
-		text-decoration: none;
-	}
+.site-footer {
+    
+    .site-info {
+        @include rem(margin, $margin__footer);
+        @include rem(padding, $padding__footer-vertical $padding__footer-horizontal);
+        @include border($border__footer);
+        background-color: $color__background-footer;
+        color: $color__footer-text;
+        font-family: $font__footer;
+        @include font-size($font__size-footer);
+
+        .copyright {
+            float: left;
+        }
+
+        .theme-info {
+            float: right;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
 }
