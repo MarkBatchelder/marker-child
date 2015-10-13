@@ -4,7 +4,8 @@
 
 	.site-main & {
 		overflow: hidden;
-		@include rem(margin, $spacing__post-nav);
+		@include rem(margin, $margin__post-nav);
+        @include rem(padding, $padding__post-nav);
         font-weight: bold;
 	}
 
@@ -22,7 +23,7 @@
 
 .page-links {
 	clear: both;
-	@include rem(margin-bottom, $spacing__element-bottom);
+	@include rem(margin-bottom, $spacing__element-vertical);
 	font-weight: bold;
 	
 	a {

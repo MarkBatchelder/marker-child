@@ -1,5 +1,6 @@
-.top-navigation {
-	@include rem(padding, 0 $spacing__secondary-nav-width);
+.secondary-navigation {
+    @include rem(margin, $margin__secondary-nav);
+	@include rem(padding, $padding__secondary-nav);
     @include border($border__secondary-nav);
 	background-color: $color__background-secondary-nav;
 
@@ -13,12 +14,12 @@
 			background-color: $color__background-secondary-nav-dropdown;
 
 			ul {
-				margin-top: $margin-top__secondary-nav-border-fix; // Aligns top border
+				margin-top: $margin-top__secondary-nav-dropdown; // Aligns top border
             }
 
 			a {
 				width: $width__secondary-nav-dropdown;
-				@include rem(padding, $spacing__secondary-nav-dropdown);
+				@include rem(padding, $padding__secondary-nav-dropdown);
 			}
 
 			:hover > a {
@@ -38,7 +39,7 @@
 	}
 	
 	a {
-		@include rem(padding, $spacing__secondary-nav-link-height $spacing__secondary-nav-link-width);
+		@include rem(padding, $padding__secondary-nav-link-vertical $padding__secondary-nav-link-horizontal);
 		font-family: $font__secondary-nav;
 		@include font-size($font__size-secondary-nav);
 		font-weight: normal;

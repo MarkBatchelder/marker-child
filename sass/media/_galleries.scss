@@ -1,5 +1,5 @@
 .gallery {
-	@include rem(margin-bottom, $spacing__element-bottom);
+	@include rem(margin-bottom, $spacing__element-vertical);
 }
 
 .gallery-item {

@@ -6,7 +6,8 @@
 }
 
 .site-main { // #main
-	@include rem(padding, $spacing__main-height $spacing__main-width);
+    @include rem(margin, $margin__main);
+	@include rem(padding, $padding__main);
 	@include border($border__main);
 	background-color: $color__background-body;
 	background-color: $color__background-main;
@@ -31,20 +32,21 @@
 }
 
 .hentry {
-	@include rem(padding, $spacing__article);
+    @include rem(margin, $margin__article);
+	@include rem(padding, $padding__article);
 }
 
 img.wp-post-image {
 	display: block;
-	@include rem(margin, $spacing__post-image);
+	@include rem(margin, $margin__post-image);
+    @include rem(padding, $padding__post-image);
 }
 
 .entry-header {
-	@include rem(margin-bottom, $spacing__element-bottom);
+	@include rem(margin-bottom, $spacing__element-vertical);
 }
 
 h1.entry-title {
-	margin-left: -2px; // Fixes larger font alignment with smaller fonts
     color: $color__title;
 	
 	a,
@@ -67,7 +69,7 @@ h1.entry-title {
 	color: $color__text-meta;
 	
 	.edit-link {
-		@include rem(margin-left, $spacing__element-left);
+		@include rem(margin-left, $spacing__element-horizontal);
 	}
     
 	a:visited {
@@ -99,11 +101,11 @@ h1.entry-title {
 	h4,
 	h5,
 	h6 {
-		@include rem(padding, $spacing__element-bottom 0);
+		@include rem(padding, $spacing__element-vertical 0);
 	}
 	
 	p {
-		@include rem(margin, 0 0 $spacing__element-bottom);
+		@include rem(margin, 0 0 $spacing__element-vertical);
 	}
     
     .more-link {
@@ -118,7 +120,7 @@ h1.entry-title {
 	
 	span {
 		display: inline-block;
-		@include rem(margin-right, $spacing__element-left);
+		@include rem(margin-right, $spacing__element-horizontal);
 	}
 	
 	.edit-link {

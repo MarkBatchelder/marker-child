@@ -9,7 +9,7 @@ q {
 }
 
 blockquote {
-	@include rem(margin, 0 $spacing__element-left);
+	@include rem(margin, 0 $spacing__element-horizontal);
 	padding-left: 0.3em; // normal letter spacing
 	border-left: $border__blockquote-left;
 	font-style: italic;

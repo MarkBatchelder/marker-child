@@ -1,5 +1,6 @@
 .main-navigation {
-	@include rem(padding, 0 $spacing__primary-nav-width);
+    @include rem(margin, $margin__primary-nav);
+	@include rem(padding, $padding__primary-nav);
 	@include border($border__primary-nav);
 	background-color: $color__background-primary-nav;
 
@@ -12,12 +13,12 @@
 			background-color: $color__background-primary-nav-dropdown;
 
 			ul {
-				margin-top: $margin-top__primary-nav-border-fix; // Aligns top border
+				margin-top: $margin-top__primary-nav-dropdown; // Aligns top border
             }
 
 			a {
 				width: $width__primary-nav-dropdown;
-				@include rem(padding, $spacing__primary-nav-dropdown);
+				@include rem(padding, $padding__primary-nav-dropdown);
 			}
 
 			:hover > a {
@@ -37,7 +38,7 @@
 	}
 	
 	a {
-		@include rem(padding, $spacing__primary-nav-link-height $spacing__primary-nav-link-width);
+		@include rem(padding, $padding__primary-nav-link-vertical $padding__primary-nav-link-horizontal);
 		font-family: $font__primary-nav;
 		@include font-size($font__size-primary-nav);
 		font-weight: bold;

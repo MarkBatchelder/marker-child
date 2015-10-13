@@ -13,33 +13,36 @@ $size__site-sidebar: 25%;
 
 /* Top Navigation */
 
-$spacing__secondary-nav-width: 1rem;
-$spacing__secondary-nav-link-height: 5px;
-$spacing__secondary-nav-link-width: 1rem; // $spacing__secondary-nav-width + $spacing__secondary-nav-link-width = $spacing__secondary
+$margin__secondary-nav: 0;
+$padding__secondary-nav: 0 1rem;
+$padding__secondary-nav-link-vertical: 5px;
+$padding__secondary-nav-link-horizontal: 1rem; // $padding__secondary-nav + $padding__secondary-nav-link-horizontal = spacing__secondary-area
 
 $top__secondary-nav-dropdown: 28px;
-$margin-top__secondary-nav-border-fix: 0;
+$margin-top__secondary-nav-dropdown: $margin-top__secondary-nav-dropdown-border-fix; // Variable defined in colors.scss.
 
 $width__secondary-nav-dropdown: 150px;
-$spacing__secondary-nav-dropdown: 2.5px $spacing__secondary-nav-link-width;
+$padding__secondary-nav-dropdown: 2.5px $padding__secondary-nav-link-horizontal; // Verticle is half of $padding__secondary-nav-link-vertical.
 
 
 /* Header */
 
-$spacing__branding: ($default-height / 2) $default-width $default-height;
+$margin__branding: $default-height $default-width;
+$padding--branding: 0;
 
 
 /* Main Navigation */
 
-$spacing__primary-nav-width: 2rem;
-$spacing__primary-nav-link-height: 10px;
-$spacing__primary-nav-link-width: 2rem; // $spacing__primary-nav-width + $spacing__primary-nav-link-width = $default-width
+$margin__primary-nav: 0;
+$padding__primary-nav: 0 2rem;
+$padding__primary-nav-link-vertical: 10px;
+$padding__primary-nav-link-horizontal: 2rem; // $padding__primary-nav + $padding__primary-nav-link-horizontal = spacing__main + spacing__article
 
 $top__primary-nav-dropdown: 41px;
-$margin-top__primary-nav-border-fix: -1px;
+$margin-top__primary-nav-dropdown: $margin-top__primary-nav-dropdown-border-fix; // Variable defined in colors.scss.
 
 $width__primary-nav-dropdown: 200px;
-$spacing__primary-nav-dropdown: 5px $spacing__primary-nav-link-width;
+$padding__primary-nav-dropdown: 5px $padding__primary-nav-link-horizontal; // Verticle is half of $padding__primary-nav-link-vertical.
 
 
 /* Content Area */
@@ -50,30 +53,36 @@ $padding__primary: 0;
 
 /* Site Main */
 
-$spacing__main-height: ($default-height / 2);
-$spacing__main-width: ($default-width / 2);
+$margin__main: 0;
+$padding__main: ($default-height / 2) ($default-width / 2);
 
-$margin__page-header: (-$spacing__main-height) (-$spacing__main-width) $spacing__main-height;
-$padding__page-header: $spacing__main-height $spacing__main-width;
+$margin__page-header: (-$default-height / 2) (-default-width / 2) ($default-height / 2); // $padding__main: -# -# #;
+$padding__page-header: ($default-height / 2) ($default-width / 2); // Equal to $padding__main.
 
-$spacing__article: ($default-width / 2);
+$margin__article: 0;
+$padding__article: ($default-height / 2) ($default-width / 2); // Also used for $padding__comments.
 
-$spacing__post-image: 0 auto 1rem;
+$margin__post-image: 0 auto 1rem;
+$padding__post-image: 0;
+
+$margin__post-nav: ($default-height / 2) ($default-width / 2); // Equal to $padding__article.
+$padding__post-nav: 0;
 
 
 /* Elements */
 
-$spacing__element-bottom: 2rem;
-$spacing__element-left: 2rem;
+$spacing__element-vertical: 2rem; // Variable reused later.
+$spacing__element-horizontal: 2rem; // Variable reused later.
 
-$spacing__list-left: ($spacing__element-left / 2);
-
-$spacing__post-nav: $spacing__main-height $spacing__main-width $spacing__element-bottom;
+$spacing__list-left: ($spacing__element-horizontal / 2);
 
 
 /* Comments */
 
-$spacing__comment: ($spacing__element-left / 2);
+$margin__comments: 0;
+$padding__comments: $padding__article;
+
+$spacing__comment: ($spacing__element-horizontal / 2);
 
 $width__comment-label: 70px;
 
@@ -82,12 +91,13 @@ $width__comment-label: 70px;
 
 $margin-bottom__widget-title: 0.5rem;
 
-$spacing__widget-list-left: ($spacing__element-left / 2);
+$spacing__widget-list-left: ($spacing__element-horizontal / 2);
 
 
 /* Sidebar Widget Area */
 
-$spacing__secondary: 1rem;
+$margin__secondary-area: 0 $margin__secondary-column-border-fix 0 (-$margin__secondary-column-border-fix); // Variable defined in colors.scss.
+$padding__secondary-area: 3rem 1rem;
 
 $margin__secondary-widget: 0;
 $padding__secondary-widget: 1rem;
@@ -95,14 +105,16 @@ $padding__secondary-widget: 1rem;
 
 /* Footer Widget Area */
 
-$spacing__tertiary: 1rem;
+$margin__tertiary-area: 0;
+$padding__tertiary-area: 2rem;
 
 $margin__tertiary-widget: 1rem;
-$padding__tertiary-widget: 2rem;
-$width__teriary-widget: 640px;
+$padding__tertiary-widget: 1rem;
+$width__teriary-widget: 274px; // Backwards compatibility.
 
 
 /* Footer */
 
-$spacing__footer-height: 1rem;
-$spacing__footer-width: ($spacing__tertiary + $margin__tertiary-widget + $padding__tertiary-widget);
+$margin__footer: 0;
+$padding__footer-vertical: 1rem;
+$padding__footer-horizontal: ($margin__tertiary-area + $padding__tertiary-area + $margin__tertiary-widget + $padding__tertiary-widget);

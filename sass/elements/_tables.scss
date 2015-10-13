@@ -1,6 +1,6 @@
 table {
 	width: 100%;
-	@include rem(margin, 0 0 $spacing__element-bottom);
+	@include rem(margin, 0 0 $spacing__element-vertical);
 	border-collapse: collapse;
 }
 

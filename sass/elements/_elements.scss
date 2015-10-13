@@ -14,7 +14,7 @@ body {
 
 hr {
 	height: 1px;
-	@include rem(margin, 0 $spacing__element-left $spacing__element-bottom);
+	@include rem(margin, 0 $spacing__element-horizontal $spacing__element-vertical);
 	border: 0;
 	background-color: $color__background-hr;
 }
@@ -25,5 +25,5 @@ img {
 }
 
 figure {
-	@include rem(margin, 0 0 $spacing__element-bottom);
+	@include rem(margin, 0 0 $spacing__element-vertical);
 }
