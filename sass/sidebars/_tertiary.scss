@@ -1,9 +1,12 @@
+.footer-sidebar {
+	@include border($border__tertiary);
+}
+
 .footer-widget-area { // #tertiary
     @include flexbox;
     @include justify-content(space-around);
 	@include rem(margin, $margin__tertiary-area);
 	@include rem(padding, $padding__tertiary-area);
-	@include border($border__tertiary);
 	background-color: $color__background-tertiary;
 	color: $color__tertiary-text;
 	font-family: $font__tertiary;
