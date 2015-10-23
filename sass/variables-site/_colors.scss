@@ -61,16 +61,17 @@ $color__site-title-link-hover: $main-color1;
 
 $border__primary-nav: 1px solid $border-color, none;
 $color__background-primary-nav: #fff;
-$color__background-primary-nav-hover: $main-color1;
-$color__background-primary-nav-current: $main-color2;
+$color__background-primary-nav-hover: $main-color2;
+$color__background-primary-nav-current: $main-color1;
 
 $color__primary-nav-link: $main-color1;
 $color__primary-nav-link-hover: #fff;
-$color__primary-nav-link-current: $main-color1;
+$color__primary-nav-link-current: #fff;
 
 $border__primary-nav-dropdown: 1px solid $border-color;
 $margin-top__primary-nav-dropdown-border-fix: -1px; // Used in structure.scss.
 $color__background-primary-nav-dropdown: #fff;
+
 
 /* Content Area */
 
