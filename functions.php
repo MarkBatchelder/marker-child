@@ -63,8 +63,8 @@ function marker_setup() {
 	
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'top' => __( 'Top Menu', 'marker' ),
-		'main' => __( 'Main Menu', 'marker' ),
+		'top' => esc_html__( 'Top Menu', 'marker' ),
+		'main' => esc_html__( 'Main Menu', 'marker' ),
 	) );
 
 	/*
@@ -99,7 +99,7 @@ add_action( 'after_setup_theme', 'marker_setup' );
  */
 function marker_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar Widget Area', 'marker' ),
+		'name'          => esc_html__( 'Sidebar Widget Area', 'marker' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
         'class'         => '',
@@ -110,7 +110,7 @@ function marker_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-        'name'          => __( 'Footer Widget Area', 'marker' ),
+        'name'          => esc_html__( 'Footer Widget Area', 'marker' ),
         'id'            => 'sidebar-2',
 		'description'   => '',
         'class'         => '',
