@@ -27,7 +27,6 @@ if ( ! function_exists( 'marker_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function marker_setup() {
-
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -65,14 +64,23 @@ function marker_setup() {
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(
-		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
+		'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
 	) );
 
 	/*
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
+     *
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
+		'aside',
+        'image',
+        'video',
+        'quote',
+        'link',
 	) );
 	 */
 
