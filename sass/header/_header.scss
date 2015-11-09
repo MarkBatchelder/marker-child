@@ -10,7 +10,7 @@
 	background-color: $color__background-branding;
 }
 
-h1.site-title {
+.site-title {
     @include rem(margin, 0); // Line height fix
 	font-family: $font__site-title;
 	@include font-size($font__size-site-title);
@@ -30,7 +30,7 @@ h1.site-title {
 	}
 }
 
-h2.site-description {
+.site-description {
     @include rem(margin, 0); // Line height fix
 	font-family: $font__site-description;
 	@include font-size($font__size-site-description);
