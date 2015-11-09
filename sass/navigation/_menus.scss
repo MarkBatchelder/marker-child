@@ -18,8 +18,7 @@
 			}
 
 			li {
-				&:hover > ul,
-				&.focus > ul {
+                &:hover > ul {
 					left: 100%;
 				}
 			}
@@ -27,17 +26,14 @@
 			a {
 			}
 
-			:hover > a,
-			.focus > a {
+            :hover > a {
 			}
 
-			a:hover,
-			a.focus {
+            a:hover {
 			}
 		}
 
-		li:hover > ul,
-		li.focus > ul {
+        li:hover > ul {
 			left: auto;
 		}
 	}
@@ -46,8 +42,7 @@
 		position: relative;
 		float: left;
 
-		&:hover > a,
-		&.focus > a {
+        &:hover > a {
 		}
 	}
 	
