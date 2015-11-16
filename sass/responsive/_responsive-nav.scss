@@ -5,20 +5,41 @@
 
 @media only screen and (max-width: 40em) { // max-width 640px, mobile-only styles
 
-    .nav-collapse ul {
-        margin: 0;
+    .main-navigation {
         padding: 0;
-        width: 100%;
-        display: block;
-        list-style: none;
+        border-bottom: none;
+    
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: block;
+            list-style: none;
+
+            ul {
+                float: none;
+                width: 50%;
+                top: 0;
+                margin-left: 50%;
+                
+                a {
+                    width: 100%;
+                }
+            }
+        }
+
+        li {
+            float: none;
+            width: 100%;
+            display: block;
+        }
+        
+        a {
+             @include rem(padding, 10px 2rem);
+        }
     }
 
-    .nav-collapse li {
-        width: 100%;
-        display: block;
-    }
-
-    .js .nav-collapse {
+    .js .main-navigation {
         clip: rect(0 0 0 0);
         max-height: 0;
         position: absolute;
@@ -27,11 +48,14 @@
         zoom: 1;
     }
 
-    .nav-collapse.opened {
+    .main-navigation.opened {
         max-height: 9999px;
     }
 
     .nav-toggle {
+        position: absolute;
+        @include rem(top, 2rem);
+        @include rem(right, 2rem);
         -webkit-tap-highlight-color: rgba(0,0,0,0);
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -47,11 +71,11 @@
 
 @media screen and (min-width: 40em) {
     
-    .js .nav-collapse {
+    .js .main-navigation {
         position: relative;
     }
     
-    .js .nav-collapse.closed {
+    .js .main-navigation.closed {
         max-height: none;
     }
     
