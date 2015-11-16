@@ -1,0 +1,16 @@
+/* Small Screens */
+
+.menu-toggle {
+    display: none;
+}
+.main-navigation ul {
+    display: block;
+}
+
+@media only screen and (max-width: 40em) { // max-width 640px, mobile-only styles
+
+    .menu-toggle,
+    .main-navigation.toggled ul {
+        display: block;
+    }
+}
