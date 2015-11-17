@@ -8,7 +8,6 @@
     
     .main-navigation {
         height: 0;
-        margin-top: 34px;
         padding: 0;
         
         ul {
@@ -17,20 +16,22 @@
     }
     
     .menu-toggle {
+        z-index: 1;
         display: block;
         position: relative;
-        top: -34px;
-        @include rem(left, 2rem);
+        top: -17px;
+        left: 100%;
+        @include rem(margin-left, -5rem);
         @include rem(padding, 0.5rem 1rem);
-        @include border($border__button, $border__button, none);
-        border-radius: 3px 3px 0 0 / 3px 3px 0 0;
+        @include border($border__button);
+        border-radius: 3px;
     }
     .main-navigation.toggled {
         height: 100%;
         
         ul {
             display: block;
-            margin-top: -33px; // .main-navigation margin-top - .main-navigation border-top
+            margin-top: -34px; // .main-navigation margin-top - .main-navigation border-top
             
             ul {
                 width: 50%;
