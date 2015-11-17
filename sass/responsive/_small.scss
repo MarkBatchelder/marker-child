@@ -82,15 +82,18 @@
 
 /* Tertiary */
 
-.footer-widget-area { // #tertiary
-    @include flex-direction(column);
-    @include rem(margin, 0);
-    @include rem(padding, 1rem);
+.footer-sidebar {
     
-    .widget {
-        width: 100%;
+    .footer-widget-area { // #tertiary
+        @include flex-direction(column);
         @include rem(margin, 0);
         @include rem(padding, 1rem);
+
+        .widget {
+            width: 100%;
+            @include rem(margin, 0);
+            @include rem(padding, 1rem);
+        }
     }
 }
 

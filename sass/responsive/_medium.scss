@@ -115,18 +115,21 @@
     
     
 /* Tertiary */
-    
-.footer-widget-area { // #tertiary
-    @include rem(margin, 0);
-    @include rem(padding, 1rem);
 
-    .widget {
-        @include rem(margin, 0.5rem);
-        @include rem(padding, 0.5rem);
+.footer-sidebar {
+    
+    .footer-widget-area { // #tertiary
+        @include rem(margin, 0);
+        @include rem(padding, 1rem);
+
+        .widget {
+            @include rem(margin, 0.5rem);
+            @include rem(padding, 0.5rem);
+        }
     }
 }
-    
-    
+
+
 /* Footer */
 
 .site-footer {
