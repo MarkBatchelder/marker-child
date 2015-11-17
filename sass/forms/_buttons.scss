@@ -15,6 +15,7 @@ input[type="submit"] {
 		border-color: $color__border-button-hover;
         background: $color__background-button-hover;
         color: $color__text-button-hover;
+        outline: none;
 	}
 
 	&:active {
