@@ -25,7 +25,7 @@
 /* Content */
 
 .content-area {
-    @include border(1px solid $border-color, none);
+    @include border(none, none, 1px solid $border-color);
 
     .site-main {
         @include rem(padding, 1rem);
