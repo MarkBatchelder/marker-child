@@ -47,7 +47,7 @@
         width: $size__site-sidebar;
     }
 
-    #content-footer { // .footer-sidebar
+    #tertiary-container { // .footer-sidebar
         clear: both;
         width: 100%;
 
@@ -63,7 +63,7 @@
 
     #credits {
         overflow: hidden;
-        width: 100%
+        width: 100%;
     }
 }
 
@@ -116,6 +116,10 @@
         #secondary { // .sidebar-widget-area
             float: left;
             width: 100%;
+        }
+
+        #tertiary-container {
+            display: none;
         }
     }
 }

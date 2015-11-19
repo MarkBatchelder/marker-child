@@ -47,7 +47,7 @@
         width: $size__site-sidebar;
     }
 
-    #content-footer { // .footer-sidebar
+    #tertiary-container { // .footer-sidebar
         clear: both;
         width: 100%;
 
@@ -118,7 +118,7 @@
             width: 100%;
         }
 
-        #content-footer {
+        #tertiary-container {
             display: none;
         }
     }
