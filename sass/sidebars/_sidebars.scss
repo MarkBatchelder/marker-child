@@ -1,7 +1,7 @@
 .widget-title {
 	display: inline-block;
 	width: 100%;
-    @include rem(margin-bottom, $margin-bottom__widget-title);
+    @include rem(margin, $margin__widget-title);
 }
 
 .widget ul {
