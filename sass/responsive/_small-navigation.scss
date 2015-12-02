@@ -5,13 +5,62 @@
 }
 
 @media only screen and (max-width: 40em) { // max-width 640px, mobile-only styles
-    
-    .main-navigation {
-        height: 0;
+
+    .main-navigation { // menu.scss reset
+        height: 0; // before toggle
         padding: 0;
-        
+
         ul {
-            display: none;
+            display: none; // before toggle
+
+            ul {
+                position: static;
+                float: none;
+                left: 0;
+
+                ul {
+                    left: 0;
+                }
+
+                li {
+                    &:hover > ul,
+                    &.focus > ul {
+                        left: 100%;
+                    }
+                }
+
+                a {
+                }
+
+                :hover > a,
+                .focus > a {
+                }
+
+                a:hover,
+                a.focus {
+                }
+            }
+
+            li:hover > ul,
+            li.focus > ul {
+                left: 0;
+            }
+        }
+
+        li {
+            position: relative;
+            float: none;
+
+            &:hover > a,
+            &.focus > a {
+            }
+        }
+
+        a {
+            display: block;
+
+            &:visited {
+            }
         }
     }
     
@@ -26,29 +75,62 @@
         @include border($border__button);
         border-radius: 3px;
     }
+    
     .main-navigation.toggled {
-        height: 100%;
+        height: 100%; // after toggle
         
         ul {
-            display: block;
+            display: block; // after toggle
             margin-top: -34px; // .main-navigation margin-top - .main-navigation border-top
             
             ul {
-                width: 50%;
-                margin-left: 50%;
+                width: 100%;
+                margin-top: 0;
+                border-right: none;
+                border-left: none;
                 
                 ul {
-                    display: none; // Only handles one submenu.
+                    border: none;
+                    
+                    ul {
+                        
+                        a {
+                            @include rem(padding-left, 4rem);
+                        }
+                    }
+                    
+                    a {
+                        @include rem(padding-left, 3rem);
+                    }
                 }
                 
                 a {
-                    width: 100%;
+                    @include rem(padding-left, 2rem);
                 }
             }
-        
+            
             li {
                 width: 100%;
             }
+        
+            a {
+                width: 100%;
+                @include rem(padding-left, 1rem);
+            }
+        }
+    
+        li > ul { // before submenu
+            visibility: hidden;
+            opacity: 0;
+            height: 0;
+            transition: height 50ms, opacity 250ms ease-in;
+        }
+        
+        li:hover > ul,
+        li.focus > ul { // active submenu
+            visibility: visible;
+            opacity: 1;
+            height: 100%;
         }
     }
 }
