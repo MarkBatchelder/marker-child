@@ -118,8 +118,8 @@ function marker_widgets_init() {
 		'id'            => 'sidebar-1',
 		'description'   => '',
         'class'         => '',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
@@ -129,8 +129,8 @@ function marker_widgets_init() {
         'id'            => 'sidebar-2',
 		'description'   => '',
         'class'         => '',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );
