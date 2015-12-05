@@ -3,8 +3,8 @@
 }
 
 .footer-widget-area { // #tertiary
-    @include flexbox;
-    @include justify-content(space-around);
+    display: flex;
+    justify-content: space-around;
 	@include rem(margin, $margin__tertiary-area);
 	@include rem(padding, $padding__tertiary-area);
 	background-color: $color__background-tertiary;
@@ -15,7 +15,7 @@
 	.widget {
         float: left; // Backwards compatibility.
 		overflow: hidden;
-        @include flex-grow(1);
+        flex-grow: 1;
         width: $width__teriary-widget;
 		@include rem(margin, $margin__tertiary-widget);
 		@include rem(padding, $padding__tertiary-widget);

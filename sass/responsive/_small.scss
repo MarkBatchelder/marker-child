@@ -85,7 +85,7 @@
     .footer-sidebar {
 
         .footer-widget-area { // #tertiary
-            @include flex-direction(column);
+            flex-direction: column;
             @include rem(margin, 0);
             @include rem(padding, 1rem);
 

@@ -3,12 +3,12 @@
 }
 
 .yarpp-thumbnails-horizontal {
-    @include flexbox;
-    @include justify-content(space-around);
+    display: flex;
+    justify-content: space-around;
     margin: 0 -10px;
     
     .yarpp-thumbnail {
-        @include flex-grow(1);
+        flex-grow: 1;
         width: 100% !important;
         height: 100% !important;
         margin: 0 10px !important;
@@ -38,10 +38,10 @@
 @media only screen and (max-width: 40em) { // max-width 640px, mobile-only styles
     
     .yarpp-thumbnails-horizontal {
-        @include flex-wrap(wrap);
+        flex-wrap: wrap;
     
         .yarpp-thumbnail {
-            @include flex-grow(0);
+            flex-grow: 0;
             width: 100px !important;
         }
     }
