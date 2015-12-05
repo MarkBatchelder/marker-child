@@ -1079,13 +1079,11 @@ table#wp-calendar {
 /* line 5, F:/xampp/htdocs/wordpress/wp-content/themes/marker-child/sass/sidebars/tertiary */
 .footer-widget-area {
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   margin: 0;
   margin: 0;
   padding: 32px;
@@ -1099,11 +1097,9 @@ table#wp-calendar {
   .footer-widget-area .widget {
     float: left;
     overflow: hidden;
-    -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
-    -moz-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 306px;
     margin: 16px;
     margin: 1rem;
@@ -1488,21 +1484,17 @@ h1.entry-title {
 /* line 5, F:/xampp/htdocs/wordpress/wp-content/themes/marker-child/sass/plugins/yarpp */
 .yarpp-thumbnails-horizontal {
   display: -webkit-flex;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   margin: 0 -10px; }
   /* line 10, F:/xampp/htdocs/wordpress/wp-content/themes/marker-child/sass/plugins/yarpp */
   .yarpp-thumbnails-horizontal .yarpp-thumbnail {
-    -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
-    -moz-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 100% !important;
     height: 100% !important;
     margin: 0 10px !important;
@@ -1527,15 +1519,13 @@ h1.entry-title {
   /* line 40, F:/xampp/htdocs/wordpress/wp-content/themes/marker-child/sass/plugins/yarpp */
   .yarpp-thumbnails-horizontal {
     -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
     /* line 43, F:/xampp/htdocs/wordpress/wp-content/themes/marker-child/sass/plugins/yarpp */
     .yarpp-thumbnails-horizontal .yarpp-thumbnail {
-      -webkit-box-flex: 0;
       -webkit-flex-grow: 0;
-      -moz-flex-grow: 0;
-      -ms-flex-positive: 0;
-      flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
       width: 100px !important; }
  }
 
@@ -1819,9 +1809,8 @@ embed, iframe, object {
   /* line 87, F:/xampp/htdocs/wordpress/wp-content/themes/marker-child/sass/responsive/small */
   .footer-sidebar .footer-widget-area {
     -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     margin: 0;
     padding: 16px;
