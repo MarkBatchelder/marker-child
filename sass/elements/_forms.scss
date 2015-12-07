@@ -4,9 +4,9 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-    outline: none;
 	@include border($border__input);
 	border-radius: 3px;
+    outline: none;
 	color: $color__text-input;
 
 	&:focus {
