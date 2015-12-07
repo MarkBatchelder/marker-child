@@ -1,63 +1,66 @@
-.main-navigation,
-.secondary-navigation {
+@media only screen and (min-width: 40.063em) { // min-width 641px, medium screens
 
-	ul {
-		margin: 0;
-		padding-left: 0;
-		list-style: none;
+    .main-navigation,
+    .secondary-navigation {
 
-		ul {
-			z-index: 99999;
-			position: absolute;
-			float: left;
-			left: -999em;
+        ul {
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
 
-			ul {
-				top: 0;
-				left: -999em;
-			}
+            ul {
+                z-index: 99999;
+                position: absolute;
+                float: left;
+                left: -999em;
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
+                ul {
+                    top: 0;
+                    left: -999em;
+                }
 
-			a {
-			}
+                li {
+                    &:hover > ul,
+                    &.focus > ul {
+                        left: 100%;
+                    }
+                }
 
-			:hover > a,
-			.focus > a {
-			}
+                a {
+                }
 
-			a:hover,
-			a.focus {
-			}
-		}
+                :hover > a,
+                .focus > a {
+                }
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-	
-	li {
-		position: relative;
-		float: left;
+                a:hover,
+                a.focus {
+                }
+            }
 
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	
-	a {
-		display: block;
-	}
+            li:hover > ul,
+            li.focus > ul {
+                left: auto;
+            }
+        }
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
+        li {
+            position: relative;
+            float: left;
+
+            &:hover > a,
+            &.focus > a {
+            }
+        }
+
+        a {
+            display: block;
+        }
+
+        .current_page_item > a,
+        .current-menu-item > a,
+        .current_page_ancestor > a,
+        .current-menu-ancestor > a {
+        }
+    }
 }

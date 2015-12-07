@@ -1,66 +1,27 @@
-/* Small Screens */
-
 .menu-toggle {
     display: none;
 }
 
 @media only screen and (max-width: 40em) { // max-width 640px, mobile-only styles
 
-    .main-navigation { // menu.scss reset
+    .main-navigation {
         height: 0; // before toggle
-        padding: 0;
+        margin: 0; // reset
+        padding: 0; // reset
 
         ul {
             display: none; // before toggle
+            margin: 0; // reset
+            padding: 0; // reset
+            list-style: none;
 
             ul {
-                position: static;
-                float: none;
-                left: 0;
-
-                ul {
-                    left: 0;
-                }
-
-                li {
-                    &:hover > ul,
-                    &.focus > ul {
-                        left: 100%;
-                    }
-                }
-
-                a {
-                }
-
-                :hover > a,
-                .focus > a {
-                }
-
-                a:hover,
-                a.focus {
-                }
-            }
-
-            li:hover > ul,
-            li.focus > ul {
-                left: 0;
-            }
-        }
-
-        li {
-            position: relative;
-            float: none;
-
-            &:hover > a,
-            &.focus > a {
+                z-index: 99999;
             }
         }
 
         a {
             display: block;
-
-            &:visited {
-            }
         }
     }
     
