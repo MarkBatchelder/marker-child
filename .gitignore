@@ -4,6 +4,6 @@ gulpfile.js
 prepros.cfg
 koala-config.json
 .sass-cache
-*.css
-*.css.map
+style.css
+style.css.map
 *.png
