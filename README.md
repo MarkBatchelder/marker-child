@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/WPAddiction/marker-child.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+[![Build Status](https://travis-ci.org/WPAddiction/marker-child.svg?branch=master)](https://travis-ci.org/WPAddiction/marker-child)
 
 _s
 ===
