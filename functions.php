@@ -92,7 +92,7 @@ function marker_setup() {
 		'default-image' => '',
 	) ) );
 }
-endif; // marker_setup
+endif;
 add_action( 'after_setup_theme', 'marker_setup' );
 
 /**
