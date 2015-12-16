@@ -7,7 +7,7 @@
  * @package Marker Child
  */
 
- /**
+/**
  * This enqueues the parent and child theme stylesheets.
  * http://codex.wordpress.org/Child_Themes
  */
@@ -92,7 +92,7 @@ function marker_setup() {
 		'default-image'	=> '',
 	) ) );
 }
-endif; // marker_setup
+endif;
 add_action( 'after_setup_theme', 'marker_setup' );
 
 /**
