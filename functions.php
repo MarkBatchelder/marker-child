@@ -7,17 +7,17 @@
  * @package Marker Child
  */
 
- /**
+/**
  * This enqueues the parent and child theme stylesheets.
  * http://codex.wordpress.org/Child_Themes
  */
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array('parent-style')
-    );
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'child-style',
+		get_stylesheet_directory_uri() . '/style.css',
+		array('parent-style')
+	);
 }
 
 if ( ! function_exists( 'marker_setup' ) ) :
@@ -54,7 +54,7 @@ function marker_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	
+
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'top' => esc_html__( 'Top Navigation', 'marker' ),
@@ -67,29 +67,29 @@ function marker_setup() {
 	 */
 	add_theme_support( 'html5', array(
 		'search-form',
-        'comment-form',
-        'comment-list',
-        'gallery',
-        'caption',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'caption',
 	) );
 
 	/*
 	 * Enable support for Post Formats.
 	 * See https://developer.wordpress.org/themes/functionality/post-formats/
-     *
+	 *
 	add_theme_support( 'post-formats', array(
 		'aside',
-        'image',
-        'video',
-        'quote',
-        'link',
+		'image',
+		'video',
+		'quote',
+		'link',
 	) );
 	 */
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'marker_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
+		'default-color'	=> 'ffffff',
+		'default-image'	=> '',
 	) ) );
 }
 endif;
@@ -114,25 +114,25 @@ add_action( 'after_setup_theme', 'marker_content_width', 0 );
  */
 function marker_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Widget Area', 'marker' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-        'class'         => '',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'name'		=> esc_html__( 'Sidebar Widget Area', 'marker' ),
+		'id'		=> 'sidebar-1',
+		'description'	=> '',
+		'class'		=> '',
+		'before_widget'	=> '<section id="%1$s" class="widget %2$s">',
+		'after_widget'	=> '</section>',
+		'before_title'	=> '<h2 class="widget-title">',
+		'after_title'	=> '</h2>',
 	) );
-	
+
 	register_sidebar( array(
-        'name'          => esc_html__( 'Footer Widget Area', 'marker' ),
-        'id'            => 'sidebar-2',
-		'description'   => '',
-        'class'         => '',
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
+		'name'		=> esc_html__( 'Footer Widget Area', 'marker' ),
+		'id'		=> 'sidebar-2',
+		'description'	=> '',
+		'class'		=> '',
+		'before_widget'	=> '<section id="%1$s" class="widget %2$s">',
+		'after_widget'	=> '</section>',
+		'before_title'	=> '<h2 class="widget-title">',
+		'after_title'	=> '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'marker_widgets_init' );
