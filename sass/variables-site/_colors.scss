@@ -117,15 +117,6 @@ $color__background-table-tr: $back-color;
 
 $color__caption: $text-color2;
 
-
-/* Forms */
-
-$border__input: 1px solid $border-color;
-$color__border-input-focus: $main-color1;
-
-$color__text-input: $text-color2;
-$color__text-input-focus: $text-color1;
-
 $border__button: 1px solid $border-color;
 $color__border-button-hover: $border-color;
 $color__border-button-active: $border-color;
@@ -137,6 +128,12 @@ $color__background-button-active: $main-color2;
 $color__text-button: $back-color;
 $color__text-button-hover: $back-color;
 $color__text-button-active: $back-color;
+
+$border__input: 1px solid $border-color;
+$color__border-input-focus: $main-color1;
+
+$color__text-input: $text-color2;
+$color__text-input-focus: $text-color1;
 
 
 /* Comments */

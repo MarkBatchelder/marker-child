@@ -68,11 +68,11 @@ $font__line-height-pre: 1.6;
 
 $font__size-caption: 0.875;
 
+$font__size-button: 0.9375;
+$font__line-height-button: 1;
 
-/* Forms */
-
-$font__size-button: 0.875;
-$font__line-height-button: 1.2;
+$font__size-input: $font__size-button;
+$font__line-height-input: $font__line-height-button;
 
 
 /* Comments */

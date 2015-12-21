@@ -2,7 +2,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	padding: .6em 1.2em;
+	padding: $padding__button;
 	@include border($border__button);
 	border-radius: 3px;
 	background: $color__background-button;
