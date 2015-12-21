@@ -2,15 +2,15 @@
     @include rem(margin, $margin__primary-nav);
 	@include rem(padding, $padding__primary-nav);
 	@include border($border__primary-nav);
-	background-color: $color__background-primary-nav;
+	background: $color__background-primary-nav;
 
 	ul {
 
 		ul {
 			top: $top__primary-nav-dropdown;
 			@include border($border__primary-nav-dropdown);
-			background-color: $color__background-primary-nav;
-			background-color: $color__background-primary-nav-dropdown;
+			background: $color__background-primary-nav;
+			background: $color__background-primary-nav-dropdown;
 
 			ul {
 				margin-top: $margin-top__primary-nav-dropdown; // Aligns top border
@@ -32,7 +32,7 @@
 	li {
 
 		&:hover > a {
-			background-color: $color__background-primary-nav-hover;
+			background: $color__background-primary-nav-hover;
 			color: $color__primary-nav-link-hover;
 		}
 	}
@@ -53,7 +53,7 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-			background-color: $color__background-primary-nav-current;
+			background: $color__background-primary-nav-current;
 			color: $color__primary-nav-link-current;
 	}
 }

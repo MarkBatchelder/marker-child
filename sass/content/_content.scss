@@ -2,14 +2,14 @@
 	@include rem(margin, $margin__primary);
 	@include rem(padding, $padding__primary);
 	@include border($border__primary);
-	background-color: $color__background-primary; // Also Sidebar Column background.
+	background: $color__background-primary; // Also Sidebar Column background.
 }
 
 .site-main { // #main
     @include rem(margin, $margin__main);
 	@include rem(padding, $padding__main);
 	@include border($border__main);
-	background-color: $color__background-main;
+	background: $color__background-main;
 }
 
 .page-header {

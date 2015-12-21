@@ -7,7 +7,7 @@
     justify-content: space-around;
 	@include rem(margin, $margin__tertiary-area);
 	@include rem(padding, $padding__tertiary-area);
-	background-color: $color__background-tertiary;
+	background: $color__background-tertiary;
 	color: $color__tertiary-text;
 	font-family: $font__tertiary;
 	@include font-size($font__size-tertiary);

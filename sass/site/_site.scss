@@ -9,5 +9,5 @@
 .site { // #page
 	box-shadow: $box-shadow__body;
 	@include border($border__body);
-	background-color: $color__background-page;
+	background: $color__background-page;
 }
