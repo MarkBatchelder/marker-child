@@ -7,8 +7,12 @@ $default-width: 4rem;
 /* body */
 
 $size__site: 1080px;
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
+
+$size__site-header: 100%;
+$size__site-content: 100%;
+    $size__site-secondary: 25%;  // Sidebar
+    $size__site-tertiary: 100%;
+$size__site-footer: 100%;
 
 
 /* Top Navigation */
