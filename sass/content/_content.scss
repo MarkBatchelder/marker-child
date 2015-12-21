@@ -9,7 +9,6 @@
     @include rem(margin, $margin__main);
 	@include rem(padding, $padding__main);
 	@include border($border__main);
-	background-color: $color__background-body;
 	background-color: $color__background-main;
 }
 
