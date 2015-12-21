@@ -22,10 +22,10 @@ th {
 .hentry {
 
 	th {
-		background-color: $color__background-table-th;
+		background: $color__background-table-th;
 	}
 	
 	tbody tr:nth-child(odd) {
-		background-color: $color__background-table-tr;
+		background: $color__background-table-tr;
 	}
 }

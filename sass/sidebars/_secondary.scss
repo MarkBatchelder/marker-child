@@ -1,12 +1,12 @@
 .content-area { // #primary
-	background-color: $color__background-secondary-column; // Equal to $color__background-primary.
+	background: $color__background-secondary-column; // Equal to $color__background-primary.
 }
 
 .sidebar-widget-area { // #secondary
     @include rem(margin, $margin__secondary-area);
 	@include rem(padding, $padding__secondary-area);
 	@include border($border__secondary);
-	background-color: $color__background-secondary;
+	background: $color__background-secondary;
 	color: $color__secondary-text;
 	font-family: $font__secondary;
 	@include font-size($font__size-secondary);

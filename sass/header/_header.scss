@@ -1,13 +1,13 @@
 .site-header { // #masthead
     @include border($border__header);
-	background-color: $color__background-header;
+	background: $color__background-header;
 }
 
 .site-branding {
 	@include rem(margin, $margin__branding);
     @include rem(padding, $padding__branding);
     @include border($border__branding);
-	background-color: $color__background-branding;
+	background: $color__background-branding;
 }
 
 .site-title {
