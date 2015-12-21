@@ -11,18 +11,19 @@
         clear: both;
         display: block;
         float: left;
-        width: 100%;
+        width: $size__site-top-nav;
     }
     
     #logo {
-	   clear: both;
+        clear: both;
+        width: $size__site-logo;
     }
     
     #primary-navigation { // .main-navigation
         clear: both;
         display: block;
         float: left;
-        width: 100%;
+        width: $size__site-main-nav;
     }
 }
 
