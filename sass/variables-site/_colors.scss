@@ -1,7 +1,7 @@
 /* Defaults */
 
-$back-color: #f6f6f6;
 $border-color: #808080;
+$back-color: #f6f6f6;
 
 $text-color1: #404040;
 $text-color2: #808080;
@@ -12,11 +12,11 @@ $main-color2: #9b59b6;
 
 /* Body */
 
-$color__background: #eee;
+$color__background-body: #eee;
 
 $box-shadow__body: 0 0 10px rgba(0, 0, 0, 0.2);
 $border__body: none;
-$color__background-body: #fff;
+$color__background-page: #fff;
 
 $color__text-body: $text-color1;
 $color__link: $main-color1;
@@ -27,6 +27,7 @@ $color__text-selection: $text-color1;
 $color__background-selection: $main-color1;
 
 $color__text-screen: #21759b;
+$color__background-screen: #f1f1f1;
 
 
 /* Top Navigation */
@@ -89,7 +90,7 @@ $color__background-secondary-column: $color__background-primary; // Equal to $co
 /* Site Main */
 
 $border__main: none, $border__secondary-column, none, none; // 2nd border also used for Secondary Column.
-$color__background-main: #fff;
+$color__background-main: $color__background-page; // Default is $color__background-page.
 
 $color__background-page-header: $back-color;
 
@@ -144,7 +145,7 @@ $color__background-comment: transparent;
 $color__text-form-allowed-tags: $text-color2;
 
 $color__background-comment-even: $back-color;
-$color__background-comment-odd: #fff;
+$color__background-comment-odd: transparent;
 
 $border__bypostauthor: 5px solid $border-color, none, none;
 $color__background-bypostauthor: transparent;
@@ -173,6 +174,6 @@ $color__tertiary-text: $text-color1;
 /* Footer */
 
 $border__footer: 1px solid $border-color, none, none;
-$color__background-footer: #fff;
+$color__background-footer: transparent;
 
 $color__footer-text: $text-color1;

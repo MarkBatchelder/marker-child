@@ -5,7 +5,7 @@
 
 #masthead { // Header
 	clear: both;
-	width: $size__site-main;
+	width: $size__site-header;
     
     #top-navigation { // .secondary-navigation
         clear: both;
@@ -28,7 +28,7 @@
 
 #content { // Content
 	clear: both;
-	width: $size__site-main;
+	width: $size__site-content;
 
     #primary { // .content-area
         width: 100%;
@@ -40,7 +40,7 @@
 
     #tertiary-container { // .footer-sidebar
         clear: both;
-        width: 100%;
+        width: $size__site-tertiary;
 
         #tertiary { // .footer-widget-area
             overflow: hidden;
@@ -50,7 +50,7 @@
 
 #colophon { // Footer
 	clear: both;
-	width: $size__site-main;
+	width: $size__site-footer;
 
     #credits {
         overflow: hidden;
