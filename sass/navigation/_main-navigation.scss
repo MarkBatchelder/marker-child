@@ -9,7 +9,6 @@
 		ul {
 			top: $top__primary-nav-dropdown;
 			@include border($border__primary-nav-dropdown);
-			background: $color__background-primary-nav;
 			background: $color__background-primary-nav-dropdown;
 
 			ul {
