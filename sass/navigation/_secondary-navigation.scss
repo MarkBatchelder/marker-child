@@ -10,7 +10,6 @@
 		ul {
 			top: $top__secondary-nav-dropdown;
 			@include border($border__secondary-nav-dropdown);
-			background: $color__background-secondary-nav;
 			background: $color__background-secondary-nav-dropdown;
 
 			ul {
