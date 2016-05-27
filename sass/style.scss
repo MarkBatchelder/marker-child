@@ -21,7 +21,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-0.0 Normalize
 1.0 Mixins
     1.1 REM to PX
     1.2 Border Shorthand
@@ -29,54 +28,54 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     2.1 Colors
     2.2 Typography
     2.3 Structure
-3.0 Typography
-	3.1 Headings
-	3.2 Copy
-	3.3 Links
-4.0 Elements
-	4.1 Lists
-	4.2 Tables
-	4.3 Blockquotes
-	4.4 Pre & Code
-	4.5 Buttons
-    4.6 Forms
+3.0 Normalize
+4.0 Typography
+	4.1 Headings
+	4.2 Copy
+	4.3 Links
 5.0 Modules
     5.1 Accessibility
     5.2 Alignments
     5.3 Clearings
     5.4 Infinite scroll
-6.0 Layouts
-7.0 Site Backgroud & Borders
-8.0 Header
-9.0 Navigation
-	9.1 Top Navigation
-	9.2 Primary Navigation
-10.0 Content
-	10.1 Asides
-	10.2 Single
-	10.3 Comments
-	10.4 404
-11.0 Sidebars
-	11.1 Widgets
-	11.2 Sidebar Widget Area
-	11.3 Footer Widget Area
-12.0 Footer
-13.0 Media
-	13.1 Captions
-	13.2 Galleries
-14.0 Plugins
-    14.1 Ninja Forms
-    14.2 Yet Another Related Posts Plugin
-    14.1 Medium Screen
-    14.2 Small Screen
-    14.3 Small Screen Navigation
-15.0 Custom Pages
-16.0 Mobile Responsive
-    16.1 Medium Screen
-    16.2 Small Screen
-    16.3 Small Screen Navigation
+6.0 Elements
+	6.1 Lists
+	6.2 Tables
+	6.3 Blockquotes
+	6.4 Pre & Code
+	6.5 Buttons
+    6.6 Forms
+7.0 Layouts
+8.0 Site Backgroud & Borders
+9.0 Header
+10.0 Navigation
+	10.1 Top Navigation
+	10.2 Primary Navigation
+11.0 Content
+	11.1 Asides
+	11.2 Single
+	11.3 Comments
+	11.4 404
+12.0 Sidebars
+	12.1 Widgets
+	12.2 Sidebar Widget Area
+	12.3 Footer Widget Area
+13.0 Footer
+14.0 Media
+	14.1 Captions
+	14.2 Galleries
+15.0 Plugins
+    15.1 Ninja Forms
+    15.2 Yet Another Related Posts Plugin
+    15.1 Medium Screen
+    15.2 Small Screen
+    15.3 Small Screen Navigation
+16.0 Pages
+17.0 Mobile Responsive
+    17.1 Medium Screen
+    17.2 Small Screen
+    17.3 Small Screen Navigation
 --------------------------------------------------------------*/
-@import "normalize";
 
 /*--------------------------------------------------------------
 1.0 Mixins
@@ -108,50 +107,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	@import "variables-site/structure";
 
 /*--------------------------------------------------------------
-3.0 Typography
+3.0 Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+4.0 Typography
 --------------------------------------------------------------*/
 @import "typography/typography";
 
-	/* 3.1 Headings
+	/* 4.1 Headings
 	----------------------------------------------------------*/
 	@import "typography/headings";
 
-	/* 3.2 Copy
+	/* 4.2 Copy
 	----------------------------------------------------------*/
 	@import "typography/copy";
 
-	/* 3.3 Links
+	/* 4.3 Links
 	----------------------------------------------------------*/
 	@import "typography/links";
-
-/*--------------------------------------------------------------
-4.0 Elements
---------------------------------------------------------------*/
-@import "elements/elements";
-
-	/* 4.1 Lists
-	----------------------------------------------------------*/
-	@import "elements/lists";
-
-	/* 4.2 Tables
-	----------------------------------------------------------*/
-	@import "elements/tables";
-
-	/* 4.3 Blockquotes
-	----------------------------------------------------------*/
-	@import "elements/blockquotes";
-	
-	/* 4.4 Pre & Code
-	----------------------------------------------------------*/
-	@import "elements/pre";
-
-	/* 4.5 Buttons
-	----------------------------------------------------------*/
-	@import "elements/buttons";
-
-	/* 4.6 Forms
-	----------------------------------------------------------*/
-	@import "elements/forms";
 
 /*--------------------------------------------------------------
 5.0 Modules
@@ -174,119 +149,148 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	@import "modules/infinite-scroll";
 
 /*--------------------------------------------------------------
-6.0 Layouts
+6.0 Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+	/* 6.1 Lists
+	----------------------------------------------------------*/
+	@import "elements/lists";
+
+	/* 6.2 Tables
+	----------------------------------------------------------*/
+	@import "elements/tables";
+
+	/* 6.3 Blockquotes
+	----------------------------------------------------------*/
+	@import "elements/blockquotes";
+	
+	/* 6.4 Pre & Code
+	----------------------------------------------------------*/
+	@import "elements/pre";
+
+	/* 6.5 Buttons
+	----------------------------------------------------------*/
+	@import "elements/buttons";
+
+	/* 6.6 Forms
+	----------------------------------------------------------*/
+	@import "elements/forms";
+
+/*--------------------------------------------------------------
+7.0 Layouts
 --------------------------------------------------------------*/
 @import "layout/content-sidebar";
 // @import "layout/sidebar-content";
 // @import "layout/content";
 
 /*--------------------------------------------------------------
-7.0 Site Background & Borders
+8.0 Site Background & Borders
 --------------------------------------------------------------*/
 @import "site/site";
 
 /*--------------------------------------------------------------
-8.0 Header
+9.0 Header
 --------------------------------------------------------------*/
 @import "header/header";
 
 /*--------------------------------------------------------------
-9.0 Navigation
+10.0 Navigation
 --------------------------------------------------------------*/
 @import "navigation/menus";
 
-	/* 9.1 Top Navigation
+	/* 10.1 Top Navigation
 	----------------------------------------------------------*/
 	@import "navigation/secondary-navigation";
 
-	/* 9.2 Primary Navigation
+	/* 10.2 Primary Navigation
 	----------------------------------------------------------*/
 	@import "navigation/main-navigation";
 
 /*--------------------------------------------------------------
-10.0 Content
+11.0 Content
 --------------------------------------------------------------*/
 @import "content/content";
 
-	/* 10.1 Asides
+	/* 11.1 Asides
 	----------------------------------------------------------*/
 	@import "content/asides";
 	
-	/* 10.2 Navigation
+	/* 11.2 Navigation
 	----------------------------------------------------------*/
 	@import "content/navigation";
 		
-	/* 10.3 Comments
+	/* 11.3 Comments
 	----------------------------------------------------------*/
 	@import "content/comments";
 		
-	/* 10.4 404
+	/* 11.4 404
 	----------------------------------------------------------*/
 	@import "content/404";
 	
 /*--------------------------------------------------------------
-11.0 Sidebars
+12.0 Sidebars
 --------------------------------------------------------------*/
 @import "sidebars/sidebars";
 
-	/* 11.1 Widgets
+	/* 12.1 Widgets
 	----------------------------------------------------------*/
 	@import "sidebars/widgets";
 	
-	/* 11.2 Sidebar Widget Area
+	/* 12.2 Sidebar Widget Area
 	----------------------------------------------------------*/
 	@import "sidebars/secondary";
 
-	/* 11.3 Footer Widget Area
+	/* 12.3 Footer Widget Area
 	----------------------------------------------------------*/
 	@import "sidebars/tertiary";
 		
 /*--------------------------------------------------------------
-12.0 Footer
+13.0 Footer
 --------------------------------------------------------------*/
 @import "footer/footer";
 
 /*--------------------------------------------------------------
-13.0 Media
+14.0 Media
 --------------------------------------------------------------*/
 @import "media/media";
 
-	/* 13.1 Captions
+	/* 14.1 Captions
 	----------------------------------------------------------*/
 	@import "media/captions";
 
-	/* 13.2 Galleries
+	/* 14.2 Galleries
 	----------------------------------------------------------*/
 	@import "media/galleries";
 	
 /*--------------------------------------------------------------
-14.0 Plugins
+15.0 Plugins
 --------------------------------------------------------------*/
 
-	/* 14.1 Ninja Forms
+	/* 15.1 Ninja Forms
 	----------------------------------------------------------*/
 	@import "plugins/ninja-forms";
 
-	/* 14.2 Yet Another Related Posts Plugin
+	/* 15.2 Yet Another Related Posts Plugin
 	----------------------------------------------------------*/
 	@import "plugins/yarpp";
 
 /*--------------------------------------------------------------
-15.0 Custom Pages
+16.0 Pages
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-16.0 Mobile Responsive
+17.0 Mobile Responsive
 --------------------------------------------------------------*/
 
-	/* 16.1 Medium Screen
+	/* 17.1 Medium Screen
 	----------------------------------------------------------*/
 	@import "responsive/medium";
 
-	/* 16.2 Small Screen
+	/* 17.2 Small Screen
 	----------------------------------------------------------*/
 	@import "responsive/small";
 
-	/* 16.3 Small Screen Navigation
+	/* 17.3 Small Screen Navigation
 	----------------------------------------------------------*/
 	@import "responsive/small-navigation";
