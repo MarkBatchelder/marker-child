@@ -17,6 +17,7 @@ textarea {
 	@include border($border__input);
 	border-radius: 3px;
     outline: none;
+    padding: $padding__input;
 	color: $color__text-input;
 	@include font-size($font__size-input);
 	line-height: $font__line-height-input;
@@ -27,25 +28,6 @@ textarea {
 	}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"]
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"] {
-	padding: $padding__input;
-}
-
 textarea {
-	padding: $padding__textarea;
 	width: 100%;
 }
