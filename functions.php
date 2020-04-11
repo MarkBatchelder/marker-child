@@ -83,6 +83,8 @@ if ( ! function_exists( 'marker_setup' ) ) :
 				'comment-list',
 				'gallery',
 				'caption',
+                'style',
+                'script',
 			)
 		);
 
