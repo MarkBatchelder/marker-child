@@ -2,6 +2,7 @@ body,
 button,
 input,
 select,
+optgroup,
 textarea {
 	font-family: $font__body;
 	@include font-size($font__size-body);
