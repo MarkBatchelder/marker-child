@@ -13,3 +13,8 @@ iframe,
 object {
 	max-width: 100%;
 }
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link{
+    display: inline-block;
+}
