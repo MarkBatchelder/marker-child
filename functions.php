@@ -60,7 +60,7 @@ function marker_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'top' => esc_html__( 'Top Navigation', 'marker' ),
+		'top'     => esc_html__( 'Top Navigation', 'marker' ),
 		'primary' => esc_html__( 'Primary Navigation', 'marker' ),
 	) );
 
@@ -94,6 +94,9 @@ function marker_setup() {
 		'default-color'	=> 'ffffff',
 		'default-image'	=> '',
 	) ) );
+
+    // Add theme support for selective refresh for widgets.
+    add_theme_support( 'customize-selective-refresh-widgets' );
 }
 endif;
 add_action( 'after_setup_theme', 'marker_setup' );
