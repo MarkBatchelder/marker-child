@@ -29,6 +29,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     2.1 Colors
     2.2 Typography
     2.3 Structure
+	2.4 Columns
 3.0 Normalize
 4.0 Typography
 	4.1 Headings
@@ -106,6 +107,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	/* 2.3 Structure
 	----------------------------------------------------------*/
 	@import "variables-site/structure";
+
+	/* 2.4 Columns
+	----------------------------------------------------------*/
+	@import "variables-site/columns";
 
 /*--------------------------------------------------------------
 3.0 Normalize
