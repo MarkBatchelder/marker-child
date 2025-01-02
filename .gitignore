@@ -6,4 +6,6 @@ koala-config.json
 .sass-cache
 style.css
 style.css.map
+woocommerce.css
+woocommerce.css.map
 *.png
