@@ -6,6 +6,11 @@ Author URI:		https://WebFirstDesigns.com
 Description:	WooCommerce styles override
 */
 
+// WooCommerce color variables
+$woocommerce__color-error: #e2401c;
+$woocommerce__color-success: #0f834d;
+$woocommerce__color-info: #3d9cd2;
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -86,8 +91,3 @@ Description:	WooCommerce styles override
 	/* 3.6 WooCommerce Widgets
 	----------------------------------------------------------*/
 	@import "plugins/woocommerce/widgets";
-
-// WooCommerce color variables
-$woocommerce__color-error: #e2401c;
-$woocommerce__color-success: #0f834d;
-$woocommerce__color-info: #3d9cd2;
