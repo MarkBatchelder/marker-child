@@ -18,7 +18,7 @@
 	@include rem(padding, $padding__page-header);
 	
 	.page-title {
-		font-weight: bold;
+		font-weight: 700;
 	}
     
     .archive-description {
@@ -106,7 +106,7 @@ h1.entry-title {
 	}
     
     .more-link {
-        font-weight: bold;
+        font-weight: 700;
     }
 }
 

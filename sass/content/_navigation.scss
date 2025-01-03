@@ -6,7 +6,7 @@
 		overflow: hidden;
 		@include rem(margin, $margin__post-nav);
         @include rem(padding, $padding__post-nav);
-        font-weight: bold;
+        font-weight: 700;
 	}
 
 	.nav-previous {
@@ -24,7 +24,7 @@
 .page-links {
 	clear: both;
 	@include rem(margin-bottom, $spacing__element-vertical);
-	font-weight: bold;
+	font-weight: 700;
 	
 	a {
 		text-decoration: none;
