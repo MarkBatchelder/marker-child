@@ -2,15 +2,18 @@
 	display: inline;
 	float: left;
 	@include rem(margin-right, $spacing__element-horizontal);
+	@include rem(margin-bottom, $spacing__element-vertical);
 }
 
 .alignright {
 	display: inline;
 	float: right;
 	@include rem(margin-left, $spacing__element-horizontal);
+	@include rem(margin-bottom, $spacing__element-vertical);
 }
 
 .aligncenter {
 	clear: both;
 	@include center-block;
+	@include rem(margin-bottom, $spacing__element-vertical);
 }
