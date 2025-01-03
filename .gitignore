@@ -1,3 +1,14 @@
+node_modules
+package.json
+gulpfile.js
+koala-config.json
+prepros.config
+.sass-cache
+style.css
+style.css.map
+woocommerce.css
+woocommerce.css.map
+*.png
 /node_modules
 /vendor
 package-lock.json
