@@ -1,4 +1,5 @@
-ul, ol {
+ul,
+ol {
 	@include rem(margin, 0 0 $spacing__element-vertical $spacing__list-left);
     @include rem(padding, 0 0 0 $spacing__list-left);
 }
@@ -17,7 +18,7 @@ li > ol {
 }
 
 dt {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 dd {
