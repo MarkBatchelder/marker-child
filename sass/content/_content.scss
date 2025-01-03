@@ -33,7 +33,8 @@
 	display: block;
 }
 
-.hentry {
+.post,
+.page {
     @include rem(margin, $margin__article);
 	@include rem(padding, $padding__article);
 }

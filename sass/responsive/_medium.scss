@@ -66,7 +66,8 @@
                 @include rem(padding, 1rem 1rem);
             }
 
-            .hentry {
+            .post,
+            .page {
                 @include rem(padding, 1rem);
             }
         }
