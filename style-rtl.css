@@ -1,21 +1,19 @@
 /*!
-Theme Name: _s
+Theme Name: Marker
 Theme URI: https://underscores.me/
 Author: Automattic
 Author URI: https://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Description: Hi. I'm a starter theme called <code>Marker</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: _s
+Text Domain: Marker
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-_s is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Marker is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -25,39 +23,31 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
-
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Generic
+# Normalize
 --------------------------------------------------------------*/
 
-/* Normalize
---------------------------------------------- */
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
 	 ========================================================================== */
@@ -79,13 +69,6 @@ html {
  */
 body {
 	margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-	display: block;
 }
 
 /**
@@ -375,27 +358,9 @@ template {
 	display: none;
 }
 
-/* Box sizing
---------------------------------------------- */
-
-/* Inherit box-sizing to more easily change it's value on a component level.
-@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-}
-
 /*--------------------------------------------------------------
-# Base
+# Typography
 --------------------------------------------------------------*/
-
-/* Typography
---------------------------------------------- */
 body,
 button,
 input,
@@ -403,7 +368,8 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: sans-serif;
+	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -439,6 +405,8 @@ address {
 pre {
 	background: #eee;
 	font-family: "Courier 10 Pitch", courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -451,6 +419,8 @@ kbd,
 tt,
 var {
 	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 abbr,
@@ -469,8 +439,22 @@ big {
 	font-size: 125%;
 }
 
-/* Elements
---------------------------------------------- */
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
 body {
 	background: #fff;
 }
@@ -509,13 +493,6 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-	max-width: 100%;
-}
-
 img {
 	height: auto;
 	max-width: 100%;
@@ -530,33 +507,9 @@ table {
 	width: 100%;
 }
 
-/* Links
---------------------------------------------- */
-a {
-	color: #4169e1;
-}
-
-a:visited {
-	color: #800080;
-}
-
-a:hover,
-a:focus,
-a:active {
-	color: #191970;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
-	outline: 0;
-}
-
-/* Forms
---------------------------------------------- */
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
 button,
 input[type="button"],
 input[type="reset"],
@@ -566,6 +519,8 @@ input[type="submit"] {
 	border-radius: 3px;
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
+	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
 }
@@ -638,17 +593,42 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Layouts
+# Navigation
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Components
+## Links
 --------------------------------------------------------------*/
+a {
+	color: #4169e1;
+}
 
-/* Navigation
---------------------------------------------- */
+a:visited {
+	color: #800080;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #191970;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
 .main-navigation {
+	clear: both;
 	display: block;
+	float: right;
 	width: 100%;
 }
 
@@ -675,8 +655,7 @@ textarea {
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
-	display: block;
-	right: auto;
+	right: 100%;
 }
 
 .main-navigation ul ul a {
@@ -689,6 +668,7 @@ textarea {
 }
 
 .main-navigation li {
+	float: right;
 	position: relative;
 }
 
@@ -710,7 +690,7 @@ textarea {
 	}
 
 	.main-navigation ul {
-		display: flex;
+		display: block;
 	}
 }
 
@@ -720,29 +700,140 @@ textarea {
 .site-main
 .post-navigation {
 	margin: 0 0 1.5em;
-}
-
-.comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
-	display: flex;
+	overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	flex: 1 0 50%;
+	float: right;
+	width: 50%;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	text-align: end;
-	flex: 1 0 50%;
+	float: left;
+	text-align: left;
+	width: 50%;
 }
 
-/* Posts and pages
---------------------------------------------- */
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	right: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear::before,
+.clear::after,
+.entry-content::before,
+.entry-content::after,
+.comment-content::before,
+.comment-content::after,
+.site-header::before,
+.site-header::after,
+.site-content::before,
+.site-content::after,
+.site-footer::before,
+.site-footer::after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear::after,
+.entry-content::after,
+.comment-content::after,
+.site-header::after,
+.site-content::after,
+.site-footer::after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
 .sticky {
 	display: block;
 }
@@ -767,8 +858,9 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-/* Comments
---------------------------------------------- */
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
 .comment-content a {
 	word-wrap: break-word;
 }
@@ -777,18 +869,24 @@ textarea {
 	display: block;
 }
 
-/* Widgets
---------------------------------------------- */
-.widget {
-	margin: 0 0 1.5em;
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	display: none;
 }
 
-.widget select {
-	max-width: 100%;
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+	display: block;
 }
 
-/* Media
---------------------------------------------- */
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -798,13 +896,21 @@ textarea {
 	padding: 0;
 }
 
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
 }
 
-/* Captions
---------------------------------------------- */
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
@@ -824,138 +930,52 @@ textarea {
 	text-align: center;
 }
 
-/* Galleries
---------------------------------------------- */
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
 .gallery {
 	margin-bottom: 1.5em;
-	display: grid;
-	grid-gap: 1.5em;
 }
 
 .gallery-item {
 	display: inline-block;
 	text-align: center;
+	vertical-align: top;
 	width: 100%;
 }
 
-.gallery-columns-2 {
-	grid-template-columns: repeat(2, 1fr);
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
 }
 
-.gallery-columns-3 {
-	grid-template-columns: repeat(3, 1fr);
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
 }
 
-.gallery-columns-4 {
-	grid-template-columns: repeat(4, 1fr);
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
 }
 
-.gallery-columns-5 {
-	grid-template-columns: repeat(5, 1fr);
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
 }
 
-.gallery-columns-6 {
-	grid-template-columns: repeat(6, 1fr);
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
 }
 
-.gallery-columns-7 {
-	grid-template-columns: repeat(7, 1fr);
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
 }
 
-.gallery-columns-8 {
-	grid-template-columns: repeat(8, 1fr);
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
 }
 
-.gallery-columns-9 {
-	grid-template-columns: repeat(9, 1fr);
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
 }
 
 .gallery-caption {
 	display: block;
-}
-
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
-
-/* Jetpack infinite scroll
---------------------------------------------- */
-
-/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-	display: none;
-}
-
-/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	clip-path: none;
-	color: #21759b;
-	display: block;
-	font-size: 0.875rem;
-	font-weight: 700;
-	height: auto;
-	right: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-}
-
-/* Do not show the outline on the skip link target. */
-#primary[tabindex="-1"]:focus {
-	outline: 0;
-}
-
-/* Alignments
---------------------------------------------- */
-.alignleft {
-	float: left;
-	margin-right: 1.5em;
-	margin-bottom: 1.5em;
-}
-
-.alignright {
-	float: right;
-	margin-left: 1.5em;
-	margin-bottom: 1.5em;
-}
-
-.aligncenter {
-	clear: both;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 1.5em;
 }
