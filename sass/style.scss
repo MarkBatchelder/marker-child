@@ -33,16 +33,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     2.2 Typography
     2.3 Structure
 	2.4 Columns
-3.0 Normalize
+3.0 Generic
+	3.1 Normalize
 4.0 Typography
 	4.1 Headings
 	4.2 Copy
 	4.3 Links
-5.0 Modules
+5.0 Utilities
     5.1 Accessibility
     5.2 Alignments
     5.3 Clearings
-    5.4 Infinite scroll
 6.0 Elements
 	6.1 Lists
 	6.2 Tables
@@ -70,11 +70,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	14.1 Captions
 	14.2 Galleries
 15.0 Plugins
-    15.1 Ninja Forms
-    15.2 Yet Another Related Posts Plugin
-    15.1 Medium Screen
-    15.2 Small Screen
-    15.3 Small Screen Navigation
+	15.1 Jetpck Infinite Scroll
+    15.2 Ninja Forms
+    15.3 Yet Another Related Posts Plugin
 16.0 Pages
 17.0 Mobile Responsive
     17.1 Medium Screen
@@ -101,24 +99,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 	/* 2.1 Colors
 	----------------------------------------------------------*/
-	@import "variables-site/colors";
+	@import "variables/colors";
 
 	/* 2.2 Typography
 	----------------------------------------------------------*/
-	@import "variables-site/typography";
+	@import "variables/typography";
 
 	/* 2.3 Structure
 	----------------------------------------------------------*/
-	@import "variables-site/structure";
+	@import "variables/structure";
 
 	/* 2.4 Columns
 	----------------------------------------------------------*/
-	@import "variables-site/columns";
+	@import "variables/columns";
 
 /*--------------------------------------------------------------
-3.0 Normalize
+3.0 Generic
 --------------------------------------------------------------*/
-@import "normalize";
+
+	/* 4.1 Normalize
+	----------------------------------------------------------*/
+	@import "generic/normalize";
 
 /*--------------------------------------------------------------
 4.0 Typography
@@ -138,24 +139,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	@import "typography/links";
 
 /*--------------------------------------------------------------
-5.0 Modules
+5.0 Utilities
 --------------------------------------------------------------*/
 
 	/* 5.1 Accessibility
 	----------------------------------------------------------*/
-	@import "modules/accessibility";
+	@import "utilities/accessibility";
 
 	/* 5.2 Alignments
 	----------------------------------------------------------*/
-	@import "modules/alignments";
+	@import "utilities/alignments";
 
 	/* 5.3 Clearings
 	----------------------------------------------------------*/
-	@import "modules/clearings";
-
-	/* 5.4 Infinite scroll
-	----------------------------------------------------------*/
-	@import "modules/infinite-scroll";
+	@import "utilities/clearings";
 
 /*--------------------------------------------------------------
 6.0 Elements
@@ -278,11 +275,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 15.0 Plugins
 --------------------------------------------------------------*/
 
-	/* 15.1 Ninja Forms
+	/* 15.1 Jetpack Infinite Scroll
+	----------------------------------------------------------*/
+	@import "plugins/jetpack";
+
+	/* 15.2 Ninja Forms
 	----------------------------------------------------------*/
 	@import "plugins/ninja-forms";
 
-	/* 15.2 Yet Another Related Posts Plugin
+	/* 15.3 Yet Another Related Posts Plugin
 	----------------------------------------------------------*/
 	@import "plugins/yarpp";
 
