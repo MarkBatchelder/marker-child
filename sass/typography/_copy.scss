@@ -12,8 +12,34 @@ i {
 	font-style: italic;
 }
 
+blockquote {
+	@include rem(margin, 0 $spacing__element-horizontal);
+	padding-left: 0.3em; // normal letter spacing
+	border-left: $border__blockquote-left;
+	font-style: italic;
+}
+
 address {
 	margin: 0 0 $spacing__element-vertical;
+}
+
+pre {
+	overflow: auto;
+	max-width: 100%;
+	@include rem(margin-bottom, $spacing__element-vertical);
+	@include rem(padding, $spacing__element-horizontal);
+	font-family: $font__pre;
+	@include font-size($font__size-pre);
+	line-height: $font__line-height-pre;
+}
+
+code,
+kbd,
+samp,
+var {
+	font-family: $font__code;
+	@include font-size($font__size-code);
+	background: $color__background-code;
 }
 
 abbr {
@@ -33,15 +59,4 @@ u {
 
 del {
 	text-decoration: line-through;
-}
-
-/* Deprecated in HTML5, but just in case */
-
-acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
-}
-
-big {
-	font-size: 125%;
 }

@@ -46,10 +46,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 6.0 Elements
 	6.1 Lists
 	6.2 Tables
-	6.3 Blockquotes
-	6.4 Pre & Code
-	6.5 Buttons
-    6.6 Forms
+	6.3 Buttons
+    6.4 Forms
+	6.5 Media
 7.0 Layouts
 8.0 Site Backgroud & Borders
 9.0 Header
@@ -167,21 +166,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	----------------------------------------------------------*/
 	@import "elements/tables";
 
-	/* 6.3 Blockquotes
-	----------------------------------------------------------*/
-	@import "elements/blockquotes";
-	
-	/* 6.4 Pre & Code
-	----------------------------------------------------------*/
-	@import "elements/pre";
-
-	/* 6.5 Buttons
+	/* 6.3 Buttons
 	----------------------------------------------------------*/
 	@import "elements/buttons";
 
-	/* 6.6 Forms
+	/* 6.4 Forms
 	----------------------------------------------------------*/
 	@import "elements/forms";
+
+	/* 6.5 Media
+	----------------------------------------------------------*/
+	@import "elements/media";
 
 /*--------------------------------------------------------------
 7.0 Layouts

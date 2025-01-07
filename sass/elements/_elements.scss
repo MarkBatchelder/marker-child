@@ -20,12 +20,3 @@ hr {
 	border: 0;
 	background: $color__background-hr;
 }
-
-img {
-    height: auto; // Make sure images are scaled correctly.
-    max-width: 100%; // Adhere to container width.
-}
-
-figure {
-	@include rem(margin, 0 0 $spacing__element-vertical); // Extra wide images within figure tags don't overflow the content area.
-}
