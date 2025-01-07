@@ -16,10 +16,11 @@ td {
 }
 
 th {
-	font-weight: bold;
+	font-weight: 700;
 }
 
-.hentry {
+.post,
+.page {
 
 	th {
 		background: $color__background-table-th;

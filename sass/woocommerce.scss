@@ -1,0 +1,88 @@
+/*!
+Theme Name:		Marker Child
+Theme URI:		https://github.com/WPAddiction/marker
+Author:			Web First Designs
+Author URI:		https://WebFirstDesigns.com
+Description:	WooCommerce styles override
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Mixins
+    1.1 REM to PX
+    1.2 Border Shorthand
+2.0 Variables
+    2.1 Colors
+    2.2 Typography
+    2.3 Structure
+	2.4 Columns
+3.0 WooCommerce
+    3.1 Shop Tables
+    3.2 Products
+    3.3 Single Product
+    3.4 Checkout
+    3.5 General WooCommerce Components
+    3.6 WooCommerce Widgets
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Mixins
+--------------------------------------------------------------*/
+@import "mixins/mixins-master";
+
+	/* 1.1 REM to PX
+	----------------------------------------------------------*/
+	@import "mixins/rem";
+
+	/* 1.2 Border Shorthand
+	----------------------------------------------------------*/
+	@import "mixins/border";
+
+/*--------------------------------------------------------------
+2.0 Variables
+--------------------------------------------------------------*/
+
+	/* 2.1 Colors
+	----------------------------------------------------------*/
+	@import "variables/colors";
+
+	/* 2.2 Typography
+	----------------------------------------------------------*/
+	@import "variables/typography";
+
+	/* 2.3 Structure
+	----------------------------------------------------------*/
+	@import "variables/structure";
+
+	/* 2.4 Columns
+	----------------------------------------------------------*/
+	@import "variables/columns";
+
+/*--------------------------------------------------------------
+3.0 WooCommerce
+--------------------------------------------------------------*/
+
+	/* 3.1 Shop Tables
+	----------------------------------------------------------*/
+	@import "plugins/woocommerce/tables";
+
+	/* 3.2 Products
+	----------------------------------------------------------*/
+	@import "plugins/woocommerce/products";
+
+	/* 3.3 Single Product
+	----------------------------------------------------------*/
+	@import "plugins/woocommerce/single-product";
+
+	/* 3.4 Checkout
+	----------------------------------------------------------*/
+	@import "plugins/woocommerce/checkout";
+
+	/* 3.5 General WooCommerce Components
+	----------------------------------------------------------*/
+	@import "plugins/woocommerce/components";
+
+	/* 3.6 WooCommerce Widgets
+	----------------------------------------------------------*/
+	@import "plugins/woocommerce/widgets";

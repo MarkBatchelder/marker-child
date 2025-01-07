@@ -40,7 +40,7 @@
 		@include rem(padding, $padding__primary-nav-link-vertical $padding__primary-nav-link-horizontal);
 		font-family: $font__primary-nav;
 		@include font-size($font__size-primary-nav);
-		font-weight: bold;
+		font-weight: 700;
 		text-decoration: none;
 		color: $color__primary-nav-link;
 

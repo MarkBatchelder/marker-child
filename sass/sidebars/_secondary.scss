@@ -24,7 +24,7 @@
 		font-family: $font__title-secondary;
 		@include font-size($font__size-title-secondary);
         line-height: $font__line-height-secondary-title;
-		font-weight: bold;
+		font-weight: 700;
         text-align: left; // Calendar title fix.
 	}
 	

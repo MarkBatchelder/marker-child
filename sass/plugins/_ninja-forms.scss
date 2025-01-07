@@ -6,12 +6,12 @@
 
 .ninja-forms-error-msg {
 	@include rem(margin-bottom, 2rem);
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .ninja-forms-field-error {
 	float: left;
-	color: #F00;
+	color: $color__error;
 }
 
 .submit-wrap {
@@ -19,5 +19,5 @@
 }
 
 .ninja-forms-response-msg {
-	font-weight: bold;
+	font-weight: 700;
 }

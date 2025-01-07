@@ -8,7 +8,7 @@ input[type="submit"] {
 	background: $color__background-button;
 	color: $color__text-button;
 	@include font-size($font__size-button);
-    font-weight: bold;
+    font-weight: 700;
 	line-height: $font__line-height-button;
 
 	&:hover,

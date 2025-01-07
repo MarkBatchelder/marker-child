@@ -1,22 +1,25 @@
 /*!
 Theme Name:		Marker Child
-Theme URI:		https://github.com/WPAddiction/marker
+Theme URI:		https://github.com/MarkBatchelder/marker-child
 Author:			Web First Designs
-Author URI:		http://WebFirstDesigns.com
+Author URI:		https://WebFirstDesigns.com
 Description:	Starter child theme for Marker
-Tags:			
-Version:		1.2.4
-_s Update:      Friday, September 23, 2016 6:44:04 AM
+Tags:			HTML5, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Version:		2.0.0
+_s Update:      Friday, April 17, 2020 10:38:12 PM
 License:		GNU General Public License v2 or later
-License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+License URI:	LICENSE
 Text Domain:	marker-child
-Template:		marker
+Template:		marker2
 
-Marker is based on Underscores http://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Marker-Child is a child theme with SASS and CSS for the parent theme Marker.
+Marker (https://github.com/MarkBatchelder/marker) is the parent theme with PHP to customize Marker child themes.
+
+Marker-Child is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
@@ -29,23 +32,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     2.1 Colors
     2.2 Typography
     2.3 Structure
-3.0 Normalize
+	2.4 Columns
+3.0 Generic
+	3.1 Normalize
 4.0 Typography
 	4.1 Headings
 	4.2 Copy
 	4.3 Links
-5.0 Modules
+5.0 Utilities
     5.1 Accessibility
     5.2 Alignments
     5.3 Clearings
-    5.4 Infinite scroll
 6.0 Elements
-	6.1 Lists
-	6.2 Tables
-	6.3 Blockquotes
-	6.4 Pre & Code
-	6.5 Buttons
-    6.6 Forms
+	6.1 Body
+	6.2 Lists
+	6.3 Tables
+	6.4 Buttons
+    6.5 Forms
+	6.6 Media
 7.0 Layouts
 8.0 Site Backgroud & Borders
 9.0 Header
@@ -66,11 +70,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	14.1 Captions
 	14.2 Galleries
 15.0 Plugins
-    15.1 Ninja Forms
-    15.2 Yet Another Related Posts Plugin
-    15.1 Medium Screen
-    15.2 Small Screen
-    15.3 Small Screen Navigation
+	15.1 Jetpck Infinite Scroll
+    15.2 Ninja Forms
+    15.3 Yet Another Related Posts Plugin
 16.0 Pages
 17.0 Mobile Responsive
     17.1 Medium Screen
@@ -97,20 +99,27 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 	/* 2.1 Colors
 	----------------------------------------------------------*/
-	@import "variables-site/colors";
+	@import "variables/colors";
 
 	/* 2.2 Typography
 	----------------------------------------------------------*/
-	@import "variables-site/typography";
+	@import "variables/typography";
 
 	/* 2.3 Structure
 	----------------------------------------------------------*/
-	@import "variables-site/structure";
+	@import "variables/structure";
+
+	/* 2.4 Columns
+	----------------------------------------------------------*/
+	@import "variables/columns";
 
 /*--------------------------------------------------------------
-3.0 Normalize
+3.0 Generic
 --------------------------------------------------------------*/
-@import "normalize";
+
+	/* 4.1 Normalize
+	----------------------------------------------------------*/
+	@import "generic/normalize";
 
 /*--------------------------------------------------------------
 4.0 Typography
@@ -130,53 +139,48 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	@import "typography/links";
 
 /*--------------------------------------------------------------
-5.0 Modules
+5.0 Utilities
 --------------------------------------------------------------*/
 
 	/* 5.1 Accessibility
 	----------------------------------------------------------*/
-	@import "modules/accessibility";
+	@import "utilities/accessibility";
 
 	/* 5.2 Alignments
 	----------------------------------------------------------*/
-	@import "modules/alignments";
+	@import "utilities/alignments";
 
 	/* 5.3 Clearings
 	----------------------------------------------------------*/
-	@import "modules/clearings";
-
-	/* 5.4 Infinite scroll
-	----------------------------------------------------------*/
-	@import "modules/infinite-scroll";
+	@import "utilities/clearings";
 
 /*--------------------------------------------------------------
 6.0 Elements
 --------------------------------------------------------------*/
-@import "elements/elements";
 
-	/* 6.1 Lists
+	/* 6.1 Body
+	----------------------------------------------------------*/
+	@import "elements/body";
+
+	/* 6.2 Lists
 	----------------------------------------------------------*/
 	@import "elements/lists";
 
-	/* 6.2 Tables
+	/* 6.3 Tables
 	----------------------------------------------------------*/
 	@import "elements/tables";
 
-	/* 6.3 Blockquotes
-	----------------------------------------------------------*/
-	@import "elements/blockquotes";
-	
-	/* 6.4 Pre & Code
-	----------------------------------------------------------*/
-	@import "elements/pre";
-
-	/* 6.5 Buttons
+	/* 6.4 Buttons
 	----------------------------------------------------------*/
 	@import "elements/buttons";
 
-	/* 6.6 Forms
+	/* 6.5 Forms
 	----------------------------------------------------------*/
 	@import "elements/forms";
+
+	/* 6.6 Media
+	----------------------------------------------------------*/
+	@import "elements/media";
 
 /*--------------------------------------------------------------
 7.0 Layouts
@@ -184,6 +188,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "layout/content-sidebar";
 // @import "layout/sidebar-content";
 // @import "layout/content";
+// @import "layout/no-sidebar";
 
 /*--------------------------------------------------------------
 8.0 Site Background & Borders
@@ -269,11 +274,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 15.0 Plugins
 --------------------------------------------------------------*/
 
-	/* 15.1 Ninja Forms
+	/* 15.1 Jetpack Infinite Scroll
+	----------------------------------------------------------*/
+	@import "plugins/jetpack";
+
+	/* 15.2 Ninja Forms
 	----------------------------------------------------------*/
 	@import "plugins/ninja-forms";
 
-	/* 15.2 Yet Another Related Posts Plugin
+	/* 15.3 Yet Another Related Posts Plugin
 	----------------------------------------------------------*/
 	@import "plugins/yarpp";
 

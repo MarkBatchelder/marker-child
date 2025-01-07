@@ -1,0 +1,22 @@
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+}
+
+hr {
+	height: 1px;
+	@include rem(margin, 0 $spacing__element-horizontal $spacing__element-vertical);
+	border: 0;
+	background: $color__background-hr;
+}
