@@ -82,7 +82,7 @@ p.stars {
 			line-height: 1;
 			font-family: star;
 			content: "\53";
-			color: $color__text-main;
+			color: $text-color1;
 			text-indent: 0;
 			opacity: 0.25;
 		}
@@ -91,7 +91,7 @@ p.stars {
 
 			~ a::before {
 				content: "\53";
-				color: $color__text-main;
+				color: $text-color1;
 				opacity: 0.25;
 			}
 		}
@@ -121,7 +121,7 @@ p.stars {
 
 			~ a::before {
 				content: "\53";
-				color: $color__text-main;
+				color: $text-color1;
 				opacity: 0.25;
 			}
 		}
@@ -175,19 +175,19 @@ p.stars {
 	text-align: right;
 
 	&.strong {
-		color: $woocommerce__color-success;
+		color: $color__success;
 	}
 
 	&.short {
-		color: $woocommerce__color-error;
+		color: $color__error;
 	}
 
 	&.bad {
-		color: $woocommerce__color-error;
+		color: $color__error;
 	}
 
 	&.good {
-		color: $woocommerce__color-info;
+		color: $color__info;
 	}
 }
 
@@ -199,14 +199,14 @@ p.stars {
 	&.woocommerce-validated {
 
 		input.input-text {
-			box-shadow: inset 2px 0 0 $woocommerce__color-success;
+			box-shadow: inset 2px 0 0 $color__success;
 		}
 	}
 
 	&.woocommerce-invalid {
 
 		input.input-text {
-			box-shadow: inset 2px 0 0 $woocommerce__color-error;
+			box-shadow: inset 2px 0 0 $color__error;
 		}
 	}
 }
@@ -223,18 +223,18 @@ p.stars {
 .woocommerce-error,
 .woocommerce-noreviews,
 p.no-comments {
-	background-color: $woocommerce__color-success;
+	background-color: $color__success;
 	clear: both;
 }
 
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-	background-color: $woocommerce__color-info;
+	background-color: $color__info;
 }
 
 .woocommerce-error {
-	background-color: $woocommerce__color-error;
+	background-color: $color__error;
 }
 
 .demo_store {
@@ -244,7 +244,7 @@ p.no-comments {
 	right: 0;
 	margin: 0;
 	padding: 1em;
-	background-color: $woocommerce__color-info;
+	background-color: $color__info;
 	z-index: 9999;
 }
 
