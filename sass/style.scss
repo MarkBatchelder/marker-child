@@ -44,11 +44,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     5.2 Alignments
     5.3 Clearings
 6.0 Elements
-	6.1 Lists
-	6.2 Tables
-	6.3 Buttons
-    6.4 Forms
-	6.5 Media
+	6.1 Body
+	6.2 Lists
+	6.3 Tables
+	6.4 Buttons
+    6.5 Forms
+	6.6 Media
 7.0 Layouts
 8.0 Site Backgroud & Borders
 9.0 Header
@@ -156,25 +157,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 6.0 Elements
 --------------------------------------------------------------*/
-@import "elements/elements";
 
-	/* 6.1 Lists
+	/* 6.1 Body
+	----------------------------------------------------------*/
+	@import "elements/body";
+
+	/* 6.2 Lists
 	----------------------------------------------------------*/
 	@import "elements/lists";
 
-	/* 6.2 Tables
+	/* 6.3 Tables
 	----------------------------------------------------------*/
 	@import "elements/tables";
 
-	/* 6.3 Buttons
+	/* 6.4 Buttons
 	----------------------------------------------------------*/
 	@import "elements/buttons";
 
-	/* 6.4 Forms
+	/* 6.5 Forms
 	----------------------------------------------------------*/
 	@import "elements/forms";
 
-	/* 6.5 Media
+	/* 6.6 Media
 	----------------------------------------------------------*/
 	@import "elements/media";
 
