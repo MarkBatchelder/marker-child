@@ -23,11 +23,6 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-if ( ! defined( 'MARKER_VERSION' ) ) {
-    // Replace the version number of the theme on each release.
-    define( 'MARKER_VERSION', '2.0.0' );
-}
-
 if ( ! function_exists( 'marker_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
