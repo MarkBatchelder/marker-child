@@ -1,4 +1,4 @@
-.widget-title {
+.widget h2 {
 	display: inline-block;
 	width: 100%;
     @include rem(margin, $margin__widget-title);
@@ -8,6 +8,11 @@
 	margin: 0; // Reset
     padding: 0; // Reset
 	list-style: none;
+
+	li{
+		@include rem(margin-bottom, $spacing__widget-bottom);
+		line-height: 1;
+	}
 	
 	ul {
 		@include rem(padding-left, $spacing__widget-list-left);
@@ -19,6 +24,11 @@
 	margin: 0; // Reset
     @include rem(padding, 0 0 0 $spacing__widget-list-left);
 	list-style-type: decimal;
+
+	li{
+		@include rem(margin-bottom, $spacing__widget-bottom);
+		line-height: 1;
+	}
 }
 
 .widget select {
