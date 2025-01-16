@@ -38,23 +38,24 @@
     #secondary { // .sidebar-widget-area
         display: none;
     }
+}
 
-    #tertiary-container { // .footer-sidebar
-        clear: both;
+#tertiary-container { // .footer-sidebar
+    clear: both;
+    width: $size__site-tertiary-container;
+
+    #tertiary { // .footer-widget-area
+        overflow: hidden;
         width: $size__site-tertiary;
-
-        #tertiary { // .footer-widget-area
-            overflow: hidden;
-        }
     }
 }
 
 #colophon { // Footer
 	clear: both;
-	width: $size__site-footer;
+	width: $size__site-footer-container;
 
     #credits {
         overflow: hidden;
-        width: 100%;
+        width: $size__site-footer;
     }
 }

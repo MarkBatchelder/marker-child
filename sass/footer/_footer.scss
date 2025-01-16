@@ -1,10 +1,10 @@
 .site-footer {
+    @include border($border__footer);
+    background: $color__background-footer;
     
     .site-info {
         @include rem(margin, $margin__footer);
-        @include rem(padding, $padding__footer-vertical $padding__footer-horizontal);
-        @include border($border__footer);
-        background: $color__background-footer;
+        @include rem(padding, $padding__footer);
         color: $color__footer-text;
         font-family: $font__footer;
         @include font-size($font__size-footer);

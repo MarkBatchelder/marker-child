@@ -14,8 +14,10 @@ $size__site-header: 100%;
     $size__site-main-nav: 100%;
 $size__site-content: 100%;
     $size__site-secondary: 25%;  // Sidebar
+$size__site-tertiary-container: 100%;
     $size__site-tertiary: 100%;
-$size__site-footer: 100%;
+$size__site-footer-container: 100%;
+    $size__site-footer: 100%;
 
 
 /* Top Navigation */
@@ -63,7 +65,7 @@ $padding__primary: 0;
 $margin__main: 0;
 $padding__main: ($default-height / 2) ($default-width / 2);
 
-$margin__page-header: (-$default-height / 2) (-default-width / 2) ($default-height / 2); // $padding__main: -# -# #;
+$margin__page-header: (-$default-height / 2) (-$default-width / 2) ($default-height / 2); // $padding__main: -# -# #;
 $padding__page-header: ($default-height / 2) ($default-width / 2); // Equal to $padding__main.
 
 $margin__article: 0;
@@ -128,6 +130,5 @@ $width__teriary-widget: 306px; // Backwards compatibility.
 
 /* Footer */
 
-$margin__footer: 0;
-$padding__footer-vertical: 1rem;
-$padding__footer-horizontal: ($margin__tertiary-area + $padding__tertiary-area + $margin__tertiary-widget + $padding__tertiary-widget);
+$margin__footer: 0 auto;
+$padding__footer: 1rem ($spacing__element-horizontal / 2);
