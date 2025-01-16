@@ -1,39 +1,54 @@
 .site-header { // #masthead
     @include border($border__header);
 	background: $color__background-header;
+
+	img {
+	}
 }
 
 .site-branding {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
 	@include rem(margin, $margin__branding);
     @include rem(padding, $padding__branding);
     @include border($border__branding);
 	background: $color__background-branding;
-}
 
-.site-title {
-    @include rem(margin, 0); // Line height fix
-	font-family: $font__site-title;
-	@include font-size($font__size-site-title);
-	line-height: $font__line-height-site-title;
-	
-	a,
-	a:visited {
-		text-decoration: none;
-		color: $color__site-title-link;
+	.custom-logo-link,
+	.custom-logo {
+		height: 75px;
+		width: 75px;
 	}
-	
-	a:hover,
-	a:focus,
-	a:active {
-		text-decoration: none;
-		color: $color__site-title-link-hover;
-	}
-}
 
-.site-description {
-    @include rem(margin, 0); // Line height fix
-	font-family: $font__site-description;
-	@include font-size($font__size-site-description);
-	line-height: $font__line-height-site-description;
-	font-weight: 700;
+	.site-name {
+
+		.site-title {
+			@include rem(margin, 0); // Line height fix
+			font-family: $font__site-title;
+			@include font-size($font__size-site-title);
+			line-height: $font__line-height-site-title;
+			
+			a,
+			a:visited {
+				text-decoration: none;
+				color: $color__site-title-link;
+			}
+			
+			a:hover,
+			a:focus,
+			a:active {
+				text-decoration: none;
+				color: $color__site-title-link-hover;
+			}
+		}
+
+		.site-description {
+			@include rem(margin, 0); // Line height fix
+			font-family: $font__site-description;
+			@include font-size($font__size-site-description);
+			line-height: $font__line-height-site-description;
+			font-weight: 700;
+		}
+	}
 }
